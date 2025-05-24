@@ -3,7 +3,7 @@
 // import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 // import {Link} from 'react-router-dom';
 import Link from 'next/link';
-import {useRouter} from 'next/router';
+// import {useRouter} from 'next/router';
 import './NavBar.css';
 // import {AboutMe} from '../Pages/AboutMe.js';
 // import {Projects} from '../Pages/Projects.js';

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">

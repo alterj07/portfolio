@@ -10,7 +10,7 @@ export default function MainPage() {
         <NavigationBar />
       </div>
       <div id = "mainTitle">
-        <h1 id = "Title">Jayden's Portfolio</h1>
+        <h1 id = "Title">Jayden Portfolio</h1>
       </div>
       <div id = "mainAboutParagraph">
         {/* <h1 id = "mainAbout">About</h1> */}
