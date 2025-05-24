@@ -12,9 +12,9 @@ import './NavBar.css';
 export default function NavBar() {
     return (
       <ul className = "navBar">
-        <Link href ="/">Home</Link>
-        <Link href ="/about">About Me</Link>
-        <Link href ="/projects">Projects</Link>
+        <Link href ="../Pages/MainPage">Home</Link>
+        <Link href ="../Pages/AboutMe">About Me</Link>
+        <Link href ="../Pages/Projects">Projects</Link>
 
       </ul>
     )
