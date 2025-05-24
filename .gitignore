@@ -1,2 +1,21 @@
-node_modules
+# Next.js
+.next/
+out/
+
+# Production build
+/build
+/dist
+
+# Dependencies
+node_modules/
+
+# Environment variables
+.env*.local
+
+# Logs
+*.log
+
+# Other common ignores
 .DS_Store
+.vscode/
+.idea/
