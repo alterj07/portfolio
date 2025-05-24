@@ -1,4 +1,4 @@
-import NavBar from "@/components/NavBar";
+import NavBar from "../Components/NavBar";
 export default function Home() {
   return (
     <div className="min-h-screen grid grid-rows-[auto_1fr_auto] bg-black text-white">
