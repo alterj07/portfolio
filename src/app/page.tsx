@@ -1,5 +1,4 @@
-import NavigationBar from '@/Components/NavBar.js';
-import './MainPage.css';
+import NavigationBar from '../Components/NavBar.js';
 
 export default function Home() {
   return (
