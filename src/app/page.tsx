@@ -1,5 +1,5 @@
 import NavigationBar from '../Components/NavBar.js';
-import '../globals.css';
+import './globals.css';
 export default function Home() {
   return (
     <div className="bg-black text-white">
