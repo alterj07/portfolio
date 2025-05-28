@@ -1,5 +1,8 @@
 export default function AboutMe() {
     return (
-        <h1>About Me!</h1>
+        <div>
+            <h1>About Me!</h1>
+            <Link href = "/">Go back</Link>
+        </div>
     )
 }
