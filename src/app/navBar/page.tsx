@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import '../globals.css';
 export default function NavBar() {
     return (
       <ul className = "display-flex align-items-center flex-direction-column color-burlywood padding-1rem position-absolute left-0 width-14rem height-full list-style-none">
