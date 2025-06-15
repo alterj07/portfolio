@@ -10,6 +10,7 @@
         color: var(--color-darkMode-primary);
         text-align: center;
         justify-content: center;
+        background-color: "bg-gradient-to-r from-indigo-500 to-teal-400";
     }
 }
 
@@ -22,8 +23,8 @@
   --color-darkMode-primary: azure;
   --color-darkMode-secondary: azure;
   --color-darkMode-accent: azure;
-  --color-darkMode-background: "bg-linear-to-r/srgb from-emerald-950 via-cyan-700 to-black-1000";
-  --color-darkMode-foreground: #e0e0e0;
+  --color-darkMode-background: "bg-gradient-to-r from-indigo-500 to-teal-400";
+  /* --color-darkMode-foreground: #e0e0e0; */
   --font-family-sans: "Arial", "Helvetica", "sans-serif";
   --font-family-serif: "Georgia", "serif";
 }
