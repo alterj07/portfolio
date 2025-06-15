@@ -1,5 +1,6 @@
 import NavigationBar from './navBar/page';
 import './globals.css';
+import "..css/classes.css"
 export default function Home() {
   return (
     <div className="bg-black">
