@@ -22,7 +22,7 @@
   --color-darkMode-primary: azure;
   --color-darkMode-secondary: azure;
   --color-darkMode-accent: azure;
-  --color-darkMode-background: #121212;
+  --color-darkMode-background: "bg-gradient-to-r/srgb from-emerald-950 via-cyan-700 to-black-1000";
   --color-darkMode-foreground: #e0e0e0;
   --font-family-sans: "Arial", "Helvetica", "sans-serif";
   --font-family-serif: "Georgia", "serif";
