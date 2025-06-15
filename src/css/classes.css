@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@layer components {
+    .topTitle {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: "darkMode: var(--colors.primary)";
+        text-align: center;
+    }
+}
+
+@theme {
+    --colors: {
+        primary: #4a90e2;
+        secondary: #50e3c2;
+        accent: #f5a623;
+        background: #f0f0f0;
+        foreground: #333333;
+    },
+    --darkMode: {
+        --colors: {
+            primary: azure;
+            secondary: azure;
+            accent: azure;
+            background: #121212;
+            foreground: #e0e0e0;
+        },
+    },
+    --fontFamily: {
+        sans: ["Arial", "Helvetica", "sans-serif"];
+        serif: ["Georgia", "serif"];
+    },
+}

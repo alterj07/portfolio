@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="bg-black">
       <div className="bg-black p-4">
-        <h1 className="bg-black text-2xl font-bold">Jayden Portfolio</h1>
+        <h1 className="topTitle">Jayden Portfolio</h1>
       </div>
         <NavigationBar />
     </div>
