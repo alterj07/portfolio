@@ -6,7 +6,7 @@ export default function NavBar() {
       <ul className="h-full bg-white/10 backdrop-blur-lg shadow-lg flex flex-col items-start justify-start px-2 py-8 overflow-hidden space-y-6">
         <li>
           <Link
-            className="text-lime-300 text-lg font-semibold hover:text-white transition-colors duration-200"
+            className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
             href="/"
           >
             Home
@@ -14,7 +14,7 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            className="text-lime-300 text-lg font-semibold hover:text-white transition-colors duration-200"
+            className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
             href="/aboutMe"
           >
             About Me
@@ -22,7 +22,7 @@ export default function NavBar() {
         </li>
         <li>
           <Link
-            className="text-lime-300 text-lg font-semibold hover:text-white transition-colors duration-200"
+            className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
             href="/projects"
           >
             Projects
