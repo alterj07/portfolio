@@ -5,7 +5,7 @@
         font-size: 2rem;
         font-weight: bold;
         margin-bottom: 1rem;
-        color: "darkMode: var(--colors.primary)";
+        color: var(--darkMode-primary);
         text-align: center;
     }
 }
@@ -19,13 +19,11 @@
         foreground: #333333;
     },
     --darkMode: {
-        --colors: {
-            primary: azure;
-            secondary: azure;
-            accent: azure;
-            background: #121212;
-            foreground: #e0e0e0;
-        },
+        primary: azure;
+        secondary: azure;
+        accent: azure;
+        background: #121212;
+        foreground: #e0e0e0;
     },
     --fontFamily: {
         sans: ["Arial", "Helvetica", "sans-serif"];
