@@ -13,17 +13,25 @@ export default function NavBar() {
           </Link>
         </li>
         <li>
-          <Link
+          {/* <Link
             className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
             href="/aboutMe"
+          > */}
+          <Link
+            className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
+            href="/underConstruction"
           >
             About Me
           </Link>
         </li>
         <li>
-          <Link
+          {/* <Link
             className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
             href="/projects"
+          > */}
+          <Link
+            className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
+            href="/underConstruction"
           >
             Projects
           </Link>
