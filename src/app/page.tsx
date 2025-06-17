@@ -3,14 +3,14 @@ import './globals.css';
 import "../css/classes.css"
 export default function Home() {
   return (
-    <div className="h-screen bg-gradient-to-br from-[#4ecdc4] to-[#556270]">
+    // <div className="h-screen bg-gradient-to-br from-[#4ecdc4] to-[#556270] scroll-smooth">
+    <div className = "h-screen bg-black scroll-smooth">
       <div>
-        <h1 className="topTitle">Jayden Portfolio</h1>
+        <h1 className="mainPageTitle">Jayden's Portfolio</h1>
       </div>
         <NavigationBar />
+      
     </div>
   )
 }
-
-
 

@@ -3,6 +3,33 @@
 @import "tailwindcss/utilities";
 
 @layer components {
+    .mainPageTitle {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: var(--color-darkMode-background);
+        text-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.7s ease-in-out;
+        transition-delay: 0.7s;
+        /* &:hover {
+            color: rgb(48.499% 97.477% 95.812%);
+            animation: pulse 1s infinite;
+        } */
+    }
+    .mainPageTitle:hover {
+      color: rgb(48.499% 97.477% 95.812%);
+      animation: pulse 8s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      50% { transform: translate(-50%, -50%) scale(1.05); }
+    }
     .topTitle {
         font-size: 2rem;
         font-weight: bold;
@@ -10,7 +37,22 @@
         color: var(--color-darkMode-primary);
         text-align: center;
         justify-content: center;
-        background-color: "bg-gradient-to-r from-emerald-950 via-cyan-700 to-black";
+        background-color: var(--color-darkMode-background);
+        
+    }
+    /* //group fixed top-0 left-0 h-screen opacity-0 hover:opacity-100 transition-opacity duration-[0.9s] ease-in-out z-50 */
+    .navBarItems {
+        top: 0;
+        left: 0;
+        position: fixed;
+        height: 100vh;
+        width: fit-content;
+        opacity: 0;
+        transition: opacity random(100ms, 1000ms) ease-in-out;
+        z-index: 50;
+        &:hover {
+            opacity: 1;
+        }
     }
 }
 
