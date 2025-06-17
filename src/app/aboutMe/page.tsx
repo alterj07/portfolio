@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import '../globals.css';
+import '../../css/classes.css';
 export default function AboutMe() {
     return (
         <div className="h-screen bg-gradient-to-br from-[#4ecdc4] to-[#556270]">
@@ -7,7 +8,7 @@ export default function AboutMe() {
             <Link href = "/">Go back</Link>
             <div className = "flex flex-row items-center">
                 <p className="text-center text-lg mt-4">
-                    Hi, I'm Jayden!
+                    Hi, I&apos;m Jayden!
                 </p>
             </div>
         </div>

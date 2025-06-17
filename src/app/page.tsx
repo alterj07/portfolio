@@ -6,7 +6,7 @@ export default function Home() {
     // <div className="h-screen bg-gradient-to-br from-[#4ecdc4] to-[#556270] scroll-smooth">
     <div className = "h-screen bg-black scroll-smooth">
       <div>
-        <h1 className="mainPageTitle">Jayden's Portfolio</h1>
+        <h1 className="mainPageTitle">Jayden&apos;s Portfolio</h1>
       </div>
         <NavigationBar />
       

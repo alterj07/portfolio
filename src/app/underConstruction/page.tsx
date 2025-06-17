@@ -1,5 +1,5 @@
 import Link from 'next/link';
-
+import "../../css/classes.css"
 export default function UnderConstruction() {
     return (
         <div>

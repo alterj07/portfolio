@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import '../globals.css';
+import "../../css/classes.css"
 export default function Projects() {
     return (
          <div className="h-screen bg-gradient-to-br from-[#4ecdc4] to-[#556270]">
