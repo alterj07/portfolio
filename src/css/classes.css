@@ -4,32 +4,92 @@
 
 @layer components {
     .mainPageTitle {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
         font-size: 2.5rem;
         font-weight: bold;
         margin-bottom: 1rem;
         color: var(--color-darkMode-background);
         text-align: center;
         justify-content: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         transition: all 0.7s ease-in-out;
         transition-delay: 0.7s;
-        /* &:hover {
-            color: rgb(48.499% 97.477% 95.812%);
-            animation: pulse 1s infinite;
-        } */
+        flex-direction: column;
     }
     .mainPageTitle:hover {
       color: rgb(48.499% 97.477% 95.812%);
       animation: pulse 8s infinite;
     }
-
     @keyframes pulse {
-      0%, 100% { transform: translate(-50%, -50%) scale(1); }
-      50% { transform: translate(-50%, -50%) scale(1.05); }
+      /* 0%, 100% { transform: translate(-50%, -50%) scale(1); }
+      25% { transform: translate(-50%, -50%) scale(1.05); }
+      75% { transform: translate(-50%, -50%) scale(0.95); } */
+      0%, 100% { transform: scale(1); }
+      25% { transform: scale(1.05); }
+      75% { transform: scale(0.95); }
     }
+
+    #featuredProjectsTitle {
+        position: static;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        flex-direction: column;
+        color: white;
+        /* animation-name: disappearAnimation;
+        animation-duration: 1s;
+        animation-direction: normal;
+        animation-range: entry 0% entry 100%;
+        animation-range: 0% 100%;
+        animation-fill-mode: both;
+        animation-timeline: scroll(y); */
+        animation-name: disappearAnimation;
+        animation-timeline: view(); /* Use view timeline instead */
+        animation-range: entry 0% entry 100%;
+        animation-fill-mode: both;
+    }
+
+    @keyframes disappearAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .test-scroll-animation {
+        animation: testAnimation 1s linear;
+        animation-timeline: view();
+        animation-range: entry 0% entry 100%;
+        animation-fill-mode: both;
+    }
+
+    @keyframes testAnimation {
+        0% { background-color: red; }
+        100% { background-color: blue; }
+    }
+
+    .spacerDiv {
+        height: 2rem;
+        width: 100%;
+    }
+
+    .mainTitleSpacerDiv {
+        height: 20rem;
+        width: 100%;
+    }
+
+    .sectionSpacerDiv {
+        height: 30rem;
+        width: 100%;
+    }
+
     .topTitle {
         font-size: 2rem;
         font-weight: bold;
