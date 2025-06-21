@@ -1,4 +1,5 @@
-import NavigationBar from './navBar/page';
+import NavigationBar from '../components/navBar/page';
+import FeatureProjects from '../components/projectsFeature/page';
 import './globals.css';
 import "../css/classes.css"
 export default function Home() {
@@ -11,14 +12,7 @@ export default function Home() {
       </div>
         <NavigationBar />
       <div className = "sectionSpacerDiv"></div>
-      <div>
-        <h1 id = "featuredProjectsTitle" className = "test-scroll-animation">
-          Featured Projects
-        </h1>
-      </div>
-      <div className = "h-screen">
-
-      </div>
+        <FeatureProjects />
     </div>
   )
 }

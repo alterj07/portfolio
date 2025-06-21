@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import "../../css/classes.css"
+import React from 'react';
 export default function NavBar() {
   return (
     <div className="group fixed top-0 left-0 h-screen opacity-0 hover:opacity-100 transition-opacity duration-[0.9s] ease-in-out z-50">
