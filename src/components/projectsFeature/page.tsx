@@ -6,7 +6,7 @@ export default function FeatureProjects() {
             <h1 id = "featuredProjectsTitle">
                 Featured Projects
             </h1>
-            <div className = "projectsFeatureContainer">
+            <div className = "projectsFeatureContainer h-screen">
                 
             </div>
         </div>

@@ -77,19 +77,25 @@
         background-color: var(--color-darkMode-background);
         
     }
-    /* //group fixed top-0 left-0 h-screen opacity-0 hover:opacity-100 transition-opacity duration-[0.9s] ease-in-out z-50 */
     .navBarItems {
-        top: 0;
-        left: 0;
-        position: fixed;
-        height: 100vh;
-        width: fit-content;
-        opacity: 0;
-        transition: opacity random(100ms, 1000ms) ease-in-out;
-        z-index: 50;
-        &:hover {
-            opacity: 1;
-        }
+        color: #bef264;
+        font-size: 1.875rem; 
+        font-weight: 600;
+        padding-top: 2rem;
+        gap: 1rem;
+        transition-property: color;
+        transition-duration: 700ms;
+        transition-timing-function: ease-in-out;
+    }
+    .navBarItems:hover {
+        color: #fff;
+        transition: all 0.7s ease-in-out;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    .navBarItems:hover {
+        color: white !important;
+        transition: all 0.7s ease-in-out;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
 
     #projectsFeatureContainer {
@@ -103,7 +109,9 @@
         flex-wrap: wrap;
         gap: 1rem;
         padding: 1rem;
-        background-color: var(--color-darkMode-background);
+        background-color: brown;
+        color:white;
+        z-index: 10;
         border-radius: 0.5rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         transition: all 0.3s ease-in-out;
@@ -111,7 +119,7 @@
         &:hover {
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
             transform: scale(1.02);
-        }
+        } 
     }
 }
 
