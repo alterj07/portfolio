@@ -1,0 +1,112 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components"; 
+@import "tailwindcss/utilities";
+
+@layer base {
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .flip-card-container:hover .flip-card,
+    .flip-card-container:focus-within .flip-card {
+        transform: rotateY(180deg);
+    }
+
+    #featuredProjectsTitle {
+        position: static;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        flex-direction: column;
+        color: white;
+    }
+
+    #projectsFeatureContainer {
+        position: relative;
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+        /* background-color: white; */
+    }
+
+    .flip-card-container {
+        --hue: 150;
+        --primary: hsl(var(--hue), 50%, 50%);
+        --white-1: hsl(0, 0%, 90%);
+        --white-2: hsl(0, 0%, 80%);
+        --dark: hsl(var(--hue), 25%, 10%);
+        --grey: hsl(0, 0%, 50%);
+
+        width: fit-content;
+        height: 100%;
+        margin: 40px;
+
+        perspective: 1000px;
+    }
+
+    .flip-card {
+        width: inherit;
+        height: inherit;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: .6s .1s;
+        /* background-color: white; */
+    }
+
+    .projectsFeatureCard,
+    .projectsFeatureCardBack {
+        position: relative;
+        /* display: flex;
+        flex-direction: column; */
+        align-items: center;
+        padding: 1rem;
+        backface-visibility: hidden;
+        text-align: center;
+        border-radius: 0.5rem;
+        border-width: 1px;
+        /* background-color: white; */
+    }
+
+    .projectsFeatureCard {
+        width: fit-content;
+        height: 17rem;
+        transform: rotateY(0deg);
+        z-index:2;
+    }
+
+    .projectsFeatureCardBack {
+        transform: rotateY(180deg) translateY(-17rem);
+        z-index: 1;
+    }
+
+    .projectsFeatureCard:hover .flip-card,
+    .projectsFeatureCardBack:focus-within .flip-card {
+        transform: rotateY(180deg);
+    }
+    
+    .projectFeatureTitle{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .projectFeatureDescription {
+        font-size: 1rem;
+        color: var(--color-darkMode-secondary);
+        margin-top: 0.5rem;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
