@@ -3,9 +3,9 @@ import "../../css/classes.css"
 import React from 'react';
 export default function NavBar() {
   return (
-    <div className="group fixed top-0 left-0 h-screen opacity-0 hover:opacity-100 transition-opacity duration-[0.9s] ease-in-out z-50">
+    <div className="group fixed top-0 left-0 h-auto opacity-0 hover:opacity-100 transition-opacity duration-[0.9s] ease-in-out z-50">
     {/* // <div> */}
-      <ul className="h-full backdrop-blur-lg shadow-lg flex flex-col items-start justify-start px-2 py-8 overflow-hidden space-y-6">
+      <ul className="h-full shadow-lg flex flex-col items-start justify-start px-2 py-8 overflow-hidden space-y-6">
         <li>
           <Link
             className="navBarItems"
