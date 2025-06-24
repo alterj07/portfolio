@@ -10,43 +10,105 @@ export default function FeatureProjects() {
             <h1 id = "featuredProjectsTitle">
                 Featured Projects
             </h1>
-            <div id = "projectsFeatureContainer">
-                <div className = "flip-card-container">
-                    <div className = "flip-card">
-                        <div className = "projectsFeatureCard">
-                            <h2 className = "projectFeatureTitle">Words of Wisdom</h2>
-                            <img src = {WordsofWisdomImg.src} alt = "Words Of Wisdom" width = "300" height = "150"/>
-                        </div>
-                        <div className = "projectsFeatureCardBack">
-                            <p className = "projectFeatureDescription">*Short Description*</p>
-                            <div className = "projectFeatureLinks">
-                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
-                                    <img src = {GithubIcon.src} width = "18" height = "18"/>
-                                </a>
-                                <div className = "rowSpacer"/>
-                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
-                                   Github
-                                </a>
+            <div id = "projectsFeatureWrapper">
+                <div id = "projectsFeatureContainer">
+                    <div className = "flip-card-container">
+                        <div className = "flip-card">
+                            <div className = "projectsFeatureCard">
+                                <h2 className = "projectFeatureTitle">Words of Wisdom</h2>
+                                <img src = {WordsofWisdomImg.src} alt = "Words Of Wisdom" width = "300" height = "150"/>
+                            </div>
+                            <div className = "projectsFeatureCardBack">
+                                <p className = "projectFeatureDescription">*Short Description*</p>
+                                <div className = "projectFeatureLinks">
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
+                                        <img src = {GithubIcon.src} width = "18" height = "18"/>
+                                    </a>
+                                    <div className = "rowSpacer"/>
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
+                                    Github
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className = "flip-card-container">
-                    <div className = "flip-card">
-                        <div className = "projectsFeatureCard">
-                            <h2 className = "projectFeatureTitle">CookieCrumbl</h2>
-                            <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300" height = "150"/>
+                    <div className = "flip-card-container">
+                        <div className = "flip-card">
+                            <div className = "projectsFeatureCard">
+                                <h2 className = "projectFeatureTitle">CookieCrumbl</h2>
+                                <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300" height = "150"/>
+                            </div>
+                            <div className = "projectsFeatureCardBack">
+                                <p className = "projectFeatureDescription">*Short Description*</p>
+                                <div className = "projectFeatureLinks">
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        <img src = {GithubIcon.src} width = "18" height = "18"/>
+                                    </a>
+                                    <div className = "rowSpacer"/>
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                        <div className = "projectsFeatureCardBack">
-                            <p className = "projectFeatureDescription">*Short Description*</p>
-                            <div className = "projectFeatureLinks">
-                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
-                                    <img src = {GithubIcon.src} width = "18" height = "18"/>
-                                </a>
-                                <div className = "rowSpacer"/>
-                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
-                                    Github
-                                </a>
+                    </div>
+                    <div className = "flip-card-container">
+                        <div className = "flip-card">
+                            <div className = "projectsFeatureCard">
+                                <h2 className = "projectFeatureTitle">WOW1</h2>
+                                <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300" height = "150"/>
+                            </div>
+                            <div className = "projectsFeatureCardBack">
+                                <p className = "projectFeatureDescription">*Short Description*</p>
+                                <div className = "projectFeatureLinks">
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        <img src = {GithubIcon.src} width = "18" height = "18"/>
+                                    </a>
+                                    <div className = "rowSpacer"/>
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className = "flip-card-container">
+                        <div className = "flip-card">
+                            <div className = "projectsFeatureCard">
+                                <h2 className = "projectFeatureTitle">HOW2</h2>
+                                <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300" height = "150"/>
+                            </div>
+                            <div className = "projectsFeatureCardBack">
+                                <p className = "projectFeatureDescription">*Short Description*</p>
+                                <div className = "projectFeatureLinks">
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        <img src = {GithubIcon.src} width = "18" height = "18"/>
+                                    </a>
+                                    <div className = "rowSpacer"/>
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className = "flip-card-container">
+                        <div className = "flip-card">
+                            <div className = "projectsFeatureCard">
+                                <h2 className = "projectFeatureTitle">HIGH5</h2>
+                                <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300" height = "150"/>
+                            </div>
+                            <div className = "projectsFeatureCardBack">
+                                <p className = "projectFeatureDescription">*Short Description*</p>
+                                <div className = "projectFeatureLinks">
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        <img src = {GithubIcon.src} width = "18" height = "18"/>
+                                    </a>
+                                    <div className = "rowSpacer"/>
+                                    <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                        Github
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

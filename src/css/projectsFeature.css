@@ -27,20 +27,6 @@
         color: white;
     }
 
-    #projectsFeatureContainer {
-        position: relative;
-        width: fit-content;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding: 1rem;
-        /* background-color: white; */
-    }
-
     .flip-card-container {
         --hue: 150;
         --primary: hsl(var(--hue), 50%, 50%);
@@ -62,6 +48,8 @@
         position: relative;
         transform-style: preserve-3d;
         transition: .6s .1s;
+        animation: scroll var(--iteration-time) linear infinite;
+        /* background-color: white; */
         /* background-color: white; */
     }
 
@@ -93,6 +81,7 @@
 
     .projectsFeatureCard:hover .flip-card,
     .projectsFeatureCardBack:focus-within .flip-card {
+        animation: none;
         transform: rotateY(180deg);
     }
     
@@ -121,4 +110,63 @@
         width: 0.2rem;
         height: 100%;
     }
+
+    #projectsFeatureContainer {
+        position: relative;
+        height: auto;
+        display: flex;
+        /* align-items: center; */
+        /* justify-content: center; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+        /* background-color: white; */
+        overflow: hidden;
+    }
+
+    .projectsFeatureWrapper {
+        /* position: relative;
+        height: calc(12rem + var(--project-height));
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem;
+        width: calc((var(--project-width) + 1rem) * var(--project-count) -1rem);
+        overflow: hidden; */
+        display: flex;
+        /*justify-content: center;*/
+        align-items: center;
+        
+        width: calc(var(--slides-in-view) * var(--slide-width));
+        overflow: hidden;
+        border: 1px dashed gray;
+        margin: 0 auto;
+    }
+
+    #projectsFeatureContainer:hover {
+        --iteration-time: 100s;
+        transition: all 0.5s ease-in-out;
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(var(--project-width) * -1 * var(--project-count)));
+        }
+        hover {
+
+        }
+    }
+}
+
+:root {
+  --project-count: 5;
+  /* --slides-in-view: 4; */
+  --project-width: 300px;
+  --project-height: 150px;
+  --iteration-time: 15s;
 }
