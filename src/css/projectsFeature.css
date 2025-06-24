@@ -109,4 +109,16 @@
         justify-content: center;
         text-align: center;
     }
+
+    .projectFeatureLinks {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .rowSpacer {
+        width: 0.2rem;
+        height: 100%;
+    }
 }

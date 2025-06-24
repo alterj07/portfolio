@@ -3,6 +3,7 @@ import React from 'react';
 import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
+import GithubIcon from '../../assets/github-mark-white.png';
 export default function FeatureProjects() {
     return (
         <div>
@@ -18,10 +19,15 @@ export default function FeatureProjects() {
                         </div>
                         <div className = "projectsFeatureCardBack">
                             <p className = "projectFeatureDescription">*Short Description*</p>
-                            <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
-                            *logo*Github
-                            </a>
-
+                            <div className = "projectFeatureLinks">
+                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
+                                    <img src = {GithubIcon.src} width = "18" height = "18"/>
+                                </a>
+                                <div className = "rowSpacer"/>
+                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
+                                   Github
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -33,9 +39,15 @@ export default function FeatureProjects() {
                         </div>
                         <div className = "projectsFeatureCardBack">
                             <p className = "projectFeatureDescription">*Short Description*</p>
-                            <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
-                            *logo*Github
-                            </a>
+                            <div className = "projectFeatureLinks">
+                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                    <img src = {GithubIcon.src} width = "18" height = "18"/>
+                                </a>
+                                <div className = "rowSpacer"/>
+                                <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                                    Github
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
