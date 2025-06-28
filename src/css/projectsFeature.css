@@ -3,13 +3,13 @@
 @import "tailwindcss/utilities";
 
 @layer base {
-    *,
+    /* *,
     *::after,
     *::before {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-    }
+    } */
 
     .flip-card-container:hover .flip-card,
     .flip-card-container:focus-within .flip-card {
@@ -35,11 +35,12 @@
         --dark: hsl(var(--hue), 25%, 10%);
         --grey: hsl(0, 0%, 50%);
 
-        width: fit-content;
+        width: var(--project-width);
         height: 100%;
         margin: 40px;
 
         perspective: 1000px;
+        flex-shrink: 0;
     }
 
     .flip-card {
@@ -48,8 +49,6 @@
         position: relative;
         transform-style: preserve-3d;
         transition: .6s .1s;
-        animation: scroll var(--iteration-time) linear infinite;
-        /* background-color: white; */
         /* background-color: white; */
     }
 
@@ -68,7 +67,7 @@
     }
 
     .projectsFeatureCard {
-        width: fit-content;
+        width: var(--project-width);
         height: 17rem;
         transform: rotateY(0deg);
         z-index:2;
@@ -111,62 +110,58 @@
         height: 100%;
     }
 
+    /* figure out how to make it one row */
     #projectsFeatureContainer {
         position: relative;
-        height: auto;
+        height: 21rem;
+        /* width: 20000rem; */
+        /* width: infinite; */
+        /* width: 100%; */
+        width: calc((var(--project-width) + 7rem) * var(--project-count) * 2);
         display: flex;
-        /* align-items: center; */
-        /* justify-content: center; */
         flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
+        flex-wrap:nowrap;
+        gap: 2rem;
         padding: 1rem;
         /* background-color: white; */
-        overflow: hidden;
+        /* overflow: hidden; */
+        animation: scroll var(--iteration-time) linear infinite;
+        &:hover {
+            animation-play-state: paused;
+        }
     }
 
-    .projectsFeatureWrapper {
-        /* position: relative;
-        height: calc(12rem + var(--project-height));
+    #projectsFeatureWrapper {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding: 1rem;
-        width: calc((var(--project-width) + 1rem) * var(--project-count) -1rem);
-        overflow: hidden; */
-        display: flex;
-        /*justify-content: center;*/
         align-items: center;
-        
-        width: calc(var(--slides-in-view) * var(--slide-width));
-        overflow: hidden;
-        border: 1px dashed gray;
+        width: 100%;
         margin: 0 auto;
+        overflow: hidden;
+        /* background-color: white; */
     }
 
     #projectsFeatureContainer:hover {
-        --iteration-time: 100s;
-        transition: all 0.5s ease-in-out;
+        /* --iteration-time: 100s; */
+        /* transition: none; */
+        animation-play-state: paused;
     }
 
     @keyframes scroll {
         0% {
-            transform: translateX(0);
+            /* transform: translateX(calc(var(--project-width) * (var(--project-count) - 3.5))); */
+            transform: translateX(0)
         }
         100% {
-            transform: translateX(calc(var(--project-width) * -1 * var(--project-count)));
-        }
-        hover {
-
+            /* transform: translateX(calc(var(--project-width) * -1 * var(--project-count))); */
+            transform: translateX(calc(-1 * (var(--project-width) + 7rem) * var(--project-count)));
         }
     }
 }
 
 :root {
-  --project-count: 5;
+  --project-count: 7;
   /* --slides-in-view: 4; */
-  --project-width: 300px;
+  --project-width: 20rem;
   --project-height: 150px;
-  --iteration-time: 15s;
+  --iteration-time: 30s;
 }

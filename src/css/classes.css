@@ -16,10 +16,18 @@
         transition: all 0.7s ease-in-out;
         transition-delay: 0.7s;
         flex-direction: column;
+        animation-play-state: paused;
     }
     .mainPageTitle:hover {
       color: rgb(48.499% 97.477% 95.812%);
       animation: pulse 8s infinite;
+      animation-play-state: running;
+    }
+    #mainPageDescription {
+      width: fit-content;
+      height: fit-content;
+      margin-left: auto;
+      margin-right: auto;
     }
     @keyframes pulse {
       /* 0%, 100% { transform: translate(-50%, -50%) scale(1); }

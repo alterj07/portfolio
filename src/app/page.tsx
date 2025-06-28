@@ -9,6 +9,7 @@ export default function Home() {
       <div className = "mainTitleSpacerDiv" />
       <div>
         <h1 className="mainPageTitle">Jayden Chun</h1>
+        <p id = "mainPageDescription">Student by Day, Coder by Night</p>
       </div>
         <NavigationBar />
       <div className = "sectionSpacerDiv" />
