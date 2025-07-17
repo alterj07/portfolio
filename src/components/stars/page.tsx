@@ -17,7 +17,7 @@ function WhoIAmStar() {
                 <span>
                 I am a 17 year-old enthusiastic developer who
                     likes to develop apps, websites, and create any projects my heart desires.
-                    I've participated in events like a 28-long hackathon, regional CS UIL Competitions, ...
+                    I have participated in events like a 28-long hackathon, regional CS UIL Competitions, ...
                     My passion is spread out between playing my cello, competing in tennis, and being a developer/engineer.
                 </span>
             </div>

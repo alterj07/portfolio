@@ -3,7 +3,7 @@ import React from 'react';
 import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
-import VibeImg from '../../assets/VibeImg.png';
+import VibeImg from '../../assets/VibeImg.jpg';
 import GithubIcon from '../../assets/github-mark-white.png';
 export default function FeatureProjects() {
     return (
