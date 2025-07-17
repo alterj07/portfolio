@@ -13,13 +13,9 @@ export default function FeatureProjects() {
             <div id = "projectsFeatureWrapper">
                 <div id = "projectsFeatureContainer">
                     <WordsOfWisdomCard/>
+                    <CookieCrumblCard/>
                     <WordsOfWisdomCard/>
                     <WordsOfWisdomCard/>
-                    <WordsOfWisdomCard/>
-                    <CookieCrumblCard/>
-                    <CookieCrumblCard/>
-                    <CookieCrumblCard/>
-                    <CookieCrumblCard/>
                 </div>
             </div>
         </div>

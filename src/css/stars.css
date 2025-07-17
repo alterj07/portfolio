@@ -1,0 +1,110 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components"; 
+@import "tailwindcss/utilities";
+
+@layer base {
+
+    .starShape {
+        position: absolute;
+        aspect-ratio: 1;
+        background-color: #F8CA00;
+        &:hover {
+            animation-play-state: paused;
+            cursor: default;
+        }
+        clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%);
+    }
+
+    .starContent{
+        position: absolute;
+        visibility: hidden;
+        height: fit-content;
+        background-color: gray;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+    }
+
+    #WhoIAmStar {
+        top: 40%;
+        left: 40%;
+        width: 10px;
+        animation: Blink 6s infinite, StarBlink 2s infinite, StarRotate 5s infinite;
+    }
+
+    #WhoIAm{
+        top: 20%;
+        left: 10%;
+        width: 30%;
+    }
+
+    #WhoIAmStar:hover ~ #WhoIAm{
+        visibility: visible;
+        cursor: default;
+    }
+
+    #LanguagesStar{
+        top: 40%;
+        left: 60%;
+        width: 25px;
+        animation: Blink 2s infinite, StarBlink 4s infinite, StarRotate 8s infinite;
+    }
+
+    #Languages{
+        top: 15%;
+        left: 62%;
+        width: 15%;
+    }
+
+    #LanguagesStar:hover ~ #Languages{
+        visibility: visible;
+        cursor: default;
+    }
+    
+
+    
+    @keyframes Blink{
+        0% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        70% {
+            opacity: 0;
+        }
+
+        100%{
+            opacity: 0;
+        }
+    }
+    @keyframes StarBlink{
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.2);
+        }
+
+        100%{
+            transform: scale(1);
+        }
+    }
+    @keyframes StarRotate{
+        0% {
+            transform: rotate(0deg);
+        }
+
+        60% {
+            transform: rotate(180deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+}
