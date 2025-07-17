@@ -31,7 +31,7 @@ function LanguagesStar() {
             <div id = "LanguagesStar" className = "starShape"/>
             <div id = "Languages" className = "starContent">
                 <span>
-                    My repetoire of (fluent or kind of fluent) languages so far:
+                    My repetoire of - fluent or kind of fluent - languages so far:
                     <br/>
                     <ul>
                         <li>Java</li>

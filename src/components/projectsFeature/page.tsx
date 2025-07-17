@@ -3,6 +3,7 @@ import React from 'react';
 import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
+import VibeImg from '../../assets/VibeImg.png';
 import GithubIcon from '../../assets/github-mark-white.png';
 export default function FeatureProjects() {
     return (
@@ -14,7 +15,7 @@ export default function FeatureProjects() {
                 <div id = "projectsFeatureContainer">
                     <WordsOfWisdomCard/>
                     <CookieCrumblCard/>
-                    <WordsOfWisdomCard/>
+                    <VibeCard/>
                     <WordsOfWisdomCard/>
                 </div>
             </div>
@@ -64,6 +65,31 @@ function CookieCrumblCard() {
                         </a>
                         <div className = "rowSpacer"/>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function VibeCard() {
+    return (
+        <div className = "flip-card-container">
+            <div className = "flip-card">
+                <div className = "projectsFeatureCard">
+                    <h2 className = "projectFeatureTitle">Vibe</h2>
+                    <img src = {VibeImg.src} alt = "Vibe" width = "300" height = "150"/>
+                </div>
+                <div className = "projectsFeatureCardBack">
+                    <p className = "projectFeatureDescription">*Short Description*</p>
+                    <div className = "projectFeatureLinks">
+                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
+                            <img src = {GithubIcon.src} width = "18" height = "18"/>
+                        </a>
+                        <div className = "rowSpacer"/>
+                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
                             Github
                         </a>
                     </div>
