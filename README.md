@@ -1,7 +1,3 @@
-Here’s an updated and more descriptive version of your README for your portfolio at **jhchun.dev**, with added context about the project, features, and structure:
-
----
-
 # jhchun.dev – Personal Portfolio
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
