@@ -1,8 +1,37 @@
+Here’s an updated and more descriptive version of your README for your portfolio at **jhchun.dev**, with added context about the project, features, and structure:
+
+---
+
+# jhchun.dev – Personal Portfolio
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+It serves as my **personal portfolio website**, live at [https://jhchun.dev](https://jhchun.dev), where I showcase my work, skills, projects, and background.
 
-## Getting Started
+---
 
-First, run the development server:
+## ✨ About This Portfolio
+
+This website was built to serve as a centralized platform to present who I am as a developer and creator. It’s designed with simplicity and performance in mind, powered by Next.js App Router and hosted on [Vercel](https://vercel.com).
+
+### 🔧 Features
+
+* **Modern UI/UX** with a minimalist, responsive layout.
+* **Project Showcase** with individual pages for each project.
+* **About Me** section with personal background and interests.
+
+---
+
+## 🛠️ Getting Started
+
+First, clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/YOUR_USERNAME/portfolio.git
+cd portfolio
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -14,23 +43,26 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the homepage by modifying `app/page.tsx`. Changes will automatically reflect.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📁 Project Structure Highlights
 
-To learn more about Next.js, take a look at the following resources:
+* `app/`: Main application folder using App Router.
+* `components/`: Reusable UI components.
+* `styles/`: Global and component-scoped styles.
+* `public/`: Static assets.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📚 Learn More
 
-## Deploy on Vercel
+To learn more about Next.js and its features:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* [Next.js Documentation](https://nextjs.org/docs)
+* [Interactive Tutorial – Learn Next.js](https://nextjs.org/learn)
+* [Vercel Docs](https://vercel.com/docs)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
