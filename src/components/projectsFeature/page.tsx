@@ -4,6 +4,7 @@ import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
 import VibeImg from '../../assets/VibeImg.jpg';
+import PortfolioImg from '../../assets/PortfolioImg.png';
 import GithubIcon from '../../assets/github-mark-white.png';
 export default function FeatureProjects() {
     return (
@@ -16,7 +17,7 @@ export default function FeatureProjects() {
                     <WordsOfWisdomCard/>
                     <CookieCrumblCard/>
                     <VibeCard/>
-                    <WordsOfWisdomCard/>
+                    <PortfolioCard/>
                 </div>
             </div>
         </div>
@@ -90,6 +91,31 @@ function VibeCard() {
                         </a>
                         <div className = "rowSpacer"/>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
+                            Github
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+}
+
+function PortfolioCard() {
+    return (
+        <div className = "flip-card-container">
+            <div className = "flip-card">
+                <div className = "projectsFeatureCard">
+                    <h2 className = "projectFeatureTitle">Portfolio</h2>
+                    <img src = {PortfolioImg.src} alt = "Portfolio" width = "300" height = "150"/>
+                </div>
+                <div className = "projectsFeatureCardBack">
+                    <p className = "projectFeatureDescription">*Short Description*</p>
+                    <div className = "projectFeatureLinks">
+                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
+                            <img src = {GithubIcon.src} width = "18" height = "18"/>
+                        </a>
+                        <div className = "rowSpacer"/>
+                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
                             Github
                         </a>
                     </div>
