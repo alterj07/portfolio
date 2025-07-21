@@ -33,7 +33,7 @@ export default function NavBar() {
           > */}
           <Link
             className="navBarItems"
-            href="/underConstruction"
+            href="/projects"
           >
             Projects
           </Link>

@@ -1,0 +1,59 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components"; 
+@import "tailwindcss/utilities";
+
+@layer base {
+    .topTitle {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: white;
+        text-align: center;
+        justify-content: center;
+        
+    }
+
+    .ProjectsTitle {
+        /* position: static; */
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        flex-direction: column;
+        color: white;
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+        background-color: green;
+    }
+
+    .projectsGrid{
+        display: inline-grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        padding: 1rem;
+        background-color: gray;
+        margin: 0 auto;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .projectsGrid h2{
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: white;
+        border: 1px solid yellow;
+        text-align: center;
+    }
+
+    #finished{
+        background-color: blue;
+    }
+
+    #inProgress{
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+    }
+}
