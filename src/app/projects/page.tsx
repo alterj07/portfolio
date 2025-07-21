@@ -1,11 +1,6 @@
 import Link from 'next/link';
 import '../globals.css';
 import "../../css/projects.css"
-import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
-import CookieCrumblImg from '../../assets/cookieCrumbl.png';
-import VibeImg from '../../assets/VibeImg.jpg';
-import PortfolioImg from '../../assets/PortfolioImg.png';
-import GithubIcon from '../../assets/github-mark-white.png';
 export default function Projects() {
     return (
          <div className="h-screen bg-black">
