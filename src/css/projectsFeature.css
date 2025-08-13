@@ -3,13 +3,6 @@
 @import "tailwindcss/utilities";
 
 @layer base {
-    /* *,
-    *::after,
-    *::before {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    } */
 
     .flip-card-container:hover .flip-card,
     .flip-card-container:focus-within .flip-card {
@@ -117,7 +110,7 @@
         /* width: 20000rem; */
         /* width: infinite; */
         /* width: 100%; */
-        width: calc((var(--project-width) + 7rem) * var(--project-count) * 2);
+        width: calc((var(--project-width) + 7rem) * var(--project-count));
         display: flex;
         flex-direction: row;
         flex-wrap:nowrap;
@@ -140,28 +133,25 @@
         /* background-color: white; */
     }
 
-    #projectsFeatureContainer:hover {
-        /* --iteration-time: 100s; */
-        /* transition: none; */
-        animation-play-state: paused;
-    }
-
     @keyframes scroll {
         0% {
             /* transform: translateX(calc(var(--project-width) * (var(--project-count) - 3.5))); */
-            transform: translateX(0)
+            transform: translateX(0);
         }
-        100% {
+        50% {
             /* transform: translateX(calc(var(--project-width) * -1 * var(--project-count))); */
-            transform: translateX(calc(-1 * (var(--project-width) + 7rem) * var(--project-count)));
+            transform: translateX(100%);
+        }
+        100%{
+            transform: translateX(0);
         }
     }
 }
 
 :root {
-  --project-count: 7;
+  --project-count: 4;
   /* --slides-in-view: 4; */
   --project-width: 20rem;
   --project-height: 150px;
-  --iteration-time: 30s;
+  --iteration-time: 1s;
 }
