@@ -30,7 +30,7 @@
 
         width: var(--project-width);
         height: 100%;
-        margin: 40px;
+        margin: 0.8rem;
 
         perspective: 1000px;
         flex-shrink: 0;
@@ -42,21 +42,17 @@
         position: relative;
         transform-style: preserve-3d;
         transition: .6s .1s;
-        /* background-color: white; */
     }
 
     .projectsFeatureCard,
     .projectsFeatureCardBack {
         position: relative;
-        /* display: flex;
-        flex-direction: column; */
         align-items: center;
         padding: 1rem;
         backface-visibility: hidden;
         text-align: center;
         border-radius: 0.5rem;
         border-width: 1px;
-        /* background-color: white; */
     }
 
     .projectsFeatureCard {
@@ -98,30 +94,14 @@
         justify-content: center;
     }
 
-    .rowSpacer {
-        width: 0.2rem;
-        height: 100%;
-    }
-
-    /* figure out how to make it one row */
     #projectsFeatureContainer {
         position: relative;
         height: 21rem;
-        /* width: 20000rem; */
-        /* width: infinite; */
-        /* width: 100%; */
-        width: calc((var(--project-width) + 7rem) * var(--project-count));
+        width: 'fit-content';
         display: flex;
         flex-direction: row;
         flex-wrap:nowrap;
-        gap: 2rem;
         padding: 1rem;
-        /* background-color: white; */
-        /* overflow: hidden; */
-        animation: scroll var(--iteration-time) linear infinite;
-        &:hover {
-            animation-play-state: paused;
-        }
     }
 
     #projectsFeatureWrapper {
@@ -130,28 +110,5 @@
         width: 100%;
         margin: 0 auto;
         overflow: hidden;
-        /* background-color: white; */
     }
-
-    @keyframes scroll {
-        0% {
-            /* transform: translateX(calc(var(--project-width) * (var(--project-count) - 3.5))); */
-            transform: translateX(0);
-        }
-        50% {
-            /* transform: translateX(calc(var(--project-width) * -1 * var(--project-count))); */
-            transform: translateX(100%);
-        }
-        100%{
-            transform: translateX(0);
-        }
-    }
-}
-
-:root {
-  --project-count: 4;
-  /* --slides-in-view: 4; */
-  --project-width: 20rem;
-  --project-height: 150px;
-  --iteration-time: 1s;
 }
