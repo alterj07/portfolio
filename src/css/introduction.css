@@ -4,24 +4,34 @@
 
 @layer base{
     #introductionContainer {
-        /* background-color: green; */
+        display: flex;
+        flex-direction: row;
+        flex: 1;
         padding: 2rem;
         border-radius: 0.5rem;
-        margin-top: 2rem;
     }
     #nameContainer {
-        width: fit-content;
+        flex: 0.5;
+        /* width: fit-content; */
         height: fit-content;
-        margin-left: 12rem;
+        margin-left: 10vh;
         /* background-color: red; */
     }
-   #name {
+    #pictureContainer{
+        display: flex;
+        flex: 0.5;
+        height: fit-content;
+        margin-left: 10vh;
+        justify-content:center;
+        /* background-color: blue; */
+    }
+    #name {
         color: white;
         font-weight: bold;
         font-size: 4rem;
         /* background-color: blue; */
    }
-   #description {
+    #description {
         color: white;
         font-weight: bold;
         font-size: 2rem;
@@ -29,6 +39,11 @@
         width:30rem;
         margin-left: 3rem;
         /* background-color: red; */
+   }
+   #profilePicture{
+        border-radius: 999px;
+        width: auto;
+        height: 18rem;
    }
    /* note: might want to add a custom font for the name :) */
 

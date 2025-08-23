@@ -3,58 +3,20 @@
 @import "tailwindcss/utilities";
 
 @layer components {
-    .mainPageTitle {
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 2.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        color: var(--color-darkMode-background);
-        text-align: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    #mainPageDescription {
-      width: fit-content;
-      height: fit-content;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    @keyframes pulse {
-      /* 0%, 100% { transform: translate(-50%, -50%) scale(1); }
-      25% { transform: translate(-50%, -50%) scale(1.05); }
-      75% { transform: translate(-50%, -50%) scale(0.95); } */
-      0%, 100% { transform: scale(1); }
-      25% { transform: scale(1.05); }
-      75% { transform: scale(0.95); }
-    }
-
-
-    .spacerDiv {
-        height: 2rem;
-        width: 100%;
-    }
-
-    .mainTitleSpacerDiv {
-        height: 20rem;
-        width: 100%;
+    .sunsetBackground {
+        /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+        background: linear-gradient(0deg, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
+        height: max-content;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        scroll-behavior: smooth;
     }
 
     .sectionSpacerDiv {
         height: 30rem;
         width: 100%;
-    }
-
-    .topTitle {
-        font-size: 2rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        color: var(--color-darkMode-primary);
-        text-align: center;
-        justify-content: center;
-        background-color: var(--color-darkMode-background);
-        
     }
     .navBarItems {
         color: #bef264;
@@ -76,8 +38,6 @@
         transition: all 0.7s ease-in-out;
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     }
-
-
     .footerContainer {
       position: relative;
       width: 100%;
@@ -96,16 +56,5 @@
 }
 
 @theme {
-  --color-primary: #4a90e2;
-  --color-secondary: #50e3c2;
-  --color-accent: #f5a623;
-  --color-background: #f0f0f0;
-  --color-foreground: #333333;
-  --color-darkMode-primary: azure;
-  --color-darkMode-secondary: azure;
-  --color-darkMode-accent: azure;
   --color-darkMode-background: "bg-gradient-to-r from-emerald-950 via-cyan-700 to-black";
-  /* --color-darkMode-foreground: #e0e0e0; */
-  --font-family-sans: "Arial", "Helvetica", "sans-serif";
-  --font-family-serif: "Georgia", "serif";
 }

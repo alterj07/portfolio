@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../../css/classes.css';
 import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
@@ -38,7 +37,6 @@ function WordsOfWisdomCard() {
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
-                        <div className = "rowSpacer"/>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
                         Github
                         </a>
@@ -64,7 +62,6 @@ function CookieCrumblCard() {
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
-                        <div className = "rowSpacer"/>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
                             Github
                         </a>
@@ -89,7 +86,6 @@ function VibeCard() {
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
-                        <div className = "rowSpacer"/>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
                             Github
                         </a>
@@ -114,7 +110,6 @@ function PortfolioCard() {
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
-                        <div className = "rowSpacer"/>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
                             Github
                         </a>

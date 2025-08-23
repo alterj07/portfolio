@@ -4,6 +4,11 @@
 
 @layer base {
 
+    .rowSpacer{
+        height: 1rem;
+        width: 100%;
+    }
+
     .flip-card-container:hover .flip-card,
     .flip-card-container:focus-within .flip-card {
         transform: rotateY(180deg);
@@ -21,19 +26,16 @@
     }
 
     .flip-card-container {
-        --hue: 150;
+        /* --hue: 150;
         --primary: hsl(var(--hue), 50%, 50%);
         --white-1: hsl(0, 0%, 90%);
         --white-2: hsl(0, 0%, 80%);
         --dark: hsl(var(--hue), 25%, 10%);
-        --grey: hsl(0, 0%, 50%);
+        --grey: hsl(0, 0%, 50%); */
 
-        width: var(--project-width);
+        /* width: 400px; */
+        width: 370px;
         height: 100%;
-        margin: 0.8rem;
-
-        perspective: 1000px;
-        flex-shrink: 0;
     }
 
     .flip-card {
@@ -46,8 +48,11 @@
 
     .projectsFeatureCard,
     .projectsFeatureCardBack {
+        display: flex;
+        flex-direction: column;
         position: relative;
         align-items: center;
+        /* justify-content: center; */
         padding: 1rem;
         backface-visibility: hidden;
         text-align: center;
@@ -56,10 +61,10 @@
     }
 
     .projectsFeatureCard {
-        width: var(--project-width);
-        height: 17rem;
+        width: 325px;
+        height: 16rem;
         transform: rotateY(0deg);
-        z-index:2;
+        z-index: 2;
     }
 
     .projectsFeatureCardBack {
@@ -74,13 +79,13 @@
     }
     
     .projectFeatureTitle{
+        margin-bottom: 0.5rem;
         font-size: 1.5rem;
         font-weight: bold;
     }
 
     .projectFeatureDescription {
         font-size: 1rem;
-        color: var(--color-darkMode-secondary);
         margin-top: 0.5rem;
         align-items: center;
         justify-content: center;
@@ -97,11 +102,11 @@
     #projectsFeatureContainer {
         position: relative;
         height: 21rem;
-        width: 'fit-content';
+        width: fit-content;
         display: flex;
         flex-direction: row;
         flex-wrap:nowrap;
-        padding: 1rem;
+        padding-top: 1rem;
     }
 
     #projectsFeatureWrapper {

@@ -6,7 +6,7 @@ import './globals.css';
 import "../css/classes.css" 
 export default function Home() {
   return (
-    <div className="bg-black scroll-smooth">
+    <div className="sunsetBackground">
       <div>
         <Introduction />
       </div>
