@@ -1,0 +1,54 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components"; 
+@import "tailwindcss/utilities";
+
+@layer components {
+    .navBarItems {
+        color: #bef264;
+        font-size: 1.875rem; 
+        font-weight: 600;
+        padding-top: 2rem;
+        gap: 1rem;
+        /* background-color: red; */
+        transition-property: color;
+        transition-duration: 700ms;
+        transition-timing-function: ease-in-out;
+    }
+    .navBarItems:hover {
+        color: #fff;
+        transition: all 0.7s ease-in-out;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    .navBarItems:hover {
+        color: white !important;
+        transition: all 0.7s ease-in-out;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    }
+    .navBarContainer {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: auto;
+        opacity: 0;
+        backdrop-filter: blur(10px);
+        transition: opacity 0.9s ease-in-out;
+    }
+    .navBarContainer:hover {
+        opacity: 1;
+    }
+    .navBarList {
+        background-color: green;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+@theme {
+  --color-darkMode-background: "bg-gradient-to-r from-emerald-950 via-cyan-700 to-black";
+}

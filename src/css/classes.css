@@ -18,26 +18,6 @@
         height: 30rem;
         width: 100%;
     }
-    .navBarItems {
-        color: #bef264;
-        font-size: 1.875rem; 
-        font-weight: 600;
-        padding-top: 2rem;
-        gap: 1rem;
-        transition-property: color;
-        transition-duration: 700ms;
-        transition-timing-function: ease-in-out;
-    }
-    .navBarItems:hover {
-        color: #fff;
-        transition: all 0.7s ease-in-out;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
-    .navBarItems:hover {
-        color: white !important;
-        transition: all 0.7s ease-in-out;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    }
     .footerContainer {
       position: relative;
       width: 100%;
