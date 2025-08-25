@@ -5,42 +5,32 @@ import React from 'react';
 export default function NavBar() {
   return (
     <div className="navBarContainer">
-      <ul className="h-full shadow-lg flex flex-col items-start justify-start px-2 py-8 overflow-hidden space-y-6">
-        <li>
+      {/* <ul className="h-full shadow-lg flex flex-col items-start justify-start px-2 py-8 overflow-hidden space-y-6"> */}
+      <ul className = "navBarList">
+        <li className="navBarItems">
           <Link
-            className="navBarItems"
             href="/"
           >
             Home
           </Link>
         </li>
-        <li>
-          {/* <Link
-            className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
-            href="/aboutMe"
-          > */}
+        <li className="navBarItems">
           <Link
-            className="navBarItems"
+            
             href="/underConstruction"
           >
             About Me
           </Link>
         </li>
-        <li>  
-          {/* <Link
-            className="text-lime-300 text-3xl font-semibold pb-[15] hover:text-white transition-colors duration-700"
-            href="/projects"
-          > */}
+        <li className="navBarItems">  
           <Link
-            className="navBarItems"
             href="/projects"
           >
             Projects
           </Link>
         </li>
-        <li>  
+        <li className="navBarItems">  
           <Link
-            className="navBarItems"
             href="/performances"
           >
             Performances
