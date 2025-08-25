@@ -1,0 +1,43 @@
+#timelineContainer{
+    position: relative;
+    width: 28rem;
+    height: 23rem;
+    margin: 4rem auto;
+    background-color: black;
+    border-radius: 10px;
+    /* background-color: white; */
+}
+
+#timelineTitle{
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#timelineSwitchContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: black;
+}
+
+#timelineEducationContainer{
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+#timelineWorkContainer{
+    background-color: lightblue;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+#timelineEducationContainer:hover,
+#timelineWorkContainer:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
