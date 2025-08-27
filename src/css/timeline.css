@@ -1,10 +1,12 @@
 #timelineContainer{
     position: relative;
-    width: 28rem;
+    width: fit-content;
     height: 23rem;
     margin: 4rem auto;
     background-color: black;
     border-radius: 10px;
+    padding-left: 9rem;
+    padding-right: 9rem;
     /* background-color: white; */
 }
 
@@ -49,10 +51,10 @@
 }
 
 #timelineEducation{
-    background-color: lightgreen;
-    padding: 1rem;
+    /* background-color: lightgreen; */
+    /* padding: 1rem; */
     border-radius: 5px;
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     /* opacity: 0; */
 }
 
@@ -76,4 +78,33 @@
     font-weight: medium;
     text-transform: uppercase;
     color: grey;
+}
+
+#highschoolGraduation{
+    background-color: lightyellow;
+    transform: translateX(55%);
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 2rem 1rem;
+}
+
+#timeline{
+    position: relative;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%); 
+    position: absolute;
+    width: 2px;
+    height: 55%;
+    background-color: whitesmoke;
+}
+
+.itemDescription{
+    font-size: small;
+    color: grey;
+}
+
+.itemList{
+    list-style-type: disc;
+    padding-left: 1.5rem;   
 }
