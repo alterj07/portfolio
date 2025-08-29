@@ -41,7 +41,7 @@ export default function Timeline(){
                 <div id = "timelineEducation">
                     <div id = "timeline"/>
                     <div id = "highschoolGraduation">
-                        {timelineItem({
+                        {timelineItemRight({
                             date: "August 15, 2023 - 22 May, 2026",
                             title: "McNeil High School",
                             items: [
@@ -53,9 +53,18 @@ export default function Timeline(){
                     </div>
                 </div>
                 <div id = "timelineExperience">
+                    <div id = "nasaInternship">
+                        {timelineItemLeft({
+                            date: "September 1, 2024 - June 13, 2025",
+                            title: "Intern at NASA HAS",
+                            items: [
+                                "CAD Modeling"
+                            ]
+                        })}
+                    </div>
                     <div id = "timeline"/>
                     <div id = "silviaInternship">
-                        {timelineItem({
+                        {timelineItemRight({
                             date: "June 1, 2025 - Present",
                             title: "Software Engineer + Research Intern",
                             items: [
@@ -75,10 +84,31 @@ type TimelineItemProps = {
     items: string[];
 };
 
-function timelineItem({ date, title, items }: TimelineItemProps)
+function timelineItemRight({ date, title, items }: TimelineItemProps)
 {
     return (
-        <div className = "timelineItem">
+        <div className = "timelineItemRight">
+            <div className = "timelineHeading">
+                <h3 className = "timelineDate">
+                    {date}
+                </h3>
+            </div>
+            <div className = "timelineContent">
+                <p>{title}</p>
+                <ul className = "itemList">
+                    {items.map((item, index) => (
+                        <li key = {index} className = "itemDescription">{item}</li>
+                    ))}
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+function timelineItemLeft({ date, title, items }: TimelineItemProps)
+{
+    return (
+        <div className = "timelineItemLeft">
             <div className = "timelineHeading">
                 <h3 className = "timelineDate">
                     {date}
