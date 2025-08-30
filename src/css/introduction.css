@@ -17,14 +17,6 @@
         margin-left: 10vh;
         /* background-color: red; */
     }
-    #pictureContainer{
-        display: flex;
-        flex: 0.5;
-        height: fit-content;
-        margin-left: 10vh;
-        justify-content:center;
-        /* background-color: blue; */
-    }
     #name {
         color: white;
         font-weight: bold;
@@ -40,10 +32,42 @@
         margin-left: 3rem;
         /* background-color: red; */
    }
-   #profilePicture{
+    #pictureContainer{
+        display: flex;
+        flex: 0.5;
+        height: fit-content;
+        margin-left: 10vh;
+        justify-content:center;
+        /* background-color: blue; */
+    }
+   #profilePicture,
+   #hiddenProfilePicture{
         border-radius: 999px;
-        width: auto;
+        width: 12rem;
         height: 18rem;
+        position: absolute;
+        transition: transform 0.2s ease-in-out;
+   }
+
+   #profilePicture{
+        opacity: 1;
+        z-index: 1;
+   }
+
+   #hiddenProfilePicture{
+       opacity: 0;
+       z-index: 0;
+   }
+
+   #profilePicture:hover{
+       opacity: 0;
+       transform: scale(1.1);
+       transition: opacity 0.2s ease-in-out;
+       & + #hiddenProfilePicture{
+           opacity: 1;
+           transform: scale(1.1);
+           transition: transform 0.2s ease-in-out;
+       }
    }
    /* note: might want to add a custom font for the name :) */
 

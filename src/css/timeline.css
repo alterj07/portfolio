@@ -1,7 +1,7 @@
 #timelineContainer{
     position: relative;
     width: fit-content;
-    height: 23rem;
+    height: 50rem;
     margin: 4rem auto;
     /* background-color: black; */
     backdrop-filter: blur(100px);
