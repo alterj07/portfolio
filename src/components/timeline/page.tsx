@@ -3,8 +3,6 @@
 import React from 'react';
 import '../../css/timeline.css'
 export default function Timeline(){
-    const [EducationIsVisible, EducationSetVisible] = React.useState(true);
-    const [WorkIsVisible, WorkSetVisible] = React.useState(false);
 
     const showEducation = () => {
         const educationElement = document.getElementById('timelineEducation');
