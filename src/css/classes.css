@@ -12,6 +12,10 @@
         background-repeat: no-repeat;
         background-position: center;
         scroll-behavior: smooth;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1;
     }
 
     .sectionSpacerDiv {

@@ -12,10 +12,7 @@ export default function TimelineComponent(){
     return (
         <div id = "timelineContainer">
             <Timeline position="alternate" id = "timeline">
-                <TimelineItemContent date = "2020" name = "Started Learning to Code" description = "Started learning HTML, CSS, and JavaScript through online resources such as FreeCodeCamp and The Odin Project."/>
-                <TimelineItemContent date = "2020" name = "Started Learning to Code" description = "Started learning HTML, CSS, and JavaScript through online resources such as FreeCodeCamp and The Odin Project."/>
-                <TimelineItemContent date = "2020" name = "Started Learning to Code" description = "Started learning HTML, CSS, and JavaScript through online resources such as FreeCodeCamp and The Odin Project."/>
-                <TimelineItemContent date = "2020" name = "Started Learning to Code" description = "Started learning HTML, CSS, and JavaScript through online resources such as FreeCodeCamp and The Odin Project."/>
+                <TimelineItemContent date = "June 2025 - Current" name = "Intern - Silvia" description = {["Description", "Description 2"]}/>
             </Timeline>
         </div>
     )
@@ -26,7 +23,7 @@ export default function TimelineComponent(){
 type TimelineItemContentProps = {
     date: string;
     name: string;
-    description: string;
+    description: string[];
 };
 
 function TimelineItemContent({ date, name, description }: TimelineItemContentProps) {
@@ -41,7 +38,11 @@ function TimelineItemContent({ date, name, description }: TimelineItemContentPro
             </TimelineSeparator>
             <TimelineContent>
                 <h3>{name}</h3>
-                <p>{description}</p>
+                <ul>
+                    {description.map((desc, index) => (
+                        <li key={index}>{desc}</li>
+                    ))}
+                </ul>
             </TimelineContent>
         </TimelineItem>
     )

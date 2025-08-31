@@ -10,9 +10,7 @@ import "../css/classes.css"
 export default function Home() {
   return (
     <div className="sunsetBackground">
-      <div>
-        <Introduction />
-      </div>
+      <Introduction />
       <NavigationBar />
       <TimelineClient />
       <div className="sectionSpacerDiv" />
