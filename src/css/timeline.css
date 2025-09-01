@@ -9,6 +9,17 @@
     width: 50%;
 }
 
+.timeline-description {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.timeline-description li {
+    margin-bottom: 0.5rem;
+}
+
 /* #timeline{
     display: flex;
     flex-direction: column;
