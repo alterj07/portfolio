@@ -1,6 +1,5 @@
 import React from 'react';
 import '../../css/timeline.css'
-// import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -8,72 +7,95 @@ import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import {SilviaLogo} from '../timelineIcons/page';
+import {NASALogo} from '../timelineIcons/page';
 export default function TimelineComponent(){
     return (
         <div id = "timelineContainer">
-            <Timeline position="alternate" id = "timeline">
-                <TimelineItemContentRight date = "June 2025 - Current" name = "Intern - Silvia" 
-                description = {["Contributed to the design and testing of a multi-domain mobile technology program for dementia prevention.",
-                "Participated in multilingual translations, community outreach, and recruitment of study participants.",
-                "Aided in data collection to examine the effectiveness of digital tools in reducing dementia risk."]}/>
-
-                <TimelineItemContentLeft date = "August 2024 - June 2025" name = "Intern - NASA HAS Aerospace Scholars" 
-                description = {["Completed NASA Aerospace Scholars program modules with emphasis on engineering, CAD modeling, and systems design.",
-                "Applied CAD, coding, and systems engineering skills in a rigorous Moonshot mission simulation with NASA engineers.",
-                "Participated in a year-long program, researching interstellar bodies, designing aerospace tools and habitats, creating Scratch programs, and presenting findings to professors and peers."]}/>
+            <Timeline id = "timeline">
+                <SilviaTimeline />
+                <NASATimeline />
             </Timeline>
         </div>
     )
 }
 
-
-
-type TimelineItemContentProps = {
-    date: string;
-    name: string;
-    description: string[];
-};
-
-function TimelineItemContentRight({ date, name, description }: TimelineItemContentProps) {
+function SilviaTimeline() {
     return (
         <TimelineItem className = "timeline-item">
-            <TimelineOppositeContent>
-                {date}
+            <TimelineOppositeContent sx = {{marginTop: '0.7rem'}}>
+                <h4 className = "timeline-date">June 2025 - Current</h4>
             </TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot sx={{ border: 'none', padding: 0 }}>
+                    <SilviaLogo />
+                </TimelineDot>
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-                <h3>{name}</h3>
+                <h3 className = "timeline-name">Silvia</h3>
+                <h4 className = "timeline-title">Intern</h4>
                 <ul className = "timeline-description">
-                    {description.map((desc, index) => (
-                        <li key={index}>{desc}</li>
-                    ))}
+                    <li>Contributed to the design and testing of a multi-domain mobile technology program for dementia prevention.</li>
+                    <li>Aided in data collection to examine the effectiveness of digital tools in reducing dementia risk.</li>
                 </ul>
             </TimelineContent>
         </TimelineItem>
     )
 }
 
-function TimelineItemContentLeft({ date, name, description }: TimelineItemContentProps) {
+
+function NASATimeline() {
     return (
         <TimelineItem className = "timeline-item">
-            <TimelineOppositeContent>
-                {date}
+            <TimelineOppositeContent sx = {{marginTop: '1.7rem'}}>
+                <h4 className = "timeline-date">August 2024 - June 2025</h4>
             </TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineDot />
+                <TimelineDot sx={{ border: 'none', padding: 0, backgroundColor: 'transparent' }}>
+                    <NASALogo />
+                </TimelineDot>
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
-                <h3>{name}</h3>
+                <h3 className = "timeline-name">NASA HAS Aerospace Scholars</h3>
+                <h4 className = "timeline-title">Intern</h4>
                 <ul className = "timeline-description">
-                    {description.map((desc, index) => (
-                        <li key={index}>{desc}</li>
-                    ))}
+                    <li>Applied CAD, coding, and systems engineering skills in a rigorous Moonshot mission simulation with NASA engineers.</li>
+                    <li>Participated in a year-long program, researching interstellar bodies, designing aerospace tools and habitats, creating Scratch programs, and presenting findings to professors and peers.</li>
                 </ul>
             </TimelineContent>
         </TimelineItem>
     )
 }
+
+
+// type TimelineItemContentProps = {
+//     date: string;
+//     name: string;
+//     title: string;
+//     description: string[];
+// };
+
+// function TimelineItemContent({ date, name, title, description }: TimelineItemContentProps) {
+//     return (
+//         <TimelineItem className = "timeline-item">
+//             <TimelineOppositeContent>
+//                 <h4 className = "timeline-date">{date}</h4>
+//             </TimelineOppositeContent>
+//             <TimelineSeparator>
+//                 <TimelineDot />
+//                 <TimelineConnector />
+//             </TimelineSeparator>
+//             <TimelineContent>
+//                 <h3 className = "timeline-name">{name}</h3>
+//                 <h4 className = "timeline-title">{title}</h4>
+//                 <ul className = "timeline-description">
+//                     {description.map((desc, index) => (
+//                         <li key={index}>{desc}</li>
+//                     ))}
+//                 </ul>
+//             </TimelineContent>
+//         </TimelineItem>
+//     )
+// }

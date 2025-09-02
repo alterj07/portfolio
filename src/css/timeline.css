@@ -11,17 +11,33 @@
 
 .timeline-description {
     list-style-type: disc;
-    list-style-position: inside;
+    list-style: inside;
     padding: 0;
     margin-left: 1rem;
 }
 
 .timeline-description li {
     margin-bottom: 0.5rem;
+    font-size: 0.8rem;
 }
 
-/* #timeline{
-    display: flex;
-    flex-direction: column;
-} */
+.timeline-date{
+    font-weight: bold;
+    font-size: 0.8rem;
+    /* margin-top: 0.7rem; */
+}
 
+.timeline-name{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.timeline-title{
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.company-logo{
+    width: 24px;
+    background-color: red;
+}
