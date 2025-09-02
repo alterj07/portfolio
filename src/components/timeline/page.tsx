@@ -9,13 +9,27 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import {SilviaLogo} from '../timelineIcons/page';
 import {NASALogo} from '../timelineIcons/page';
+import {McNeilLogo} from '../timelineIcons/page';
+import TimelineButtons from '../TimelineButtons';
 export default function TimelineComponent(){
     return (
-        <div id = "timelineContainer">
-            <Timeline id = "timeline">
-                <SilviaTimeline />
-                <NASATimeline />
-            </Timeline>
+        <div id = "timelineComponent">
+            <div id = "timelineTopContainer">
+                <TimelineButtons />
+            </div>
+            <div id =  "timelineContainer">
+                <div id = "timelineEducation">
+                    <Timeline id = "timeline">
+                        <McNeilTimeline />
+                    </Timeline>
+                </div>
+                <div id = "timelineExperience">
+                    <Timeline id = "timeline">
+                        <SilviaTimeline />
+                        <NASATimeline />
+                    </Timeline>
+                </div>
+            </div>
         </div>
     )
 }
@@ -69,6 +83,28 @@ function NASATimeline() {
     )
 }
 
+function McNeilTimeline() {
+    return (
+        <TimelineItem className = "timeline-item">
+            <TimelineOppositeContent sx = {{marginTop: '0.7rem'}}>
+                <h4 className = "timeline-date">August 2022 - May 2026</h4>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+                <TimelineDot sx={{ border: 'none', padding: 0 }}>
+                    <McNeilLogo />
+                </TimelineDot>
+                <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+                <h3 className = "timeline-name">McNeil High School</h3>
+                <h4 className = "timeline-title">Student</h4>
+                <ul className = "timeline-description">
+                    <li>Will graduate with a STEM and Liberal Arts Endorsements</li>
+                </ul>
+            </TimelineContent>
+        </TimelineItem>
+    )
+}
 
 // type TimelineItemContentProps = {
 //     date: string;

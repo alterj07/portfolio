@@ -1,3 +1,11 @@
+#timelineComponent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 #timelineContainer {
     /* display: flex;
     flex-direction: column; */
@@ -5,13 +13,13 @@
     padding: 20px;
     backdrop-filter: blur(100px);
     border: 1px solid #eee;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 50%;
 }
 
 .timeline-description {
     list-style-type: disc;
-    list-style: inside;
+    /* list-style: inside; */
     padding: 0;
     margin-left: 1rem;
     color: white;
@@ -38,5 +46,31 @@
 .timeline-title{
     font-style: italic;
     font-size: 0.8rem;
+    color: white;
+}
+
+.timeline-buttons {
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    color: white;
+    transition: color 0.3s;
+}
+
+.timeline-button {
+    border: none;
+    background: transparent;
+    color: white;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.timeline-button:hover {
+    color: red;
+}
+
+.timeline-button-text {
+    font-size: 0.8rem;
+    font-weight: bold;
     color: white;
 }
