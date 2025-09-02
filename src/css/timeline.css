@@ -14,30 +14,29 @@
     list-style: inside;
     padding: 0;
     margin-left: 1rem;
+    color: white;
 }
 
 .timeline-description li {
     margin-bottom: 0.5rem;
     font-size: 0.8rem;
+    color: white;
 }
 
 .timeline-date{
     font-weight: bold;
     font-size: 0.8rem;
-    /* margin-top: 0.7rem; */
+    color: white;
 }
 
 .timeline-name{
     font-weight: bold;
     font-size: 1.1rem;
+    color: white;
 }
 
 .timeline-title{
     font-style: italic;
     font-size: 0.8rem;
-}
-
-.company-logo{
-    width: 24px;
-    background-color: red;
+    color: white;
 }
