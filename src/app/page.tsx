@@ -10,6 +10,7 @@ import "../css/classes.css"
 export default function Home() {
   return (
     <div className="sunsetBackground">
+      {/* <Introduction className = "introductionSection"/> */}
       <Introduction />
       <NavigationBar />
       <TimelineClient />

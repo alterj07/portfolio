@@ -6,22 +6,32 @@
     #introductionContainer {
         display: flex;
         flex-direction: row;
-        flex: 1;
-        padding: 2rem;
-        border-radius: 0.5rem;
+        height: 100vh;
+        align-items: center;
+        scroll-snap-type: y proximity;
+        /* padding: 2rem; */
+        /* border-radius: 0.5rem; */
     }
+    #introductionContainer > div{
+        height: 100vh;
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #nameContainer {
+        display: flex;
+        flex-direction: column;
         flex: 0.5;
-        /* width: fit-content; */
         height: fit-content;
         margin-left: 10vh;
-        /* background-color: red; */
+        /* background-color: blue; */
     }
     #name {
         color: white;
         font-weight: bold;
         font-size: 4rem;
-        /* background-color: blue; */
    }
     #description {
         color: white;
@@ -36,7 +46,7 @@
         display: flex;
         flex: 0.5;
         height: fit-content;
-        margin-left: 10vh;
+        /* margin-left: 10vh; */
         justify-content:center;
         /* background-color: blue; */
     }
@@ -47,6 +57,8 @@
         height: 18rem;
         position: absolute;
         transition: transform 0.2s ease-in-out;
+        background-color: red;
+        /* margin: 2rem; */
    }
 
    #profilePicture{
