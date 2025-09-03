@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <div className="sunsetBackground">
       {/* <Introduction className = "introductionSection"/> */}
-      <Introduction />
       <NavigationBar />
+      <Introduction />
       <TimelineClient />
       <div className="sectionSpacerDiv" />
       <FeatureProjects />
