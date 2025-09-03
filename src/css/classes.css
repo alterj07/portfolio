@@ -3,8 +3,7 @@
 @import "tailwindcss/utilities";
 
 @layer components {
-    .sunsetBackground {
-        /* background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%); */
+    /* .sunsetBackground {
         background: linear-gradient(0deg, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
         height: max-content;
         background-attachment: fixed;
@@ -16,7 +15,28 @@
         flex-direction: column;
         align-items: center;
         flex: 1;
+    } */
+
+    .background1{
+      position: absolute;
+      height: 100vh;
+      width: 100%;
+      background-color: #ffce61;
+      z-index: -1;
+      scroll-behavior: smooth;
+      scroll-snap-type: y proximity;
+      scroll-snap-align: start;
     }
+
+    .background2{
+      position: absolute;
+      top: 100vh;
+      height: 210vh;
+      width: 100%;
+      background: linear-gradient(0deg, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
+      z-index: -1;
+    }
+
 
     .sectionSpacerDiv {
         height: 30rem;

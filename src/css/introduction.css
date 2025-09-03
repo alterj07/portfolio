@@ -63,12 +63,12 @@
 
    #profilePicture{
         opacity: 1;
-        z-index: 1;
+        z-index: 2;
    }
 
    #hiddenProfilePicture{
        opacity: 0;
-       z-index: 0;
+       z-index: 1;
    }
 
    #profilePicture:hover{

@@ -9,8 +9,9 @@ import './globals.css';
 import "../css/classes.css" 
 export default function Home() {
   return (
-    <div className="sunsetBackground">
-      {/* <Introduction className = "introductionSection"/> */}
+    <div>
+      <div className = "background1"/>
+      <div className = "background2"/>
       <NavigationBar />
       <Introduction />
       <TimelineClient />

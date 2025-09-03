@@ -1,33 +1,41 @@
 import * as React from 'react';
-import { Tabs } from '@base-ui-components/react/tabs';
+import Link from 'next/link';
 import '../../css/navBar.css';
-// import React from 'react';
 
 export default function NavBar() {
   return (
-    <Tabs.Root className="Tabs" defaultValue="overview">
-      <Tabs.List className="List">
-        <Tabs.Tab className="Tab" value="overview">
-          Home
-        </Tabs.Tab>
-        <Tabs.Tab className="Tab" value="projects">
-          Projects
-        </Tabs.Tab>
-        <Tabs.Tab className="Tab" value="account">
-          Performances
-        </Tabs.Tab>
-        <Tabs.Indicator className="Indicator" />
-      </Tabs.List>
-      <Tabs.Panel className="Panel" value="overview">
-        {/* <OverviewIcon className="Icon" /> */}
-        <h2>Welcome to the Home Tab</h2>
-      </Tabs.Panel>
-      <Tabs.Panel className="Panel" value="projects">
-
-      </Tabs.Panel>
-      <Tabs.Panel className="Panel" value="account">
-
-      </Tabs.Panel>
-    </Tabs.Root>
-  )
+    <div className="navBarContainer">
+      <ul className = "navBarList">
+        <li className="navBarItems">
+          <Link
+            href="/"
+          >
+            Home
+          </Link>
+        </li>
+        <li className="navBarItems">
+          <Link
+            
+            href="/underConstruction"
+          >
+            About Me
+          </Link>
+        </li>
+        <li className="navBarItems">  
+          <Link
+            href="/projects"
+          >
+            Projects
+          </Link>
+        </li>
+        <li className="navBarItems">  
+          <Link
+            href="/performances"
+          >
+            Performances
+          </Link>
+        </li>
+      </ul>
+    </div>
+  );
 }
