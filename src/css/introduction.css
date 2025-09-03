@@ -6,11 +6,9 @@
     #introductionContainer {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         height: 100vh;
-        align-items: center;
         scroll-snap-type: y proximity;
-        /* padding: 2rem; */
-        /* border-radius: 0.5rem; */
     }
     #introductionContainer > div{
         height: 100vh;
@@ -23,42 +21,49 @@
     #nameContainer {
         display: flex;
         flex-direction: column;
-        flex: 0.5;
         height: fit-content;
-        margin-left: 10vh;
-        /* background-color: blue; */
+        margin-left: -4rem;
     }
     #name {
-        color: white;
+        color: black;
         font-weight: bold;
         font-size: 4rem;
+        margin-left: -6rem;
+        /* background-color: blue; */
+   }
+   #class {
+        color: black;
+        font-weight: bold;
+        font-size: 0.85rem;
+        font-style: italic;
+        width: fit-content;
+        margin-left: 13rem;
+        transform: translateX(10%) translateY(-90%);
+        /* background-color: red; */
    }
     #description {
-        color: white;
+        color: black;
         font-weight: bold;
         font-size: 2rem;
         font-style: italic;
         width:30rem;
         margin-left: 3rem;
-        /* background-color: red; */
+        transform: translateY(-20%);
    }
     #pictureContainer{
         display: flex;
         flex: 0.5;
         height: fit-content;
-        /* margin-left: 10vh; */
         justify-content:center;
-        /* background-color: blue; */
     }
    #profilePicture,
    #hiddenProfilePicture{
         border-radius: 999px;
-        width: 12rem;
+        width: 18rem;
         height: 18rem;
         position: absolute;
         transition: transform 0.2s ease-in-out;
         background-color: red;
-        /* margin: 2rem; */
    }
 
    #profilePicture{

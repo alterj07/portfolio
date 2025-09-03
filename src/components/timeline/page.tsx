@@ -99,7 +99,7 @@ function McNeilTimeline() {
                 <h3 className = "timeline-name">McNeil High School</h3>
                 <h4 className = "timeline-title">Student</h4>
                 <ul className = "timeline-description">
-                    <li>Will graduate with a STEM and Liberal Arts Endorsements</li>
+                    <li>Graduating with Distinguished Plan with STEM, Arts and Humanities, and Multidisciplinary Studies Endorsements</li>
                 </ul>
             </TimelineContent>
         </TimelineItem>

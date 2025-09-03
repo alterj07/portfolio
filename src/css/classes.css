@@ -3,19 +3,22 @@
 @import "tailwindcss/utilities";
 
 @layer components {
-    /* .sunsetBackground {
-        background: linear-gradient(0deg, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
-        height: max-content;
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        scroll-behavior: smooth;
+    .mainContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex: 1;
-    } */
+    }
+
+    .mainContainer > div{
+        scroll-snap-align: start;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        scroll-behavior: smooth;
+        scroll-snap-type: y proximity;
+        scroll-snap-align: start;
+    }
 
     .background1{
       position: absolute;
@@ -23,9 +26,6 @@
       width: 100%;
       background-color: #ffce61;
       z-index: -1;
-      scroll-behavior: smooth;
-      scroll-snap-type: y proximity;
-      scroll-snap-align: start;
     }
 
     .background2{
