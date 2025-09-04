@@ -38,7 +38,7 @@ function WordsOfWisdomCard() {
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
-                        Github
+                            <p className = "projectFeatureDescription">Github</p>
                         </a>
                     </div>
                 </div>
@@ -63,7 +63,7 @@ function CookieCrumblCard() {
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
-                            Github
+                            <p className = "projectFeatureDescription">Github</p>
                         </a>
                     </div>
                 </div>
@@ -87,7 +87,7 @@ function VibeCard() {
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
-                            Github
+                            <p className = "projectFeatureDescription">Github</p>
                         </a>
                     </div>
                 </div>
@@ -111,7 +111,7 @@ function PortfolioCard() {
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
-                            Github
+                            <p className = "projectFeatureDescription">Github</p>
                         </a>
                     </div>
                 </div>

@@ -31,15 +31,10 @@
     .background2{
       position: absolute;
       top: 100vh;
-      height: 190vh;
+      height: 140vh;
       width: 100%;
       background: linear-gradient(0deg, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
       z-index: -1;
-    }
-    
-    .sectionSpacerDiv {
-        height: 40vh;
-        width: 100%;
     }
 
     .footerContainer {
