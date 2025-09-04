@@ -3,10 +3,6 @@
 @import "tailwindcss/utilities";
 
 @layer components {
-    *{
-        padding: 0;
-        margin: 0;
-    }
     .navBarItems {
         color: #ee6c45;
         font-size: 1.2vw;

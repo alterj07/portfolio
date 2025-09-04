@@ -13,7 +13,6 @@ import {McNeilLogo} from '../timelineIcons/page';
 import {TAMULogo} from '../timelineIcons/page';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import '../../css/timeline.css'
 
 interface TimelineButtonsProps {
     mode: string;
