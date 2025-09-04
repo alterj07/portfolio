@@ -14,7 +14,7 @@ export function SilviaLogo() {
 export function NASALogo() {
     return (
         <a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">
-            <Avatar src={NASAPic.src} sx={{ width: 60, height: 60}} />
+            <Avatar src={NASAPic.src} sx={{ width: 50, height: 50, overflow: 'hidden' }} />
         </a>
     );
 }

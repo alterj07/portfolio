@@ -14,38 +14,38 @@
     backdrop-filter: blur(100px);
     border: 1px solid #eee;
     border-radius: 10px;
-    width: 50%;
+    width: 50vw;
+    overflow: hidden;
 }
 
 .timeline-description {
     list-style-type: disc;
-    /* list-style: inside; */
     padding: 0;
-    margin-left: 1rem;
+    margin-left: 1vw;
     color: white;
 }
 
 .timeline-description li {
     margin-bottom: 0.5rem;
-    font-size: 0.8rem;
+    font-size: 0.75vw;
     color: white;
 }
 
 .timeline-date{
     font-weight: bold;
-    font-size: 0.8rem;
+    font-size: 0.85vw;
     color: white;
 }
 
 .timeline-name{
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2vw;
     color: white;
 }
 
 .timeline-title{
     font-style: italic;
-    font-size: 0.8rem;
+    font-size: 0.87vw;
     color: white;
 }
 
@@ -70,7 +70,8 @@
 }
 
 .timeline-button-text {
-    font-size: 0.8rem;
+    font-size: 0.9vw;
     font-weight: bold;
     color: white;
 }
+/* 1.1rem = 1.2vw */

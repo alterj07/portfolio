@@ -5,9 +5,9 @@
 @layer components {
     .navBarItems {
         color: #ee6c45;
-        font-size: 1.875rem; 
+        font-size: 1.2vw;
         font-weight: 600;
-        margin-left: 2rem;
+        margin-left: 2vw;
         text-align: center;
         transition-property: color;
         transition-duration: 700ms;

@@ -7,7 +7,7 @@ import PortfolioImg from '../../assets/PortfolioImg.png';
 import GithubIcon from '../../assets/github-mark-white.png';
 export default function FeatureProjects() {
     return (
-        <div>
+        <div id = "featuredProjectsContainer">
             <h1 id = "featuredProjectsTitle">
                 Featured Projects
             </h1>
@@ -29,7 +29,7 @@ function WordsOfWisdomCard() {
             <div className = "flip-card">
                 <div className = "projectsFeatureCard">
                     <h2 className = "projectFeatureTitle">Words of Wisdom</h2>
-                    <img src = {WordsofWisdomImg.src} alt = "Words Of Wisdom" width = "300" height = "150"/>
+                    <img src = {WordsofWisdomImg.src} alt = "Words Of Wisdom" width = "300vw" height = "300vh"/>
                 </div>
                 <div className = "projectsFeatureCardBack">
                     <p className = "projectFeatureDescription">*Short Description*</p>
@@ -54,7 +54,7 @@ function CookieCrumblCard() {
             <div className = "flip-card">
                 <div className = "projectsFeatureCard">
                     <h2 className = "projectFeatureTitle">CookieCrumbl</h2>
-                    <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300" height = "150"/>
+                    <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300vw" height = "300vh"/>
                 </div>
                 <div className = "projectsFeatureCardBack">
                     <p className = "projectFeatureDescription">*Short Description*</p>
@@ -78,7 +78,7 @@ function VibeCard() {
             <div className = "flip-card">
                 <div className = "projectsFeatureCard">
                     <h2 className = "projectFeatureTitle">Vibe</h2>
-                    <img src = {VibeImg.src} alt = "Vibe" width = "300" height = "150"/>
+                    <img src = {VibeImg.src} alt = "Vibe" width = "300vw" height = "300vh"/>
                 </div>
                 <div className = "projectsFeatureCardBack">
                     <p className = "projectFeatureDescription">*Short Description*</p>
@@ -102,7 +102,7 @@ function PortfolioCard() {
             <div className = "flip-card">
                 <div className = "projectsFeatureCard">
                     <h2 className = "projectFeatureTitle">Portfolio</h2>
-                    <img src = {PortfolioImg.src} alt = "Portfolio" width = "300" height = "150"/>
+                    <img src = {PortfolioImg.src} alt = "Portfolio" width = "300vw" height = "300vh"/>
                 </div>
                 <div className = "projectsFeatureCardBack">
                     <p className = "projectFeatureDescription">*Short Description*</p>

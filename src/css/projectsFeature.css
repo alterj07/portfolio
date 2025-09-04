@@ -8,21 +8,48 @@
         transform: rotateY(180deg);
     }
 
-    #featuredProjectsTitle {
-        position: static;
-        width: 100%;
+    #featuredProjectsContainer {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
+        flex: 1;
+        height: 100vh;
+    }
+
+    #featuredProjectsTitle {
+        position: static;
+        width: 100vw;
+        font-size: 1.5vw;
+        text-align: center;
         font-weight: bold;
-        flex-direction: column;
         color: white;
+        margin-bottom: 2vh;
+        /* background-color: black; */
+    }
+
+    #projectsFeatureContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap:nowrap;
+        position: relative;
+        height: 40vh;
+        width: 100vw;
+        justify-content: space-around;
+        padding-top: 1rem;
+    }
+
+    #projectsFeatureWrapper {
+        display: flex;
+        align-items: center;
+        width: 100vw;
+        margin: 0 auto;
+        overflow: hidden;
     }
 
     .flip-card-container {
-        width: 100%;
-        height: 100%;
-        margin-right: 2rem;
+        width: 22vw;
+        height: 35vh;
     }
 
     .flip-card {
@@ -39,7 +66,6 @@
         flex-direction: column;
         position: relative;
         align-items: center;
-        /* justify-content: center; */
         padding: 1rem;
         backface-visibility: hidden;
         text-align: center;
@@ -48,14 +74,14 @@
     }
 
     .projectsFeatureCard {
-        height: 16rem;
+        height: 35vh;
         transform: rotateY(0deg);
         z-index: 2;
     }
 
     .projectsFeatureCardBack {
-        transform: rotateY(180deg) translateY(-16rem);
-        height: 16rem;
+        transform: rotateY(180deg) translateY(-35vh);
+        height: 35vh;
         z-index: 1;
     }
 
@@ -67,12 +93,13 @@
     
     .projectFeatureTitle{
         margin-bottom: 0.5rem;
-        font-size: 1.5rem;
+        /* font-size: 1.5rem; */
+        font-size: 1.7vw;
         font-weight: bold;
     }
 
     .projectFeatureDescription {
-        font-size: 1rem;
+        font-size: 1.2vw;
         margin-top: 0.5rem;
         align-items: center;
         justify-content: center;
@@ -84,23 +111,5 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-    }
-
-    #projectsFeatureContainer {
-        position: relative;
-        height: 21rem;
-        width: fit-content;
-        display: flex;
-        flex-direction: row;
-        flex-wrap:nowrap;
-        padding-top: 1rem;
-    }
-
-    #projectsFeatureWrapper {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        margin: 0 auto;
-        overflow: hidden;
     }
 }

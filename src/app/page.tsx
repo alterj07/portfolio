@@ -9,7 +9,7 @@ import './globals.css';
 import "../css/classes.css" 
 export default function Home() {
   return (
-    <div>
+    <div className = "mainContainer">
       <div className = "background1"/>
       <div className = "background2"/>
       <NavigationBar />
