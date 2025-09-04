@@ -1,3 +1,8 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
 #timelineComponent {
     display: flex;
     flex-direction: column;
@@ -7,8 +12,6 @@
 }
 
 #timelineContainer {
-    /* display: flex;
-    flex-direction: column; */
     margin-top: 2rem;
     padding: 20px;
     backdrop-filter: blur(100px);
@@ -20,7 +23,6 @@
 
 .timeline-description {
     list-style-type: disc;
-    padding: 0;
     margin-left: 1vw;
     color: white;
 }
@@ -65,4 +67,3 @@
     font-weight: bold;
     color: white;
 }
-/* 1.1rem = 1.2vw */

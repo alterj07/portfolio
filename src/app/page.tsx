@@ -10,15 +10,22 @@ import "../css/classes.css"
 export default function Home() {
   return (
     <div className = "mainContainer">
-      <div className = "background1"/>
-      <div className = "background2"/>
-      <NavigationBar />
-      <Introduction />
-      <TimelineClient />
-      <div className="sectionSpacerDiv" />
-      <FeatureProjects />
-      <Footer />
+        <Backgrounds />
+        <NavigationBar />
+        <Introduction />
+        <TimelineClient />
+        <div className="sectionSpacerDiv" />
+        <FeatureProjects />
+        <Footer />
     </div>
   );
 }
 
+function Backgrounds() {
+  return (
+    <>
+      <div className="background1" />
+      <div className="background2" />
+    </>
+  );
+}

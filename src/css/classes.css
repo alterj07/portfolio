@@ -2,12 +2,19 @@
 @import "tailwindcss/components"; 
 @import "tailwindcss/utilities";
 
+
 @layer components {
+    *{
+      padding: 0;
+      margin: 0;
+    }
     .mainContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        flex: 1;
+        /* flex: 1; */
+        width: 100vw;
+        overflow-x: hidden;
     }
 
     .mainContainer > div{
@@ -23,7 +30,7 @@
     .background1{
       position: absolute;
       height: 100vh;
-      width: 100%;
+      width: 100vw;
       background-color: #ffce61;
       z-index: -1;
     }
@@ -31,29 +38,25 @@
     .background2{
       position: absolute;
       top: 100vh;
-      height: 140vh;
-      width: 100%;
+      height: 150vh;
+      width: 100vw;
       background: linear-gradient(0deg, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
       z-index: -1;
     }
 
     .footerContainer {
       position: relative;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 10vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      padding: 1rem;
+      background-color: #1f214d;
     }
 
     .footerText {
       color: #fff;
       font-size: 0.5rem;
     }
-}
-
-@theme {
-  --color-darkMode-background: "bg-gradient-to-r from-emerald-950 via-cyan-700 to-black";
 }
