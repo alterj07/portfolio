@@ -56,17 +56,8 @@
     transition: color 0.3s;
 }
 
-.timeline-button {
-    border: none;
-    background: transparent;
-    color: white;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
 .timeline-button:hover {
-    color: red;
+    color: black;
 }
 
 .timeline-button-text {

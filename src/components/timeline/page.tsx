@@ -10,12 +10,55 @@ import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import {SilviaLogo} from '../timelineIcons/page';
 import {NASALogo} from '../timelineIcons/page';
 import {McNeilLogo} from '../timelineIcons/page';
-import TimelineButtons from '../TimelineButtons';
-export default function TimelineComponent(){
+import {TAMULogo} from '../timelineIcons/page';
+import ToggleButton from '@mui/material/ToggleButton';
+import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import '../../css/timeline.css'
+
+interface TimelineButtonsProps {
+    mode: string;
+    onModeChange: (newMode: string) => void;
+}
+
+function TimelineButtons({ mode, onModeChange }: TimelineButtonsProps) {
+    const handleAlignment = (
+        event: React.MouseEvent<HTMLElement>,
+        newMode: string,
+    ) => {
+        if (newMode !== null) { // Prevent deselecting all buttons
+        onModeChange(newMode);
+        }
+    };
+
     return (
+        <ToggleButtonGroup
+        value={mode}
+        exclusive
+        onChange={handleAlignment}
+        aria-label="timeline selection"
+        className="timeline-buttons"
+        >
+        <ToggleButton value="education" aria-label="education" className="timeline-button">
+            <p className="timeline-button-text">Education</p>
+        </ToggleButton>
+        <ToggleButton value="experience" aria-label="experience" className="timeline-button">
+            <p className="timeline-button-text">Experience</p>
+        </ToggleButton>
+        </ToggleButtonGroup>
+    );
+}
+
+export default function TimelineComponent(){
+    const [mode, setMode] = React.useState<string>('experience');
+
+    const handleModeChange = (newMode: string) => {
+        setMode(newMode);
+    };
+    if(mode === 'education'){
+        return (
         <div id = "timelineComponent">
             <div id = "timelineTopContainer">
-                <TimelineButtons />
+                <TimelineButtons mode={mode} onModeChange={handleModeChange} />
             </div>
             <div id =  "timelineContainer">
                 <div id = "timelineEducation">
@@ -23,22 +66,35 @@ export default function TimelineComponent(){
                         <McNeilTimeline />
                     </Timeline>
                 </div>
-                <div id = "timelineExperience">
-                    <Timeline id = "timeline">
-                        <SilviaTimeline />
-                        <NASATimeline />
-                    </Timeline>
-                </div>
             </div>
         </div>
     )
+    }
+    else if(mode === 'experience'){
+        return (
+            <div id = "timelineComponent">
+                <div id = "timelineTopContainer">
+                    <TimelineButtons mode={mode} onModeChange={handleModeChange} />
+                </div>
+                <div id =  "timelineContainer">
+                    <div id = "timelineExperience">
+                        <Timeline id = "timeline">
+                            <SilviaTimeline />
+                            <TAMUResearchTimeline />
+                            <NASATimeline />
+                        </Timeline>
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
 
 function SilviaTimeline() {
     return (
         <TimelineItem className = "timeline-item">
             <TimelineOppositeContent sx = {{marginTop: '0.7rem'}}>
-                <h4 className = "timeline-date">June 2025 - Current</h4>
+                <h4 className = "timeline-date">June 2025 - Present</h4>
             </TimelineOppositeContent>
             <TimelineSeparator>
                 <TimelineDot sx={{ border: 'none', padding: 0 }}>
@@ -50,8 +106,32 @@ function SilviaTimeline() {
                 <h3 className = "timeline-name">Silvia</h3>
                 <h4 className = "timeline-title">Intern</h4>
                 <ul className = "timeline-description">
-                    <li>Contributed to the design and testing of a multi-domain mobile technology program for dementia prevention.</li>
-                    <li>Aided in data collection to examine the effectiveness of digital tools in reducing dementia risk.</li>
+                    <li>Contributed to the design and testing of a multi-domain mobile technology program for dementia prevention</li>
+                    <li>Aided in data collection to examine the effectiveness of digital tools in reducing dementia risk</li>
+                </ul>
+            </TimelineContent>
+        </TimelineItem>
+    )
+}
+
+function TAMUResearchTimeline() {
+    return (
+        <TimelineItem className = "timeline-item">
+            <TimelineOppositeContent sx = {{marginTop: '0.7rem'}}>
+                <h4 className = "timeline-date">June 2025 - Present</h4>
+            </TimelineOppositeContent>
+            <TimelineSeparator>
+                <TimelineDot sx={{ border: 'none', padding: 0 }}>
+                    <TAMULogo />
+                </TimelineDot>
+                <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+                <h3 className = "timeline-name">A&amp;M Research</h3>
+                <h4 className = "timeline-title">Research Assistant/Lab Intern</h4>
+                <ul className = "timeline-description">
+                    <li>Assisted with outreach coordination to local rehabilitation centers and adaptive sports organizations to facilitate data collection</li>
+                    <li>Involved with multiple federally and internationally funded research projects related to health promotion and preventive software for older adults living with dementia</li>
                 </ul>
             </TimelineContent>
         </TimelineItem>
@@ -75,8 +155,8 @@ function NASATimeline() {
                 <h3 className = "timeline-name">NASA HAS Aerospace Scholars</h3>
                 <h4 className = "timeline-title">Intern</h4>
                 <ul className = "timeline-description">
-                    <li>Applied CAD, coding, and systems engineering skills in a rigorous Moonshot mission simulation with NASA engineers.</li>
-                    <li>Participated in a year-long program, researching interstellar bodies, designing aerospace tools and habitats, creating Scratch programs, and presenting findings to professors and peers.</li>
+                    <li>Applied CAD, coding, and systems engineering skills in a rigorous Moonshot mission simulation with NASA engineers</li>
+                    <li>Participated in a year-long program, researching interstellar bodies, designing aerospace tools and habitats, creating Scratch programs, and presenting findings to professors and peers</li>
                 </ul>
             </TimelineContent>
         </TimelineItem>
@@ -105,33 +185,3 @@ function McNeilTimeline() {
         </TimelineItem>
     )
 }
-
-// type TimelineItemContentProps = {
-//     date: string;
-//     name: string;
-//     title: string;
-//     description: string[];
-// };
-
-// function TimelineItemContent({ date, name, title, description }: TimelineItemContentProps) {
-//     return (
-//         <TimelineItem className = "timeline-item">
-//             <TimelineOppositeContent>
-//                 <h4 className = "timeline-date">{date}</h4>
-//             </TimelineOppositeContent>
-//             <TimelineSeparator>
-//                 <TimelineDot />
-//                 <TimelineConnector />
-//             </TimelineSeparator>
-//             <TimelineContent>
-//                 <h3 className = "timeline-name">{name}</h3>
-//                 <h4 className = "timeline-title">{title}</h4>
-//                 <ul className = "timeline-description">
-//                     {description.map((desc, index) => (
-//                         <li key={index}>{desc}</li>
-//                     ))}
-//                 </ul>
-//             </TimelineContent>
-//         </TimelineItem>
-//     )
-// }
