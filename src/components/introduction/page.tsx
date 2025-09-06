@@ -12,7 +12,6 @@ export default function Introduction() {
             </div>
             <div id = "nameContainer">
                 <h1 id="name">Jayden Chun</h1>
-                <p id = "class">Class of &apos;26</p>
                 <p id="description">Aspiring Engineer<br/>Passionate Cellist</p>
             </div>
         </div>

@@ -23,43 +23,51 @@
     #nameContainer {
         display: flex;
         flex-direction: column;
-        width: 40vw;
+        /* width: 40vw; */
         height: fit-content;
-        margin-left: 1vw;
+        /* margin-left: 1vw; */
     }
     #name {
         color: black;
         font-weight: bold;
-        font-size: xx-large;
-   }
-   #class {
-        color: black;
-        font-weight: bold;
-        font-size: small;
-        font-style: italic;
-        max-width: fit-content;
-        margin-left: 25vw;
-        margin-top: -5%;
+        font-size: xxx-large;
    }
     #description {
         color: black;
         font-weight: bold;
-        font-size: medium;
+        font-size: x-large;
         font-style: italic;
-        width: 30vw;
-        margin-top: -2%;
    }
     #pictureContainer{
-        width: 18vw;
+        width: 30vw;
         height: fit-content;
     }
    #profilePicture,
    #hiddenProfilePicture{
         border-radius: 999px;
-        width: 18vw;
-        height: 18vw;
+        width:20%;
+        height: auto;
         position: absolute;
         transition: transform 0.2s ease-in-out;
+   }
+
+   @media (max-width: 768px) {
+       #introductionContainer {
+           flex-direction: row;
+       }
+       #pictureContainer{
+           height: fit-content;
+       }
+       #profilePicture,
+       #hiddenProfilePicture{
+            width: 33vw;
+            height: auto;
+            margin-right: 8vw;
+            /* position: relative; */
+       }
+       #name {
+            font-size: xx-large;
+       }
    }
 
    #profilePicture{
