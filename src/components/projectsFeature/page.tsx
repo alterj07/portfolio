@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
@@ -8,15 +9,16 @@ import GithubIcon from '../../assets/github-mark-white.png';
 export default function FeatureProjects() {
     return (
         <div id = "featuredProjectsContainer">
-            <h1 id = "featuredProjectsTitle">
-                Featured Projects
-            </h1>
+            <div id = "topProjectsContainer">
+                <h1 id = "featuredProjectsTitle">Featured Projects</h1>
+                <Link href = "/projects">
+                    <p id = "viewMoreText">view more {'>'}</p>
+                </Link>
+            </div>
             <div id = "projectsFeatureWrapper">
                 <div id = "projectsFeatureContainer">
                     <WordsOfWisdomCard/>
                     <CookieCrumblCard/>
-                    <VibeCard/>
-                    <PortfolioCard/>
                 </div>
             </div>
         </div>
@@ -72,53 +74,53 @@ function CookieCrumblCard() {
     )
 }
 
-function VibeCard() {
-    return (
-        <div className = "flip-card-container">
-            <div className = "flip-card">
-                <div className = "projectsFeatureCard">
-                    <h2 className = "projectFeatureTitle">Vibe</h2>
-                    <img src = {VibeImg.src} alt = "Vibe" width = "300vw" height = "300vh"/>
-                </div>
-                <div className = "projectsFeatureCardBack">
-                    <p className = "projectFeatureDescription">*Short Description*</p>
-                    <div className = "projectFeatureLinks">
-                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
-                            <img src = {GithubIcon.src} width = "18" height = "18"/>
-                        </a>
-                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
-                            <p className = "projectFeatureDescription">Github</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+// function VibeCard() {
+//     return (
+//         <div className = "flip-card-container">
+//             <div className = "flip-card">
+//                 <div className = "projectsFeatureCard">
+//                     <h2 className = "projectFeatureTitle">Vibe</h2>
+//                     <img src = {VibeImg.src} alt = "Vibe" width = "300vw" height = "300vh"/>
+//                 </div>
+//                 <div className = "projectsFeatureCardBack">
+//                     <p className = "projectFeatureDescription">*Short Description*</p>
+//                     <div className = "projectFeatureLinks">
+//                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
+//                             <img src = {GithubIcon.src} width = "18" height = "18"/>
+//                         </a>
+//                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/TheScientist101/Vibe" >
+//                             <p className = "projectFeatureDescription">Github</p>
+//                         </a>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
 
-function PortfolioCard() {
-    return (
-        <div className = "flip-card-container">
-            <div className = "flip-card">
-                <div className = "projectsFeatureCard">
-                    <h2 className = "projectFeatureTitle">Portfolio</h2>
-                    <img src = {PortfolioImg.src} alt = "Portfolio" width = "300vw" height = "300vh"/>
-                </div>
-                <div className = "projectsFeatureCardBack">
-                    <p className = "projectFeatureDescription">*Short Description*</p>
-                    <div className = "projectFeatureLinks">
-                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
-                            <img src = {GithubIcon.src} width = "18" height = "18"/>
-                        </a>
-                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
-                            <p className = "projectFeatureDescription">Github</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-}
+// function PortfolioCard() {
+//     return (
+//         <div className = "flip-card-container">
+//             <div className = "flip-card">
+//                 <div className = "projectsFeatureCard">
+//                     <h2 className = "projectFeatureTitle">Portfolio</h2>
+//                     <img src = {PortfolioImg.src} alt = "Portfolio" width = "300vw" height = "300vh"/>
+//                 </div>
+//                 <div className = "projectsFeatureCardBack">
+//                     <p className = "projectFeatureDescription">*Short Description*</p>
+//                     <div className = "projectFeatureLinks">
+//                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
+//                             <img src = {GithubIcon.src} width = "18" height = "18"/>
+//                         </a>
+//                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/portfolio">
+//                             <p className = "projectFeatureDescription">Github</p>
+//                         </a>
+//                     </div>
+//                 </div>
+//             </div>
+//         </div>
+//     )
+// }
 //add a skeleton component for the project cards
 //linear progress component? mui.com
 
