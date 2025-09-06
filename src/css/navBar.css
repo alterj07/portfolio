@@ -5,36 +5,33 @@
 @layer components {
     .navBarItems {
         color: #ee6c45;
-        /* font-size: 1.2vw; */
         font-size: large;
         font-weight: 600;
-        padding: 0 1vw;
+        padding: 1.5vh 1vw;
         text-align: center;
         transition-property: color;
         transition-duration: 700ms;
         transition-timing-function: ease-in-out;
+        transition: all 0.7s ease-in-out;
         overflow: hidden;
+        mix-blend-mode: multiply;
     }
     .navBarItems:hover {
-        color: #fff;
         transition: all 0.7s ease-in-out;
-        text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(100px);
-        background-color: grey;
-        filter: brightness(1.2);
         border-radius: 10px;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
     }
     .navBarContainer {
         display: flex;
         flex-direction: row;
         justify-content: center;
         position: fixed;
-        backdrop-filter: blur(10px);
+        background: rgba(0, 0, 0, 0.2);
         border-width: 1px;
-        border-color: black;
+        border: 1px solid rgba(255, 255, 255, 0.18);
         border-radius: 20px;
         margin-top: 2rem;
-        padding: 0 1vw;
         z-index: 10;
         overflow: hidden;
     }
@@ -57,7 +54,7 @@
         .navBarItems {
             font-size: medium;
             margin-left: 1vw;
-            padding: 0.5vw;
+            margin: 0.5vw;   
         }
     }
 }
