@@ -63,7 +63,7 @@ export default function TimelineComponent(){
             </div>
             <div id =  "timelineContainer">
                 <div id = "timelineEducation">
-                    <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0.2,},}}>
+                    <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
                     {/* <Timeline id = "timeline"> */}
                         <McNeilTimeline />
                     </Timeline>
@@ -80,7 +80,7 @@ export default function TimelineComponent(){
                 </div>
                 <div id =  "timelineContainer">
                     <div id = "timelineExperience">
-                        <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0.2,},}}>
+                        <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
                             <SilviaTimeline />
                             <TAMUResearchTimeline />
                             <NASATimeline />

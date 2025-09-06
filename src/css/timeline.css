@@ -12,7 +12,8 @@ body{
 
 #timelineContainer {
     margin-top: 2rem;
-    padding: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     backdrop-filter: blur(100px);
     border: 1px solid #eee;
     border-radius: 10px;
