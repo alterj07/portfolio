@@ -20,6 +20,16 @@ body{
     width: 50vw;
 }
 
+@media (max-width: 768px) {
+    #timelineContainer {
+        width: 95vw;
+    }
+    .timeline-content {
+        white-space: normal;
+        width: 100%;
+    }
+}
+
 .timeline-description {
     list-style-type: disc;
     margin-left: 1vw;
@@ -32,13 +42,6 @@ body{
     margin-bottom: 0.5rem;
     font-size: small;
     color: white;
-}
-
-.timeline-description-container {
-    /* flex: 1; */
-    /* white-space: nowrap;
-    overflow: hidden; */
-    /* background-color: red; */
 }
 
 .timeline-date{

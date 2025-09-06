@@ -102,7 +102,7 @@ function SilviaTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>
+            <TimelineContent className = "timeline-content">
                 <h4 className = "timeline-date">June 2025 - Present</h4>
                 <h3 className = "timeline-name">Silvia</h3>
                 <h4 className = "timeline-title">Intern</h4>
@@ -127,7 +127,7 @@ function TAMUResearchTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>
+            <TimelineContent  className = "timeline-content">
                 <h4 className = "timeline-date">June 2025 - Present</h4>
                 <h3 className = "timeline-name">A&amp;M Research</h3>
                 <h4 className = "timeline-title">Research Assistant/Lab Intern</h4>
@@ -151,7 +151,7 @@ function NASATimeline() {
                 </TimelineDot>
                 <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>
+            <TimelineContent  className = "timeline-content">
                 <h4 className = "timeline-date">August 2024 - June 2025</h4>
                 <h3 className = "timeline-name">NASA HAS Aerospace Scholars</h3>
                 <h4 className = "timeline-title">Intern</h4>
@@ -174,7 +174,7 @@ function McNeilTimeline() {
                 </TimelineDot>
                 <TimelineConnector />
             </TimelineSeparator>
-            <TimelineContent>
+            <TimelineContent  className = "timeline-content">
                 <h4 className = "timeline-date">August 2022 - May 2026</h4>
                 <h3 className = "timeline-name">McNeil High School</h3>
                 <h4 className = "timeline-title">Student</h4>
