@@ -25,7 +25,7 @@
     #featuredProjectsTitle {
         position: static;
         width: 900vw;
-        font-size: 1.5vw;
+        font-size: xx-large;
         text-align: center;
         font-weight: bold;
         color: white;
@@ -95,13 +95,14 @@
     
     .projectFeatureTitle{
         margin-bottom: 0.5rem;
-        font-size: 1.7vw;
+        /* font-size: 1.7vw; */
+        font-size: large;
         font-weight: bold;
         overflow: hidden;
     }
 
     .projectFeatureDescription {
-        font-size: 10%;
+        font-size: small;
         margin-top: 0.5rem;
         align-items: center;
         justify-content: center;

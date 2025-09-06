@@ -1,12 +1,14 @@
-import React from 'react';
 import '../../css/timeline.css'
+import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
 import TimelineConnector from '@mui/lab/TimelineConnector';
 import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
+import TimelineOppositeContent, {
+  timelineOppositeContentClasses,
+} from '@mui/lab/TimelineOppositeContent';
 import {SilviaLogo} from '../timelineIcons/page';
 import {NASALogo} from '../timelineIcons/page';
 import {McNeilLogo} from '../timelineIcons/page';
@@ -61,7 +63,8 @@ export default function TimelineComponent(){
             </div>
             <div id =  "timelineContainer">
                 <div id = "timelineEducation">
-                    <Timeline id = "timeline">
+                    <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0.2,},}}>
+                    {/* <Timeline id = "timeline"> */}
                         <McNeilTimeline />
                     </Timeline>
                 </div>
@@ -77,7 +80,7 @@ export default function TimelineComponent(){
                 </div>
                 <div id =  "timelineContainer">
                     <div id = "timelineExperience">
-                        <Timeline id = "timeline">
+                        <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0.2,},}}>
                             <SilviaTimeline />
                             <TAMUResearchTimeline />
                             <NASATimeline />
@@ -92,9 +95,7 @@ export default function TimelineComponent(){
 function SilviaTimeline() {
     return (
         <TimelineItem className = "timeline-item">
-            <TimelineOppositeContent sx = {{marginTop: '0.7rem'}}>
-                <h4 className = "timeline-date">June 2025 - Present</h4>
-            </TimelineOppositeContent>
+            <TimelineOppositeContent/>
             <TimelineSeparator>
                 <TimelineDot sx={{ border: 'none', padding: 0 }}>
                     <SilviaLogo />
@@ -102,12 +103,15 @@ function SilviaTimeline() {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
+                <h4 className = "timeline-date">June 2025 - Present</h4>
                 <h3 className = "timeline-name">Silvia</h3>
                 <h4 className = "timeline-title">Intern</h4>
-                <ul className = "timeline-description">
-                    <li>Contributed to the design and testing of a multi-domain mobile technology program for dementia prevention</li>
-                    <li>Aided in data collection to examine the effectiveness of digital tools in reducing dementia risk</li>
-                </ul>
+                <div className = "timeline-description-container">
+                    <ul className = "timeline-description">
+                        <li>Contributed to the design and testing of a multi-domain mobile technology program for dementia prevention</li>
+                        <li>Aided in data collection to examine the effectiveness of digital tools in reducing dementia risk</li>
+                    </ul>
+                </div>
             </TimelineContent>
         </TimelineItem>
     )
@@ -116,9 +120,7 @@ function SilviaTimeline() {
 function TAMUResearchTimeline() {
     return (
         <TimelineItem className = "timeline-item">
-            <TimelineOppositeContent sx = {{marginTop: '0.7rem'}}>
-                <h4 className = "timeline-date">June 2025 - Present</h4>
-            </TimelineOppositeContent>
+            <TimelineOppositeContent/>
             <TimelineSeparator>
                 <TimelineDot sx={{ border: 'none', padding: 0 }}>
                     <TAMULogo />
@@ -126,6 +128,7 @@ function TAMUResearchTimeline() {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
+                <h4 className = "timeline-date">June 2025 - Present</h4>
                 <h3 className = "timeline-name">A&amp;M Research</h3>
                 <h4 className = "timeline-title">Research Assistant/Lab Intern</h4>
                 <ul className = "timeline-description">
@@ -141,9 +144,7 @@ function TAMUResearchTimeline() {
 function NASATimeline() {
     return (
         <TimelineItem className = "timeline-item">
-            <TimelineOppositeContent sx = {{marginTop: '1.7rem'}}>
-                <h4 className = "timeline-date">August 2024 - June 2025</h4>
-            </TimelineOppositeContent>
+            <TimelineOppositeContent/>
             <TimelineSeparator>
                 <TimelineDot sx={{ border: 'none', padding: 0, backgroundColor: 'transparent' }}>
                     <NASALogo />
@@ -151,6 +152,7 @@ function NASATimeline() {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
+                <h4 className = "timeline-date">August 2024 - June 2025</h4>
                 <h3 className = "timeline-name">NASA HAS Aerospace Scholars</h3>
                 <h4 className = "timeline-title">Intern</h4>
                 <ul className = "timeline-description">
@@ -165,9 +167,7 @@ function NASATimeline() {
 function McNeilTimeline() {
     return (
         <TimelineItem className = "timeline-item">
-            <TimelineOppositeContent sx = {{marginTop: '0.7rem'}}>
-                <h4 className = "timeline-date">August 2022 - May 2026</h4>
-            </TimelineOppositeContent>
+            <TimelineOppositeContent />
             <TimelineSeparator>
                 <TimelineDot sx={{ border: 'none', padding: 0 }}>
                     <McNeilLogo />
@@ -175,6 +175,7 @@ function McNeilTimeline() {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
+                <h4 className = "timeline-date">August 2022 - May 2026</h4>
                 <h3 className = "timeline-name">McNeil High School</h3>
                 <h4 className = "timeline-title">Student</h4>
                 <ul className = "timeline-description">

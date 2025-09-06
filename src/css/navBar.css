@@ -5,7 +5,8 @@
 @layer components {
     .navBarItems {
         color: #ee6c45;
-        font-size: 1.2vw;
+        /* font-size: 1.2vw; */
+        font-size: large;
         font-weight: 600;
         margin-left: 2vw;
         text-align: center;
