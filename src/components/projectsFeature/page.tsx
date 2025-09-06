@@ -3,8 +3,8 @@ import Link from 'next/link'
 import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
-import VibeImg from '../../assets/VibeImg.jpg';
-import PortfolioImg from '../../assets/PortfolioImg.png';
+// import VibeImg from '../../assets/VibeImg.jpg';
+// import PortfolioImg from '../../assets/PortfolioImg.png';
 import GithubIcon from '../../assets/github-mark-white.png';
 export default function FeatureProjects() {
     return (
