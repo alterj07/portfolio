@@ -27,10 +27,33 @@
         height: fit-content;
         /* margin-left: 1vw; */
     }
+
+    #verticalContainer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+    #linkContainer {
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        align-items: center;
+        gap: 1vw;
+        margin-top: 1vh;
+    }
+    /* #resumeContainer {
+        height: 10vh;
+        width: fit-content;
+        border-radius: 20px;
+        background-color: brown;
+    } */
     #name {
         color: black;
         font-weight: bold;
         font-size: xxx-large;
+   }
+   #githubLogo {
+        color: black;
    }
     #description {
         color: black;
