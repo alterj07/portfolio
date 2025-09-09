@@ -48,6 +48,8 @@
         align-items: flex-start;
         justify-content: center;
         backdrop-filter: blur(4px);
+        border-width: 0.1px;
+        border-radius: 30px;
         width: inherit;
         height: auto;
         overflow: hidden;

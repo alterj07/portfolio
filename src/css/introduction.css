@@ -113,6 +113,42 @@
            transition: transform 0.2s ease-in-out;
        }
    }
+
+   @keyframes hover{
+        0% {
+            transform: translateY(0px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
+   }
+
+   #scrollDownContainer{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        margin-top: 90vh;
+        height: fit-content;
+        scroll-behavior: smooth;
+        animation: hover 4s ease-in-out infinite;
+   }
+
+   #scrollDownText {
+        mix-blend-mode:color-dodge;
+        font-weight: bolder;
+        font-size: large;
+   }
+
+   #container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   }
+
    /* note: might want to add a custom font for the name :) */
 
 }
