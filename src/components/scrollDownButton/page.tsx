@@ -8,7 +8,7 @@ export default function ScrollDownButton() {
     // interface ScrollEvent extends React.MouseEvent<HTMLDivElement, MouseEvent> {}
 
     const handleScrollDown = (e: React.MouseEvent<HTMLDivElement, MouseEvent>): void => {
-        // e.preventDefault();
+        e.preventDefault();
 
         window.scrollBy({
             top: window.innerHeight * 0.9,

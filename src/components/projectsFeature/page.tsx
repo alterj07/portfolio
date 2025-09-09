@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link'
-import Image from 'next/image'
 import '../../css/projectsFeature.css';
 import WordsofWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
