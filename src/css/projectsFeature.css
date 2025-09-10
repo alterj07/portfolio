@@ -127,6 +127,10 @@
         color: white;
         font-weight: bold;
         font-size: small;
+        transition: 0.2s ease-in-out;
+    }
+    #viewMoreText:hover{
+        transform: translateY(-5px);
     }
 
     @media (max-width: 768px) {

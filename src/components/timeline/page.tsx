@@ -39,12 +39,12 @@ function TimelineButtons({ mode, onModeChange }: TimelineButtonsProps) {
         aria-label="timeline selection"
         className="timeline-buttons"
         >
-        <ToggleButton value="education" aria-label="education" className="timeline-button">
-            <p className="timeline-button-text">Education</p>
-        </ToggleButton>
-        <ToggleButton value="experience" aria-label="experience" className="timeline-button">
-            <p className="timeline-button-text">Experience</p>
-        </ToggleButton>
+            <ToggleButton value="education" aria-label="education" className="timeline-button">
+                <p className="timeline-button-text">Education</p>
+            </ToggleButton>
+            <ToggleButton value="experience" aria-label="experience" className="timeline-button">
+                <p className="timeline-button-text">Experience</p>
+            </ToggleButton>
         </ToggleButtonGroup>
     );
 }
