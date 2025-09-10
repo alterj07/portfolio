@@ -59,7 +59,7 @@ function CookieCrumblCard() {
                     <img src = {CookieCrumblImg.src} alt = "Cookie Crumbl" width = "300vw" height = "300vh"/>
                 </div>
                 <div className = "projectsFeatureCardBack">
-                    <p className = "projectFeatureDescription">CookieCrumbl is a project developed for the Hack Club Scrapyard Hackathon, aiming to provide a unique and "scrappy" web experience. The website contains the "cure to cancer" but must first agree with cookies, human authentication, and a mass of ads. This was our first Hackathon. We've learned a lot, and still have a lot to learn...</p>
+                    <p className = "projectFeatureDescription">CookieCrumbl is a project developed for the Hack Club Scrapyard Hackathon, aiming to provide a unique and &quot;scrappy&quot; web experience. The website contains the &quot;cure to cancer&quot; but must first agree with cookies, human authentication, and a mass of ads. This was our first Hackathon. We&apos;ve learned a lot, and still have a lot to learn...</p>
                     <div className = "projectFeatureLinks">
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
