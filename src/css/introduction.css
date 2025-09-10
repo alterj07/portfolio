@@ -169,22 +169,23 @@
         border: 1px solid rgba(255, 255, 255, 0.18);
         border-radius: 30px;
         backdrop-filter: blur(4px);
-        color: black;
+        color: green;
         text-align: center;
         font-weight: bold;
         font-size: large;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        animation: popup 0.5s ease-in-out;
+        /* animation: popup 0.5s ease-in; */
+        animation: popup 0.2s cubic-bezier(0.117, 0.989, 0.165, 0.621)
 
    }
 
    @keyframes popup{
-        0% {
+         0% {
             transform: translateY(300px);
-        }
-        100% {
+         }
+         100%{
             transform: translateY(0px);
-        }
+         }
    }
 
    /* note: might want to add a custom font for the name :) */
