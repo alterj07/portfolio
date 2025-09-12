@@ -39,9 +39,6 @@ function WordsOfWisdomCard() {
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
                         </a>
-                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/words-of-wisdom" >
-                            <p className = "projectFeatureDescription">Github</p>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -63,9 +60,6 @@ function CookieCrumblCard() {
                     <div className = "projectFeatureLinks">
                         <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
                             <img src = {GithubIcon.src} width = "18" height = "18"/>
-                        </a>
-                        <a target = "_blank" rel="noopener noreferrer" href = "https://github.com/alterj07/CookieCrumbl" >
-                            <p className = "projectFeatureDescription">Github</p>
                         </a>
                     </div>
                 </div>
