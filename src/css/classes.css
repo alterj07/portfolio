@@ -48,12 +48,12 @@
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      background-color: #1f214d;
+      background-color: inherit;
     }
 
     .footerText {
       color: #fff;
-      /* font-size: 0.5rem; */
       font-size: xx-small;
+
     }
 }
