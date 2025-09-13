@@ -35,19 +35,19 @@
       top: 100vh;
       height: 150vh;
       width: 100vw;
-      background: linear-gradient(0deg, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
+      background: linear-gradient(0.5deg, black 20%, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
       z-index: -1;
     }
 
     .footerContainer {
-      position: relative;
+      position: absolute;
+      left: 0;
       width: 100vw;
       height: fit-content;
       display: flex;
       justify-content: center;
-      align-items: center;
       flex-direction: row;
-      background-color: inherit;
+      background-color: black;
     }
 
     .footerText {
