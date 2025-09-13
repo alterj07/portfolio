@@ -11,9 +11,11 @@ export default function FeatureProjects() {
         <div id = "featuredProjectsContainer">
             <div id = "topProjectsContainer">
                 <h1 id = "featuredProjectsTitle">Featured Projects</h1>
-                <Link href = "/projects">
-                    <p id = "viewMoreText">view more {'>'}</p>
-                </Link>
+                <div id = "viewMoreContainer">
+                    <Link href = "/projects">
+                        <p id = "viewMoreText">view more {'>'}</p>
+                    </Link>
+                </div> 
             </div>
             <div id = "projectsFeatureWrapper">
                 <div id = "projectsFeatureContainer">

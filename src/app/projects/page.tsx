@@ -28,18 +28,6 @@ export default function Projects() {
                     <CookieCrumblCard />
                     <OrchestraCard />
                 </div>
-                {/* <div style = {{display: 'flex', flexDirection: 'row', gap: '4vw'}}>
-                    <WordsOfWisdomCard />
-                    <PortfolioCard />
-                </div>
-                <div style = {{display: 'flex', flexDirection: 'row', gap: '4vw'}}>
-                    <PurePrepCard />
-                    <CookieCrumblCard />
-                </div>
-                <div style = {{display: 'flex', flexDirection: 'row', gap: '4vw'}}>
-                    <HiddenCheeseCard />
-                    <OrchestraCard />
-                </div> */}
             </div>
         </div>
     )

@@ -128,14 +128,22 @@
         margin-top: 1vh;
     }
 
+    #viewMoreContainer{
+        border-width: 1;
+        padding: 5;
+        border-radius: 20;
+        transition: 0.2s ease-in-out;
+    }
+
+    #viewMoreContainer:hover{
+        transform: translateY(-5px);
+    }
+
     #viewMoreText {
         color: white;
         font-weight: bold;
         font-size: small;
         transition: 0.2s ease-in-out;
-    }
-    #viewMoreText:hover{
-        transform: translateY(-5px);
     }
 
     @media (max-width: 768px) {
