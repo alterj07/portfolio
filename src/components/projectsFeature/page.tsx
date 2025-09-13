@@ -38,7 +38,7 @@ function WordsOfWisdomCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <Image src = {WordsOfWisdomImg.src} alt = "Words-Of-Wisdom project screenshot"/>
+            <Image src = {WordsOfWisdomImg.src} alt = "Words-Of-Wisdom project screenshot" width='500' height='500'/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
@@ -67,7 +67,7 @@ function CookieCrumblCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <Image src={CookieCrumblImg.src} alt="CookieCrumbl project screenshot"/>
+            <Image src={CookieCrumblImg.src} alt="CookieCrumbl project screenshot" width='500' height='500'/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',

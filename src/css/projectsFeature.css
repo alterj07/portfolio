@@ -16,7 +16,6 @@
         justify-content: center;
         flex: 1;
         height: fit-content;
-        padding-bottom: 20vh;
     }
 
     #topProjectsContainer {
@@ -40,7 +39,7 @@
         flex-direction: row;
         flex-wrap:nowrap;
         position: relative;
-        height: 40vh;
+        height: 60vh;
         width: 100vw;
         justify-content: center;
         padding-top: 1rem;

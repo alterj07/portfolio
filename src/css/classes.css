@@ -4,36 +4,21 @@
 
 
 @layer components {
+    body{
+      background-color: black;
+    }
     .mainContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100vw;
-        overflow-x: hidden;
+        overflow: hidden;
     }
 
-    .mainContainer > div{
-        scroll-snap-align: start;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        scroll-behavior: smooth;
-        scroll-snap-type: y proximity;
-        scroll-snap-align: start;
-    }
-
-    .background1{
-      position: absolute;
-      height: 100vh;
-      width: 100vw;
-      background-color: #ffce61;
-      z-index: -1;
-    }
-
-    .background2{
-      position: absolute;
-      top: 100vh;
-      height: 150vh;
+    .background{
+      position: fixed;
+      top: 0;
+      min-height: 100vh;
       width: 100vw;
       background: linear-gradient(0.5deg, black 20%, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
       z-index: -1;
@@ -43,11 +28,11 @@
       position: absolute;
       left: 0;
       width: 100vw;
+      margin-top: 2rem;
       height: fit-content;
       display: flex;
       justify-content: center;
       flex-direction: row;
-      background-color: black;
     }
 
     .footerText {

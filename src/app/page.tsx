@@ -25,8 +25,7 @@ export default function Home() {
 function Backgrounds() {
   return (
     <>
-      <div className="background1" />
-      <div className="background2" />
+      <div className="background" />
     </>
   );
 }
