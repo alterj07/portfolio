@@ -45,7 +45,7 @@ function WordsOfWisdomCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <Image src={CookieCrumblPic.src} alt="CookieCrumbl project screenshot"/>
+            <Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
