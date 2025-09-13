@@ -6,6 +6,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CircularProgress from '@mui/material/CircularProgress';
 import Box from '@mui/material/Box';
+import Image from 'next/image'
 import NavBar from '../../components/navBar/page'
 import WordsOfWisdomPic from '../../assets/wordsOfWisdom.png'
 import PortfolioPic from '../../assets/PortfolioImg.png'
@@ -44,7 +45,7 @@ function WordsOfWisdomCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <img src = {WordsOfWisdomPic.src}/>
+            <Image src={CookieCrumblPic.src} alt="CookieCrumbl project screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
@@ -73,7 +74,7 @@ function PortfolioCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <img src = {PortfolioPic.src}/>
+            <Image src = {PortfolioPic.src} alt = "Portfolio Screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
@@ -134,7 +135,7 @@ function CookieCrumblCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <img src = {CookieCrumblPic.src}/>
+            <Image src = {CookieCrumblPic.src} alt = "CookieCrumbl Project Screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
@@ -164,7 +165,7 @@ function OrchestraCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <img src = {OrchestraPic.src}/>
+            <Image src = {OrchestraPic.src} alt = "Orchestral-Pieces Project Screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
@@ -193,7 +194,7 @@ function HiddenCheeseCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <img src = {SprigPic.src}/>
+            <Image src = {SprigPic.src} alt = "Sprig Project Screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',

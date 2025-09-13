@@ -1,13 +1,12 @@
 import React from 'react';
 import Link from 'next/link'
+import Image from 'next/image'
 import '../../css/projectsFeature.css';
 import WordsOfWisdomImg from '../../assets/wordsOfWisdom.png'
 import CookieCrumblImg from '../../assets/cookieCrumbl.png';
-import GithubIcon from '../../assets/github-mark-white.png';
+// import GithubIcon from '../../assets/github-mark-white.png';
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-// import Box from '@mui/material/Box';
-import WordsOfWisdomPic from '../../assets/wordsOfWisdom.png'
 export default function FeatureProjects() {
     return (
         <div id = "featuredProjectsContainer">
@@ -39,7 +38,7 @@ function WordsOfWisdomCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <img src = {WordsOfWisdomImg.src}/>
+            <Image src = {WordsOfWisdomImg.src} alt = "Words-Of-Wisdom project screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
@@ -68,7 +67,7 @@ function CookieCrumblCard() {
             boxShadow: 5,
             bgcolor: 'transparent'
         }}>
-            <img src = {CookieCrumblImg.src}/>
+            <Image src={CookieCrumblImg.src} alt="CookieCrumbl project screenshot"/>
             <CardContent 
                 sx = {{
                     background: 'linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.05))',
