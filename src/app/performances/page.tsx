@@ -27,7 +27,7 @@ function AdagioCard() {
             borderRadius: '16px',
             height: 'fit-content',
             boxShadow: 5,
-            bgcolor: 'transparent'
+            bgcolor: 'transparent',
         }}
         className = "videoPicture">
             <a href = "https://www.youtube.com/watch?v=kQBsGy9die4&list=PL-GOq6NDX0SUXMqWKgnhEzP4qC_tnrx0k" target = "_blank" rel="noopener noreferrer">

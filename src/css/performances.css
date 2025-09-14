@@ -1,59 +1,65 @@
-body{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-.backgroundContainer{
-    position: absolute;
-    height: 200vh;
-    width: 100vw;
-    /* background-color: #ff9e9e; */
-    background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%);
-    z-index: -1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components"; 
+@import "tailwindcss/utilities";
 
-.topTitle {
-    font-size: xxx-large;
-    font-weight: bold;
-    margin-top: 15vh;
-    margin-bottom: 1rem;
-    color: white;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
-    0 0 5px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    justify-content: center;
-}
+@layer base {
+    body{
+        /* background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%); */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .backgroundContainer{
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%);
+        z-index: -1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.topTitle:hover{
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
-    0 0 5px rgba(0, 0, 0, 0.2);
-}
+    .topTitle {
+        font-size: xxx-large;
+        font-weight: bold;
+        margin-top: 15vh;
+        margin-bottom: 1rem;
+        color: white;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+        0 0 5px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        justify-content: center;
+    }
 
-.awardsList{
-    list-style-type: disc;
-    font-size: small;
-    margin-left: 1vw;
-    gap: 1vh;
-    white-space: wrap;
-}
+    .topTitle:hover{
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
+        0 0 5px rgba(0, 0, 0, 0.2);
+    }
 
-.videoPicture{
-    transition: 0.7s ease-in-out;
-    width: 27vw;
-    white-space: wrap;
-}
+    .awardsList{
+        list-style-type: disc;
+        font-size: small;
+        margin-left: 1vw;
+        gap: 1vh;
+        white-space: wrap;
+    }
 
-.videoPicture:hover{
-    transform: translateY(-2px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 1.2);
-    transition: 0.7s ease-in-out;
-}
-
-@media (max-width: 768px) {
     .videoPicture{
-        width: 46vw;
+        transition: 0.7s ease-in-out;
+        width: 27vw;
+        white-space: wrap;
+    }
+
+    .videoPicture:hover{
+        transform: translateY(-2px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 1.2);
+        transition: 0.7s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+        .videoPicture{
+            width: 46vw;
+        }
     }
 }

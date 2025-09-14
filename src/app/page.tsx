@@ -13,7 +13,6 @@ export default function Home() {
         <Introduction />
         <ScrollDownButton />
         <TimelineClient />
-        {/* <div className="sectionSpacerDiv" /> */}
         <FeatureProjects />
         <Footer />
     </div>

@@ -13,14 +13,14 @@ export default function NavBar() {
             Home
           </Link>
         </li>
-        <li className="navBarItems">
+        {/* <li className="navBarItems">
           <Link
             
-            href="/underConstruction"
+            href="/contact"
           >
-            About Me
+            Contact
           </Link>
-        </li>
+        </li> */}
         <li className="navBarItems">  
           <Link
             href="/projects"

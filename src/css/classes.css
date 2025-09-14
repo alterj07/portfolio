@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 
-@layer components {
+@layer base {
     html{
       background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%);
     }
