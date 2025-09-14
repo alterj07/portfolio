@@ -10,22 +10,25 @@
     #introductionContainer {
         display: flex;
         flex-direction: row;
+        /* align-items: center; */
+        justify-content: center;
         height: 100vh;
     }
 
     #nameContainer {
         display: flex;
         flex-direction: column;
-        /* width: 40vw; */
         height: fit-content;
-        /* margin-left: 1vw; */
     }
 
     #verticalContainer {
         display: flex;
         flex-direction: column;
-        height: fit-content;
-        margin-top: 36vh;
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        margin-left: 28vw;
+        /* background-color: red; */
     }
     #linkContainer {
         display: flex;
@@ -56,59 +59,17 @@
         font-size: x-large;
         font-style: italic;
    }
-    #pictureContainer{
-        width: 30vw;
-        height: fit-content;
-        margin-top: 25vh;
-    }
-   #profilePicture,
-   #hiddenProfilePicture{
+   #profilePicture{
         border-radius: 999px;
         width:20%;
         height: auto;
         position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-100%, -50%);
         transition: transform 0.2s ease-in-out;
    }
 
-   @media (max-width: 768px) {
-       #introductionContainer {
-           flex-direction: row;
-       }
-       #pictureContainer{
-           height: fit-content;
-       }
-       #profilePicture,
-       #hiddenProfilePicture{
-            width: 33vw;
-            height: auto;
-            margin-right: 8vw;
-            /* position: relative; */
-       }
-       #name {
-            font-size: xx-large;
-       }
-   }
-
-   #profilePicture{
-        opacity: 1;
-        z-index: 2;
-   }
-
-   #hiddenProfilePicture{
-       opacity: 0;
-       z-index: 1;
-   }
-
-   #profilePicture:hover{
-       opacity: 0;
-       transform: scale(1.1);
-       transition: opacity 0.2s ease-in-out;
-       & + #hiddenProfilePicture{
-           opacity: 1;
-           transform: scale(1.1);
-           transition: transform 0.2s ease-in-out;
-       }
-   }
 
    @keyframes hover{
         0% {
@@ -186,3 +147,33 @@
    /* note: might want to add a custom font for the name :) */
 
 }
+
+@media (max-width: 768px) {
+       #introductionContainer {
+           flex-direction: row;
+       }
+       #pictureContainer{
+           height: fit-content;
+       }
+       #profilePicture{
+            width: 33vw;
+            height: auto;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -110%);
+       }
+
+       #verticalContainer{
+            margin-left: 0;
+       }
+       #linkContainer{
+            gap: 8vw;
+       }
+       #scrollDownContainer{
+            top: 77vh;
+       }
+       #name {
+            font-size: xx-large;
+       }
+       
+   }

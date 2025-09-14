@@ -4,7 +4,6 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Image from 'next/image'
 import NavBar from '../../components/navBar/page'
-import '../globals.css'
 import AdagioPic from '../../assets/adagioPic.png'
 import LaloPic from '../../assets/laloPic.png'
 export default function Performances(){
@@ -26,7 +25,6 @@ function AdagioCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '28vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
@@ -42,7 +40,7 @@ function AdagioCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "medium", color: "#888" }}>Tomaso Albinoni and Remo Giazotto</div>
+                    <div style={{ fontSize: "small", color: "#888" }}>Tomaso Albinoni and Remo Giazotto</div>
                     <div style={{ fontWeight: "bold", fontSize: "large" }}>Adagio in G Minor</div>
                     <ul className = "awardsList">
                         <li>TMEA Solo and Ensemble Outstanding Performance Award(2023-2024)</li>
@@ -60,7 +58,6 @@ function LaloCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '28vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
@@ -76,7 +73,7 @@ function LaloCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "medium", color: "#888" }}>Eduardo Lalo</div>
+                    <div style={{ fontSize: "small", color: "#888" }}>Eduardo Lalo</div>
                     <div style={{ fontWeight: "bold", fontSize: "large" }}>Lalo Cello Concerto in D Minor Movement 1</div>
                     <ul className = "awardsList">
                         <li>TMEA Solo and Ensemble Outstanding Performance Award(2024-2025)</li>

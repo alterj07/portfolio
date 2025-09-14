@@ -42,10 +42,18 @@ body{
 
 .videoPicture{
     transition: 0.7s ease-in-out;
+    width: 27vw;
+    white-space: wrap;
 }
 
 .videoPicture:hover{
     transform: translateY(-2px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 1.2);
     transition: 0.7s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .videoPicture{
+        width: 46vw;
+    }
 }

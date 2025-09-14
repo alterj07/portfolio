@@ -33,11 +33,11 @@ function WordsOfWisdomCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '20vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <Image src = {WordsOfWisdomImg.src} alt = "Words-Of-Wisdom project screenshot" width='500' height='500'/>
             <CardContent 
                 sx = {{
@@ -47,9 +47,9 @@ function WordsOfWisdomCard() {
                     boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                     borderRadius: '0 0 16px 16px',
                 }}>
-                <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Words of Wisdom</div>
-                <div style={{ fontSize: "1rem", color: "#555", whiteSpace: 'wrap' }}>
+                <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                <div style={{ fontWeight: "bold", fontSize: "larger" }}>Words of Wisdom</div>
+                <div style={{ fontSize: "small", color: "#555", whiteSpace: 'wrap' }}>
                     Words of Wisdom is a quote generator that provides inspirational content whenever you need a boost. This project is my first experience working with Python Flask and attempting to create an API.
                 </div>
             </CardContent>
@@ -62,11 +62,11 @@ function CookieCrumblCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '20vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <Image src={CookieCrumblImg.src} alt="CookieCrumbl project screenshot" width='500' height='500'/>
             <CardContent 
                 sx = {{
@@ -76,9 +76,9 @@ function CookieCrumblCard() {
                     boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                     borderRadius: '0 0 16px 16px',
                 }}>
-                <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>CookieCrumbl</div>
-                <div style={{ fontSize: "1rem", color: "#555", whiteSpace: 'wrap' }}>
+                <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                <div style={{ fontWeight: "bold", fontSize: "larger" }}>CookieCrumbl</div>
+                <div style={{ fontSize: "small", color: "#555", whiteSpace: 'wrap' }}>
                     CookieCrumbl is a project developed for the Hack Club Scrapyard Hackathon, aiming to provide a unique and &quot;scrappy&quot; web experience. The website contains the &quot;cure to cancer&quot; but must first agree with cookies, human authentication, and a mass of ads. This was our first Hackathon. We&apos;ve learned a lot, and still have a lot to learn...
                 </div>
             </CardContent>

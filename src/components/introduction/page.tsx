@@ -26,10 +26,7 @@ export default function Introduction() {
 
     return (
         <div id = "introductionContainer">
-            <div id = "pictureContainer">
-                <Image src = {ProfilePic.src} alt="Jayden Chun" width='500' height='500' id = "profilePicture"/>
-                <Image src = {HiddenPic.src} alt="Jayden Chun" width='500' height='500' id = "hiddenProfilePicture"/>
-            </div>
+            <Image src = {ProfilePic.src} alt="Jayden Chun" width='500' height='500' id = "profilePicture"/>
             <div id = "verticalContainer">
                 <div id = "nameContainer">
                     <h1 id="name">Jayden Chun</h1>

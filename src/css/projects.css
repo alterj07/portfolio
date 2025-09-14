@@ -88,4 +88,15 @@
         justify-content: center;
         align-items: center;
     }
+
+    .cardClass {
+        width: 27vw;
+        white-space: wrap;
+    }
+
+    @media (max-width: 768px) {
+        .cardClass{
+            width: 45vw;
+        }
+    }
 }

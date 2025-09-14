@@ -70,6 +70,13 @@
         font-size: small;
         transition: 0.2s ease-in-out;
     }
+    .cardClass {
+        border-radius: 16px;
+        width: 20vw;
+        height: fit-content;
+        box-shadow: 5;
+        background-color: transparent;
+    }
 
     @media (max-width: 768px) {
         #featuredProjectsTitle {
@@ -83,6 +90,15 @@
         #projectsFeatureWrapper{
             /* background-color: red; */
             height: fit-content;
+        }
+
+        #projectsFeatureWrapper {
+            height: fit-content;
+            width: 100vw;
+        }
+
+        .cardClass {
+            width: 46vw;
         }
     }
 

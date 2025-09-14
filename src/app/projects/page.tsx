@@ -18,7 +18,7 @@ export default function Projects() {
          <div className="backgroundContainer">
             <NavBar/>
             <h1 className="topTitle">Projects!</h1>
-            <div style = {{display: 'flex', flexDirection: 'row', gap: '4vh'}}>
+            <div style = {{display: 'flex', flexDirection: 'row', gap: '3vh'}}>
                 <div style = {{display: 'flex', flexDirection: 'column', gap: '4vh'}}>
                     <WordsOfWisdomCard />
                     <PurePrepCard />
@@ -40,11 +40,11 @@ function WordsOfWisdomCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '27vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <a href = "https://words-of-wisdom.jhchun.dev" target = "_blank" rel="noopener noreferrer">
                 <Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" width='500' height='500'/>
                 <CardContent 
@@ -55,9 +55,9 @@ function WordsOfWisdomCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                    <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Words of Wisdom</div>
-                    <div style={{ fontSize: "1rem", color: "#555" }}>
+                    <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                    <div style={{ fontWeight: "bold", fontSize: "medium" }}>Words of Wisdom</div>
+                    <div style={{ fontSize: "small", color: "#555" }}>
                         Words of Wisdom is a quote generator that provides inspirational content whenever you need a boost. This project is my first experience working with Python Flask and attempting to create an API.
                     </div>
                 </CardContent>
@@ -71,11 +71,11 @@ function PortfolioCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '27vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <a href = "https://jhchun.dev" target = "_blank" rel="noopener noreferrer">
                 <Image src = {PortfolioPic.src} alt = "Portfolio Screenshot" width='500' height='500'/>
                 <CardContent 
@@ -86,9 +86,9 @@ function PortfolioCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                    <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Portfolio</div>
-                    <div style={{ fontSize: "1rem", color: "#555" }}>
+                    <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                    <div style={{ fontWeight: "bold", fontSize: "medium" }}>Portfolio</div>
+                    <div style={{ fontSize: "small", color: "#555" }}>
                         This website was built to serve as a centralized platform to present who I am as a developer and creator.
                     </div>
                 </CardContent>
@@ -102,11 +102,11 @@ function PurePrepCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '27vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <a href = "https://github.com/alterj07/PurePrep" target = "_blank" rel="noopener noreferrer">
                 <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '10vh', paddingBottom: '10vh' }}>
                     <CircularProgress />
@@ -119,9 +119,9 @@ function PurePrepCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                    <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>PurePrep</div>
-                    <div style={{ fontSize: "1rem", color: "#555" }}>
+                    <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                    <div style={{ fontWeight: "bold", fontSize: "medium" }}>PurePrep</div>
+                    <div style={{ fontSize: "small", color: "#555" }}>
                         My first attempt at creating a mobile application that can identify allergens in a food using a picture of said food. First created as a passion project, this was soon used as my CS3 class&apos; final project; however, due to the time restraint on the project, I was unable to create the final product and instead had to pivot the app for it to become a hotdog identification app.
                     </div>
                 </CardContent>
@@ -136,11 +136,11 @@ function CookieCrumblCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '27vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <a href = "https://cookiecrumbl.jhchun.dev" target = "_blank" rel="noopener noreferrer">
                 <Image src = {CookieCrumblPic.src} alt = "CookieCrumbl Project Screenshot" width='500' height='500'/>
                 <CardContent 
@@ -151,9 +151,9 @@ function CookieCrumblCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                    <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>CookieCrumbl</div>
-                    <div style={{ fontSize: "1rem", color: "#555" }}>
+                    <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                    <div style={{ fontWeight: "bold", fontSize: "medium" }}>CookieCrumbl</div>
+                    <div style={{ fontSize: "small", color: "#555" }}>
                         CookieCrumbl is a project developed for the Hack Club Scrapyard Hackathon, aiming to provide a unique and &quot;scrappy&quot; web experience. The website contains the &quot;cure to cancer&quot; but must first agree with cookies, human authentication, and a mass of ads. This was our first Hackathon. We&apos;ve learned a lot, and still have a lot to learn...
                     </div>
                 </CardContent>
@@ -168,11 +168,11 @@ function OrchestraCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '27vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <a href = "https://orchestral-pieces.jhchun.dev" target = "_blank" rel="noopener noreferrer">
                 <Image src = {OrchestraPic.src} alt = "Orchestral-Pieces Project Screenshot"  width='500' height='500'/>
                 <CardContent 
@@ -183,9 +183,9 @@ function OrchestraCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                    <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Orchestral-Pieces</div>
-                    <div style={{ fontSize: "1rem", color: "#555" }}>
+                    <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                    <div style={{ fontWeight: "bold", fontSize: "medium" }}>Orchestral-Pieces</div>
+                    <div style={{ fontSize: "small", color: "#555" }}>
                         My first website, created for Hack Club&apos;s Boba Drops YSWS. Includes the orchestral pieces that I enjoyed during my junior year of high school.
                     </div>
                 </CardContent>
@@ -199,11 +199,11 @@ function HiddenCheeseCard() {
         <Card
         sx = {{
             borderRadius: '16px',
-            width: '27vw',
             height: 'fit-content',
             boxShadow: 5,
             bgcolor: 'transparent'
-        }}>
+        }}
+        className = "cardClass">
             <a href = "https://sprig.hackclub.com/share/BOoX5Ew1gWPRESZAvVlY" target = "_blank" rel="noopener noreferrer">
                 <Image src = {SprigPic.src} alt = "Sprig Project Screenshot"  width='500' height='500'/>
                 <CardContent 
@@ -214,9 +214,9 @@ function HiddenCheeseCard() {
                         boxShadow: '0 8px 32px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.25)',
                         borderRadius: '0 0 16px 16px',
                     }}>
-                    <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
-                    <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Hidden Cheese</div>
-                    <div style={{ fontSize: "1rem", color: "#555" }}>
+                    <div style={{ fontSize: "smaller", color: "#888" }}>librarys/frameworks used</div>
+                    <div style={{ fontWeight: "bold", fontSize: "medium" }}>Hidden Cheese</div>
+                    <div style={{ fontSize: "small", color: "#555", whiteSpace: 'wrap' }}>
                         For Hack Club&apos;s Sprig YSWS, this is a simple mind-stretching single player game to warm-up your mind! Consume as many pieces of cheese as you can! Dodge enemies! Memorize patterns!
                     </div>
                 </CardContent>
