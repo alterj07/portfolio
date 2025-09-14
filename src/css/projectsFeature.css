@@ -30,7 +30,7 @@
         /* width: 900vw; */
         font-size: xx-large;
         font-weight: bold;
-        color: white;
+        color: black;
         margin-bottom: 2vh;
     }
 
@@ -39,7 +39,7 @@
         flex-direction: row;
         flex-wrap:nowrap;
         position: relative;
-        height: 60vh;
+        height: 70vh;
         width: 100vw;
         justify-content: center;
         padding-top: 1rem;
@@ -55,6 +55,7 @@
         border-width: 1;
         padding: 5;
         border-radius: 20;
+        border-color: black;
         transition: 0.2s ease-in-out;
     }
 
@@ -63,7 +64,7 @@
     }
 
     #viewMoreText {
-        color: white;
+        color: black;
         font-weight: bold;
         font-size: small;
         transition: 0.2s ease-in-out;

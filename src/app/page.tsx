@@ -4,13 +4,11 @@ import Footer from '../components/footer/page';
 import Introduction from '../components/introduction/page';
 import ScrollDownButton from '../components/scrollDownButton/page'
 import TimelineClient from '../components/timeline/TimelineClient';
-// ...
 import './globals.css';
 import "../css/classes.css" 
 export default function Home() {
   return (
     <div className = "mainContainer">
-        <Backgrounds />
         <NavigationBar />
         <Introduction />
         <ScrollDownButton />
@@ -19,13 +17,5 @@ export default function Home() {
         <FeatureProjects />
         <Footer />
     </div>
-  );
-}
-
-function Backgrounds() {
-  return (
-    <>
-      <div className="background" />
-    </>
   );
 }

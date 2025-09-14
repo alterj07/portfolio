@@ -5,6 +5,7 @@
 @layer base{
     body{
         white-space: nowrap;
+        background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%);
     }
     #introductionContainer {
         display: flex;
@@ -39,7 +40,7 @@
         transition: 0.3s ease-in-out;
     }
     .linkIcon:hover{
-        color: white;
+        color: grey;
     }
     #name {
         color: black;
@@ -135,7 +136,7 @@
         mix-blend-mode:color-dodge;
         font-weight: bolder;
         font-size: large;
-        color: white;
+        color: black;
    }
 
    #container {

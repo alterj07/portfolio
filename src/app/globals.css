@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
+  /* --background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%); */
+  --background: red;
   --foreground: #171717;
 }
 
@@ -14,8 +15,9 @@
   }
 }
 
-body {
+html, body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overscroll-behavior: none;
 }

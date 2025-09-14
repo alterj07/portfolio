@@ -5,7 +5,7 @@
 
 @layer components {
     body{
-      background-color: black;
+      background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%);background-color: black;
     }
     .mainContainer {
         display: flex;
@@ -15,14 +15,14 @@
         overflow: hidden;
     }
 
-    .background{
+    /* .background{
       position: fixed;
       top: 0;
       min-height: 100vh;
       width: 100vw;
       background: linear-gradient(0.5deg, black 20%, #1f214d 30%, #50366f 60%, #ee6c45 80%, #ffce61 100%);
       z-index: -1;
-    }
+    } */
 
     .footerContainer {
       position: absolute;
@@ -36,7 +36,7 @@
     }
 
     .footerText {
-      color: #fff;
+      color: black;
       font-size: xx-small;
 
     }
