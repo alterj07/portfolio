@@ -2,7 +2,6 @@ import React from 'react'
 import '../../css/performances.css'
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import Box from '@mui/material/Box';
 import Image from 'next/image'
 import NavBar from '../../components/navBar/page'
 import '../globals.css'
