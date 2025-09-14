@@ -122,7 +122,7 @@ function PurePrepCard() {
                     <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
                     <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>PurePrep</div>
                     <div style={{ fontSize: "1rem", color: "#555" }}>
-                        My first attempt at creating a mobile application that can identify allergens in a food using a picture of said food. First created as a passion project, this was soon used as my CS3 class' final project; however, due to the time restraint on the project, I was unable to create the final product and instead had to pivot the app for it to become a hotdog identification app.
+                        My first attempt at creating a mobile application that can identify allergens in a food using a picture of said food. First created as a passion project, this was soon used as my CS3 class&apos; final project; however, due to the time restraint on the project, I was unable to create the final product and instead had to pivot the app for it to become a hotdog identification app.
                     </div>
                 </CardContent>
             </a>
@@ -186,7 +186,7 @@ function OrchestraCard() {
                     <div style={{ fontSize: "0.9rem", color: "#888" }}>librarys/frameworks used</div>
                     <div style={{ fontWeight: "bold", fontSize: "1.2rem" }}>Orchestral-Pieces</div>
                     <div style={{ fontSize: "1rem", color: "#555" }}>
-                        My first website, created for Hack Club's Boba Drops YSWS. Includes the orchestral pieces that I enjoyed during my junior year of high school.
+                        My first website, created for Hack Club&apos;s Boba Drops YSWS. Includes the orchestral pieces that I enjoyed during my junior year of high school.
                     </div>
                 </CardContent>
             </a>
