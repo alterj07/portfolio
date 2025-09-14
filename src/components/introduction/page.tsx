@@ -4,7 +4,6 @@ import Image from 'next/image'
 import "../../css/classes.css" 
 import '../../css/introduction.css'
 import ProfilePic from '../../assets/2.png'
-import HiddenPic from '../../assets/1.png'
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
