@@ -1,3 +1,4 @@
+'use client'
 import NavigationBar from '../components/navBar'
 import FeatureProjects from '../components/projectsFeature';
 import Footer from '../components/footer';
