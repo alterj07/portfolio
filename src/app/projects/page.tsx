@@ -6,9 +6,9 @@ import NavBar from '../../components/navBar'
 import WordsOfWisdomCard from '@/components/projectCards/WordsOfWisdomCard';
 import PortfolioCard from '@/components/projectCards/PortfolioCard'
 import PurePrepCard from '@/components/projectCards/PurePrepCard'
-import CookieCrumblCard from '@/components/projectCards/WordsOfWisdomCard';
-import OrchestraCard from '@/components/projectCards/PortfolioCard'
-import HiddenCheeseCard from '@/components/projectCards/PurePrepCard'
+import CookieCrumblCard from '@/components/projectCards/CookieCrumblCard';
+import OrchestraCard from '@/components/projectCards/OrchestraCard'
+import HiddenCheeseCard from '@/components/projectCards/HiddenCheeseCard'
 export default function Projects() {
     return (
          <div className="backgroundContainer">
