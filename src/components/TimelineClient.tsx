@@ -1,5 +1,5 @@
 "use client";
-import TimelineComponent from './page';
+import TimelineComponent from './timeline';
 export default function TimelineClient() {
   return <TimelineComponent />;
 }

@@ -1,9 +1,10 @@
+'use client'
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
-import SilviaPic from '../../assets/silvia-logo.png'
-import NASAPic from '../../assets/nasa-logo3.png'
-import TAMUPic from '../../assets/tamu.png'
-import McNeilPic from '../../assets/mcneil-logo1.png'
+import SilviaPic from '../assets/silvia-logo.png'
+import NASAPic from '../assets/nasa-logo3.png'
+import TAMUPic from '../assets/tamu.png'
+import McNeilPic from '../assets/mcneil-logo1.png'
 export function SilviaLogo() {
   return (
         <a href = "https://en.silvia.io" target="_blank" rel="noopener noreferrer">

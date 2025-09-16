@@ -1,4 +1,5 @@
-import '../../css/timeline.css'
+'use client'
+import '../css/timeline.css'
 import * as React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
@@ -9,10 +10,10 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
-import {SilviaLogo} from '../timelineIcons/page';
-import {NASALogo} from '../timelineIcons/page';
-import {McNeilLogo} from '../timelineIcons/page';
-import {TAMULogo} from '../timelineIcons/page';
+import {SilviaLogo} from './timelineIcons';
+import {NASALogo} from './timelineIcons';
+import {McNeilLogo} from './timelineIcons';
+import {TAMULogo} from './timelineIcons';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 

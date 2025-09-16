@@ -1,9 +1,9 @@
-import NavigationBar from '../components/navBar/page';
-import FeatureProjects from '../components/projectsFeature/page';
-import Footer from '../components/footer/page';
-import Introduction from '../components/introduction/page';
-import ScrollDownButton from '../components/scrollDownButton/page'
-import TimelineClient from '../components/timeline/TimelineClient';
+import NavigationBar from '../components/navBar'
+import FeatureProjects from '../components/projectsFeature';
+import Footer from '../components/footer';
+import Introduction from '../components/introduction';
+import ScrollDownButton from '../components/scrollDownButton'
+import TimelineClient from '../components/TimelineClient';
 import './globals.css';
 import "../css/classes.css" 
 export default function Home() {

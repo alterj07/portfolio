@@ -1,7 +1,6 @@
 'use client'
-
 import React from 'react'
-import '../../css/introduction.css'
+import '../css/introduction.css'
 import { FaAngleDown } from "react-icons/fa6";
 export default function ScrollDownButton() {
 

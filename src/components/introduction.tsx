@@ -1,13 +1,13 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import "../../css/classes.css" 
-import '../../css/introduction.css'
-import ProfilePic from '../../assets/2.png'
+import "../css/classes.css" 
+import '../css/introduction.css'
+import ProfilePic from '../assets/2.png'
 import { FiGithub } from "react-icons/fi";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
-import NotficationBox from '../../components/notificationBox/page'
+import NotficationBox from './notificationBox'
 export default function Introduction() {
     const [isCopied, setIsCopied] = useState(false);
     const email = "jayden.h.chun@gmail.com";

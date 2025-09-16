@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Link from 'next/link';
-import '../../css/navBar.css';
+import '../css/navBar.css';
 
 export default function NavBar() {
   return (

@@ -1,5 +1,6 @@
+'use client'
 import React from 'react';
-import '../../css/introduction.css'
+import '../css/introduction.css'
 interface Props {
   visible: boolean;
   text: string;
