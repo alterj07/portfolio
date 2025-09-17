@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 import Introduction from '../components/introduction';
 import ScrollDownButton from '../components/scrollDownButton'
 import TimelineClient from '../components/TimelineClient';
-import './globals.css';
+// import './globals.css';
 import "../css/classes.css" 
 export default function Home() {
   return (
