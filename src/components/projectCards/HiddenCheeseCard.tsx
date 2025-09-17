@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Image from 'next/image'
 import SprigPic from '../../assets/sprig.png'
+import "../../css/projects.css"
 export default function HiddenCheeseCard() {
   return(
         <Card

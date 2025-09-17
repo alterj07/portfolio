@@ -3,6 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Image from 'next/image'
 import CookieCrumblPic from '../../assets/cookieCrumbl.png'
+import "../../css/projects.css"
 export default function CookieCrumblCard() {
   return(
         <Card

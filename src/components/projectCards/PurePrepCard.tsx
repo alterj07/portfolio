@@ -3,7 +3,7 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import CircularProgress from '@mui/material/CircularProgress'
 import Box from '@mui/material/Box'
-
+import "../../css/projects.css"
 export default function PurePrepCard() {
   return(
         <Card
