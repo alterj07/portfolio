@@ -103,6 +103,23 @@
         transition: 0.7s ease-in-out;
     }
 
+    .languageComponent {
+        display: flex;
+        gap: 0.5rem;
+        background-color:black;
+        width: fit-content;
+        padding: 5px 10px;
+        border-radius: 15px;
+    }
+
+    .languageText {
+        font-size: small;
+        font-weight: bold;
+        color: white;
+        text-shadow: 0 1px 3px rgba(255, 255, 255, 0.4),
+        0 0 5px rgba(255, 255, 255, 0.2);
+    }
+
     @media (max-width: 768px) {
         .cardClass{
             width: 45vw;
