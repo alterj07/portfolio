@@ -18,7 +18,7 @@ export default function OrchestraCard() {
         }}
         className = "cardClass">
             <a href = "https://orchestral-pieces.jhchun.dev" target = "_blank" rel="noopener noreferrer">
-                <Image src = {OrchestraPic.src} alt = "Orchestral-Pieces Project Screenshot"  width='500' height='500'/>
+                <Image src = {OrchestraPic.src} alt = "Orchestral-Pieces Project Screenshot" />
             </a>
             <CardContent 
                 sx = {{

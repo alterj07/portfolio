@@ -18,7 +18,7 @@ export default function WordsOfWisdomCard() {
         }}
         className = "cardClass">
             <a href = "https://words-of-wisdom.jhchun.dev" target = "_blank" rel="noopener noreferrer">
-                <Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" width='500' height='500'/>
+                <Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" />
             </a>
             <CardContent 
                 sx = {{
