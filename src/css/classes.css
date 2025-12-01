@@ -5,13 +5,14 @@
 
 @layer base {
     html{
-      background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%);
+      /* background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%); */
+      background-color: #3b3b3b;
     }
     .mainContainer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 100vw; 
         height: fit-content;
         overflow: hidden;
     }
