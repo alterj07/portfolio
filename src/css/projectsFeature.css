@@ -30,7 +30,7 @@
         /* width: 900vw; */
         font-size: xx-large;
         font-weight: bold;
-        color: black;
+        color: #ded3d3;
         margin-bottom: 2vh;
     }
 
@@ -65,7 +65,7 @@
     }
 
     #viewMoreText {
-        color: black;
+        color: #ded3d3;
         font-weight: bold;
         font-size: small;
         transition: 0.2s ease-in-out;

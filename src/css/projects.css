@@ -38,7 +38,7 @@
         font-weight: bold;
         margin-top: 15vh;
         margin-bottom: 1rem;
-        color: white;
+        color: #ded3d3;
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
         0 0 5px rgba(0, 0, 0, 0.2);
         text-align: center;
@@ -52,7 +52,7 @@
         justify-content: center;
         font-weight: bold;
         flex-direction: column;
-        color: white;
+        color: #ded3d3;
         font-size: 1.5rem;
         padding-bottom: 1rem;
         background-color: green;
@@ -73,7 +73,7 @@
     .projectsGrid h2{
         font-size: 1.25rem;
         font-weight: bold;
-        color: white;
+        color: #ded3d3;
         border: 1px solid yellow;
         text-align: center;
     }
@@ -106,13 +106,13 @@
     .languageText {
         font-size: small;
         font-weight: bold;
-        color: white;
+        color: #ded3d3;
         text-shadow: 0 1px 3px rgba(255, 255, 255, 0.4),
         0 0 5px rgba(255, 255, 255, 0.2);
     }
 
     .githubIcon {
-        color: white;
+        color: #ded3d3;
         text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
         0 0 5px rgba(0, 0, 0, 0.2);
         font-size: xx-large;

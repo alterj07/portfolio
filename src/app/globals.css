@@ -2,6 +2,7 @@
   /* --background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%); */
   --background: red;
   --foreground: #171717;
+  --color: #ded3d3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -12,7 +13,7 @@
 }
 
 html, body {
-  color: var(--foreground);
+  color: var(--color);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   overscroll-behavior: none;

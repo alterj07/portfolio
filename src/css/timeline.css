@@ -39,48 +39,48 @@ body{
 .timeline-description {
     list-style-type: disc;
     margin-left: 1vw;
-    color: black;
+    color: #ded3d3;
     white-space: wrap;
 }
 
 .timeline-description li {
     margin-bottom: 0.5rem;
     font-size: small;
-    color: black;
+    color: #ded3d3;
 }
 
 .timeline-date{
     font-weight: bold;
     font-size: small;
-    color: black;
+    color: #ded3d3;
 }
 
 .timeline-name{
     font-weight: bold;
     font-size: large;
-    color: black;
+    color: #ded3d3;
 }
 
 .timeline-title{
     font-style: italic;
     font-size: small;
-    color: black;
+    color: #ded3d3;
 }
 
 .timeline-buttons {
     backdrop-filter: blur(10px);
     border: 2px solid black;
-    color: black;
+    color: #ded3d3;
     transition: color 0.3s;
 }
 
 .timeline-button:hover {
-    color: black;
+    color: #ded3d3;
 }
 
 .timeline-button-text {
     /* font-size: 0.9vw; */
     font-size: small;
     font-weight: bold;
-    color: black;
+    color: #ded3d3;
 }

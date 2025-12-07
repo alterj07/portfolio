@@ -40,7 +40,7 @@
         margin-top: 1vh;
     }
     .linkIcon{
-        color: black;
+        color: #ded3d3;
         transition: 0.3s ease-in-out;
     }
     .linkIcon:hover{
@@ -52,10 +52,10 @@
         font-size: xxx-large;
    }
    #githubLogo {
-        color: black;
+        color: #ded3d3;
    }
     #description {
-        color: black;
+        color: #ded3d3;
         font-weight: bold;
         font-size: x-large;
         font-style: italic;
