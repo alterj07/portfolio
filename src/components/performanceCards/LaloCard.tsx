@@ -25,7 +25,7 @@ export default function LaloCard() {
                         borderRadius: '0 0 16px 16px',
                     }}>
                     <div style={{ fontSize: "small", color: "#888" }}>Eduardo Lalo</div>
-                    <div style={{ fontWeight: "bold", fontSize: "large" }}>Lalo Cello Concerto in D Minor Movement 1</div>
+                    <div style={{ fontWeight: "bold", fontSize: "large", color: "#ded3d3" }}>Lalo Cello Concerto in D Minor Movement 1</div>
                     <ul className = "awardsList">
                         <li>TMEA Solo and Ensemble Outstanding Performance Award(2024-2025)</li>
                     </ul>

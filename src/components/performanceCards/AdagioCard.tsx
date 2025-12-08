@@ -27,7 +27,7 @@ export default function AdagioCard() {
                         borderRadius: '0 0 16px 16px',
                     }}>
                     <div style={{ fontSize: "small", color: "#888" }}>Tomaso Albinoni and Remo Giazotto</div>
-                    <div style={{ fontWeight: "bold", fontSize: "large" }}>Adagio in G Minor</div>
+                    <div style={{ fontWeight: "bold", fontSize: "large", color: "#ded3d3" }}>Adagio in G Minor</div>
                     <ul className = "awardsList">
                         <li>TMEA Solo and Ensemble Outstanding Performance Award(2023-2024)</li>
                         <li>New York International Young Musician Competition 2nd Prize(2024)</li>
