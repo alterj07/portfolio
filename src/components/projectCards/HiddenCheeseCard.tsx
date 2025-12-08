@@ -17,7 +17,7 @@ export default function HiddenCheeseCard() {
         }}
         className = "cardClass">
             <a href = "https://sprig.hackclub.com/share/BOoX5Ew1gWPRESZAvVlY" target = "_blank" rel="noopener noreferrer">
-                <Image src = {SprigPic.src} alt = "Sprig Project Screenshot" fill = {true} />
+                <Image src = {SprigPic.src} alt = "Sprig Project Screenshot" width='500' height='500' />
             </a>
             <CardContent 
                 sx = {{
@@ -33,8 +33,8 @@ export default function HiddenCheeseCard() {
                         <FaGithub className = "githubIcon"/>
                     </a>
                 </div>
-                <div style={{ fontWeight: "bold", fontSize: "medium" }}>Hidden Cheese</div>
-                <div style={{ fontSize: "small", color: "#555", whiteSpace: 'wrap' }}>
+                <div style={{ fontWeight: "bold", fontSize: "medium", color: "#ded3d3" }}>Hidden Cheese</div>
+                <div style={{ fontSize: "small", color: "#ded3d3", whiteSpace: 'wrap' }}>
                     For Hack Club&apos;s Sprig YSWS, this is a simple mind-stretching single player game to warm-up your mind! Consume as many pieces of cheese as you can! Dodge enemies! Memorize patterns!
                 </div>
             </CardContent>

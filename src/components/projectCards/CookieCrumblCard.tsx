@@ -19,7 +19,7 @@ export default function CookieCrumblCard() {
         }}
         className = "cardClass">
             <a href = "https://cookiecrumbl.jhchun.dev" target = "_blank" rel="noopener noreferrer">
-                <Image src = {CookieCrumblPic.src} alt = "CookieCrumbl Project Screenshot" fill = {true} />
+                <Image src = {CookieCrumblPic.src} alt = "CookieCrumbl Project Screenshot" width='500' height='500' />
             </a>
             <CardContent 
                 sx = {{
@@ -37,8 +37,8 @@ export default function CookieCrumblCard() {
                         <FaGithub className = "githubIcon"/>
                     </a>
                 </div>
-                <div style={{ fontWeight: "bold", fontSize: "medium" }}>CookieCrumbl</div>
-                <div style={{ fontSize: "small", color: "#555" }}>
+                <div style={{ fontWeight: "bold", fontSize: "medium", color: "#ded3d3" }}>CookieCrumbl</div>
+                <div style={{ fontSize: "small", color: "#ded3d3" }}>
                     CookieCrumbl is a project developed for the Hack Club Scrapyard Hackathon, aiming to provide a unique and &quot;scrappy&quot; web experience. The website contains the &quot;cure to cancer&quot; but must first agree with cookies, human authentication, and a mass of ads. This was our first Hackathon. We&apos;ve learned a lot, and still have a lot to learn...
                 </div>
             </CardContent>

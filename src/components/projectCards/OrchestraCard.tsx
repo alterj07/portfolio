@@ -18,7 +18,7 @@ export default function OrchestraCard() {
         }}
         className = "cardClass">
             <a href = "https://orchestral-pieces.jhchun.dev" target = "_blank" rel="noopener noreferrer">
-                <Image src = {OrchestraPic.src} alt = "Orchestral-Pieces Project Screenshot" fill = {true} />
+                <Image src = {OrchestraPic.src} alt = "Orchestral-Pieces Project Screenshot" width='500' height='500'/>
             </a>
             <CardContent 
                 sx = {{
@@ -35,8 +35,8 @@ export default function OrchestraCard() {
                         <FaGithub className = "githubIcon"/>
                     </a>
                 </div>
-                <div style={{ fontWeight: "bold", fontSize: "medium" }}>Orchestral-Pieces</div>
-                <div style={{ fontSize: "small", color: "#555" }}>
+                <div style={{ fontWeight: "bold", fontSize: "medium", color: "#ded3d3" }}>Orchestral-Pieces</div>
+                <div style={{ fontSize: "small", color: "#ded3d3" }}>
                     My first website, created for Hack Club&apos;s Boba Drops YSWS. Includes the orchestral pieces that I enjoyed during my junior year of high school.
                 </div>
             </CardContent>

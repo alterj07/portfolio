@@ -39,8 +39,8 @@ export default function PurePrepCard() {
                         <FaGithub className = "githubIcon"/>
                     </a>
                 </div>
-                <div style={{ fontWeight: "bold", fontSize: "medium" }}>PurePrep</div>
-                <div style={{ fontSize: "small", color: "#555" }}>
+                <div style={{ fontWeight: "bold", fontSize: "medium", color: "#ded3d3" }}>PurePrep</div>
+                <div style={{ fontSize: "small", color: "#ded3d3" }}>
                     My first attempt at creating a mobile application that can identify allergens in a food using a picture of said food. First created as a passion project, this was soon used as my CS3 class&apos; final project; however, due to the time restraint on the project, I was unable to create the final product and instead had to pivot the app for it to become a hotdog identification app.
                 </div>
             </CardContent>

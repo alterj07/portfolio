@@ -18,7 +18,7 @@ export default function PortfolioCard() {
         }}
         className = "cardClass">
             <a href = "https://jhchun.dev" target = "_blank" rel="noopener noreferrer">
-                <Image src = {PortfolioPic.src} alt = "Portfolio Screenshot" fill = {true} />
+                <Image src = {PortfolioPic.src} alt = "Portfolio Screenshot" width='500' height='500' />
             </a>
             <CardContent 
                 sx = {{
@@ -35,8 +35,8 @@ export default function PortfolioCard() {
                         <FaGithub className = "githubIcon"/>
                     </a>
                 </div>
-                <div style={{ fontWeight: "bold", fontSize: "medium" }}>Portfolio</div>
-                <div style={{ fontSize: "small", color: "#555" }}>
+                <div style={{ fontWeight: "bold", fontSize: "medium", color: "#ded3d3" }}>Portfolio</div>
+                <div style={{ fontSize: "small", color: "#ded3d3" }}>
                     This website was built to serve as a centralized platform to present who I am as a developer and creator.
                 </div>
             </CardContent>
