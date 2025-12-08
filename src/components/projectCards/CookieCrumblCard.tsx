@@ -19,7 +19,7 @@ export default function CookieCrumblCard() {
         }}
         className = "cardClass">
             <a href = "https://cookiecrumbl.jhchun.dev" target = "_blank" rel="noopener noreferrer">
-                <Image src = {CookieCrumblPic.src} alt = "CookieCrumbl Project Screenshot" />
+                <Image src = {CookieCrumblPic.src} alt = "CookieCrumbl Project Screenshot" fill = {true} />
             </a>
             <CardContent 
                 sx = {{

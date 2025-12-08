@@ -47,7 +47,7 @@
         color: grey;
     }
     #name {
-        color: black;
+        color: #ded3d3;
         font-weight: bold;
         font-size: xxx-large;
    }
@@ -98,7 +98,7 @@
         mix-blend-mode:color-dodge;
         font-weight: bolder;
         font-size: large;
-        color: black;
+        color: #ded3d3;
    }
 
    #container {

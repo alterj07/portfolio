@@ -17,7 +17,7 @@ export default function HiddenCheeseCard() {
         }}
         className = "cardClass">
             <a href = "https://sprig.hackclub.com/share/BOoX5Ew1gWPRESZAvVlY" target = "_blank" rel="noopener noreferrer">
-                <Image src = {SprigPic.src} alt = "Sprig Project Screenshot" />
+                <Image src = {SprigPic.src} alt = "Sprig Project Screenshot" fill = {true} />
             </a>
             <CardContent 
                 sx = {{

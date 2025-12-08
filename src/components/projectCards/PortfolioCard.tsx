@@ -18,7 +18,7 @@ export default function PortfolioCard() {
         }}
         className = "cardClass">
             <a href = "https://jhchun.dev" target = "_blank" rel="noopener noreferrer">
-                <Image src = {PortfolioPic.src} alt = "Portfolio Screenshot" />
+                <Image src = {PortfolioPic.src} alt = "Portfolio Screenshot" fill = {true} />
             </a>
             <CardContent 
                 sx = {{
