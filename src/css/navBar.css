@@ -16,11 +16,11 @@
         transition-property: color;
         transition-duration: 700ms;
         transition-timing-function: ease-in-out;
-        transition: all 0.7s ease-in-out;
+        transition: fadeIn 0.7s;
         overflow: hidden;
     }
     .navBarItems:hover {
-        transition: all 0.7s ease-in-out;
+        transition: all 0.7s;
         border-radius: 30px;
         transform: translateY(-1px);
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
@@ -28,6 +28,12 @@
     .navBarItems:active{
         background-color: black;
     }
+
+    @keyframes fadeIn {
+        from { opacity: 0;}
+        to { opacity: 1;}
+    }
+
     .navBarContainer {
         display: flex;
         flex-direction: row;

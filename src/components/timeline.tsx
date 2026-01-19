@@ -104,7 +104,7 @@ function SilviaTimeline() {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent className = "timeline-content">
-                <h4 className = "timeline-date">June 2025 - Present</h4>
+                <h4 className = "timeline-date">June 2025 - August 2025</h4>
                 <h3 className = "timeline-name">Silvia</h3>
                 <h4 className = "timeline-title">Intern</h4>
                 <div className = "timeline-description-container">
@@ -129,7 +129,7 @@ function TAMUResearchTimeline() {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent  className = "timeline-content">
-                <h4 className = "timeline-date">June 2025 - Present</h4>
+                <h4 className = "timeline-date">June 2025 - July 2025</h4>
                 <h3 className = "timeline-name">A&amp;M Research</h3>
                 <h4 className = "timeline-title">Research Assistant/Lab Intern</h4>
                 <ul className = "timeline-description">
