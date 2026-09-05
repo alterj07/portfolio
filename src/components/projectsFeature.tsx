@@ -19,7 +19,7 @@ export default function FeatureProjects() {
                     </div> 
                 </div>
             </ScrollReveal>
-            <ScrollReveal delay={150} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+            <ScrollReveal delay={350} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <div id = "projectsFeatureWrapper">
                     <div id = "projectsFeatureContainer" style = {{gap: '4vh'}}>
                         <WordsOfWisdomCard/>

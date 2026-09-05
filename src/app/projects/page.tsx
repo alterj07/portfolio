@@ -16,10 +16,12 @@ export default function Projects() {
     return (
          <div className="backgroundContainer">
             <NavBar/>
+            <h1 className="topTitle">Projects</h1>
             <ScrollReveal>
                 <h1 className="topTitle">Projects</h1>
             </ScrollReveal>
             <div className="cardsGrid">
+                <OrchestraCard />
                 <ScrollReveal delay={0} style={{ width: '100%', height: '100%' }}>
                     <WordsOfWisdomCard />
                 </ScrollReveal>
