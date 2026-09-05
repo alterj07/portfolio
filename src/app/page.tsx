@@ -7,15 +7,21 @@ import ScrollDownButton from '../components/scrollDownButton'
 import TimelineClient from '../components/TimelineClient';
 // import './globals.css';
 import "../css/classes.css" 
+import ScrollReveal from '../components/ScrollReveal';
+
 export default function Home() {
   return (
-    <div className = "mainContainer">
+    <div className="mainContainer">
         <NavigationBar />
-        <Introduction />
+        <ScrollReveal className="w-full flex justify-center">
+            <Introduction />
+        </ScrollReveal>
         <ScrollDownButton />
         <TimelineClient />
         <FeatureProjects />
-        <Footer />
+        <ScrollReveal className="w-full flex justify-center">
+            <Footer />
+        </ScrollReveal>
     </div>
   );
 }

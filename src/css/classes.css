@@ -14,7 +14,7 @@
         align-items: center;
         width: 100%;
         height: fit-content;
-        overflow: hidden;
+        overflow-x: clip;
     }
 
     .footerContainer {
@@ -119,7 +119,7 @@
     /* Shared media frame + zoom-on-hover for project + performance card thumbnails */
     .cardMedia {
         display: block;
-        overflow: hidden;
+        overflow: clip;
     }
 
     .cardMedia img {
