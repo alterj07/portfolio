@@ -8,10 +8,11 @@
       background-color: var(--color-bg);
     }
     .mainContainer {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         height: fit-content;
         overflow: hidden;
     }
@@ -21,7 +22,7 @@
       background: inherit;
       z-index: 10;
       left: 0;
-      width: 100vw;
+      width: 100%;
       height: fit-content;
       display: flex;
       justify-content: center;
@@ -40,7 +41,7 @@
         background-color: var(--color-bg);
         flex-direction: column;
         align-items: center;
-        width: 100vw;
+        width: 100%;
         min-height: 100vh;
         margin: 0;
         padding-bottom: 4rem;

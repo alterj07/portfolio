@@ -41,14 +41,18 @@
     }
     .linkIcon{
         color: var(--color-text-secondary);
-        font-size: 1.6rem;
-        padding: 0.6rem;
+        font-size: 2.1rem;
+        padding: 0.75rem;
         border-radius: 999px;
-        transition: color 0.25s var(--ease-standard), background-color 0.25s var(--ease-standard);
+        transition: color 0.35s var(--ease-standard), background-color 0.35s var(--ease-standard), transform 0.35s var(--ease-standard);
     }
     .linkIcon:hover{
         color: var(--color-accent);
         background-color: var(--color-accent-soft);
+        transform: scale(1.12);
+    }
+    .linkIcon:active{
+        transform: scale(0.96);
     }
     #name {
         color: var(--color-text-primary);
@@ -91,11 +95,13 @@
         flex-direction: column;
         position: absolute;
         top: 90vh;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: fit-content;
         align-items: center;
         height: fit-content;
-        animation: hover 4s ease-in-out infinite;
    }
 
    #scrollDownText {
@@ -112,6 +118,7 @@
         gap: 0.35rem;
         transition: opacity 0.3s var(--ease-standard);
         color: var(--color-text-tertiary);
+        animation: hover 4s ease-in-out infinite;
    }
 
    #container:hover{

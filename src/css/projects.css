@@ -47,15 +47,25 @@
         color: var(--color-accent);
     }
 
-    .githubIcon {
-        color: var(--color-text-secondary);
-        font-size: 1.35rem;
-        padding: 4px;
-        border-radius: 999px;
-        transition: color 0.2s var(--ease-standard);
+    .cardTitleLink {
+        text-decoration: none;
+        color: inherit;
+        width: fit-content;
+        transition: color 0.25s var(--ease-standard);
     }
 
-    .githubIcon:hover {
+    .cardTitleLink:hover {
+        color: var(--color-accent);
+    }
+
+    .cardTitleGithubIcon {
+        flex-shrink: 0;
+        font-size: 0.95em;
+        color: var(--color-text-secondary);
+        transition: color 0.25s var(--ease-standard);
+    }
+
+    .cardTitleLink:hover .cardTitleGithubIcon {
         color: var(--color-accent);
     }
 }
