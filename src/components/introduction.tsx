@@ -31,7 +31,7 @@ export default function Introduction() {
             <div id = "verticalContainer">
                 <div id = "nameContainer">
                     <h1 id="name">Jayden Chun</h1>
-                    <p id="description">Aspiring Engineer<br/>Marathoner</p>
+                    <p id="description">Aspiring Engineer<br/>Marathoner<br/>Proud Aggie</p>
                 </div>
                 <div id = "linkContainer">
                     <a href = "https://www.github.com/alterj07"
