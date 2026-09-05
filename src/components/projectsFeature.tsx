@@ -14,7 +14,7 @@ export default function FeatureProjects() {
                     <h1 id = "featuredProjectsTitle">Featured Projects</h1>
                 </div>
             </ScrollReveal>
-            <ScrollReveal delay={150} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+            <ScrollReveal delay={350} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <div id = "projectsFeatureWrapper">
                     <div id = "projectsFeatureContainer" style = {{gap: '4vh'}}>
                         <WordsOfWisdomCard/>
