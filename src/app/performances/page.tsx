@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import '@/css/classes.css'
 import '../../css/performances.css'
 import NavBar from '../../components/navBar'
 import LaloCard from '@/components/performanceCards/LaloCard'
@@ -9,7 +10,7 @@ export default function Performances(){
         <div className="backgroundContainer">
             <NavBar />
             <h1 className="topTitle">Performances</h1>
-            <div style = {{display: 'flex', flexDirection: 'row', gap: '4vw'}}>
+            <div className="cardsGrid">
                 <LaloCard />
                 <AdagioCard />
             </div>
