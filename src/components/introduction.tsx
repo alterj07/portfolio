@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react';
 import Image from 'next/image'
-import "../css/classes.css" 
+import "../css/classes.css"
 import '../css/introduction.css'
 import ProfilePic from '../assets/2.png'
 import { FiGithub } from "react-icons/fi";
@@ -25,7 +25,9 @@ export default function Introduction() {
 
     return (
         <div id = "introductionContainer">
-            <Image src = {ProfilePic.src} alt="Jayden Chun" width='500' height='500' id = "profilePicture"/>
+            <div id = "pictureContainer">
+                <Image src = {ProfilePic.src} alt="Jayden Chun" width='500' height='500' id = "profilePicture"/>
+            </div>
             <div id = "verticalContainer">
                 <div id = "nameContainer">
                     <h1 id="name">Jayden Chun</h1>

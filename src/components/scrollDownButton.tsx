@@ -19,7 +19,7 @@ export default function ScrollDownButton() {
         <div id="scrollDownContainer">
             <div id="container" onClick={handleScrollDown} style={{cursor: 'pointer'}}>
                 <span id="scrollDownText">Scroll Down for More</span>
-                <FaAngleDown size="2em" color="black"/>
+                <FaAngleDown size="1.35em" color="currentColor"/>
             </div>
         </div>
     )
