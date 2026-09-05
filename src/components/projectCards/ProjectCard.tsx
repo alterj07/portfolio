@@ -24,14 +24,12 @@ export default function ProjectCard({ href, githubHref, title, description, lang
             <CardContent className="cardContent" sx={{ padding: 0, '&:last-child': { paddingBottom: 0 } }}>
                 <div className="cardMetaRow">
                     {languages}
-                    <a href={githubHref} target="_blank" rel="noopener noreferrer" style={{ marginLeft: 'auto', display: 'flex' }}>
-                        <FaGithub className="githubIcon" />
-                    </a>
                 </div>
-                <div className="cardTitle">
+                <a href={githubHref} target="_blank" rel="noopener noreferrer" className="cardTitle cardTitleLink">
+                    <FaGithub className="cardTitleGithubIcon" />
                     <span>{title}</span>
                     <FiArrowUpRight className="cardTitleArrow" />
-                </div>
+                </a>
                 <div className="cardDescription">{description}</div>
             </CardContent>
         </Card>
