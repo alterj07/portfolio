@@ -1,68 +1,32 @@
 @import "tailwindcss/base";
-@import "tailwindcss/components"; 
+@import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
 @layer base {
-    .backgroundContainer{
-        /* position: absolute;
-        height: 100vh;
-        width: 100vw;
-        background: radial-gradient(#fff591 30%, #ffc57d 70%, #ff9e9e 100%);
-        z-index: -1;
-        display: flex;
-        flex-direction: column;
-        align-items: center; */
-        display: flex;
-        background-color: #3b3b3b;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw; 
-        min-height: 250%;
-        margin: 0;
-        overflow: hidden;
-    }
-
-    .topTitle {
-        font-size: xxx-large;
-        font-weight: bold;
-        margin-top: 15vh;
-        margin-bottom: 1rem;
-        color: white;
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
-        0 0 5px rgba(0, 0, 0, 0.2);
-        text-align: center;
-        justify-content: center;
-    }
-
-    .topTitle:hover{
-        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4),
-        0 0 5px rgba(0, 0, 0, 0.2);
-    }
-
     .awardsList{
         list-style-type: disc;
-        font-size: small;
-        margin-left: 1vw;
-        gap: 1vh;
-        white-space: wrap;
-        color: #ded3d3;
+        font-size: 0.8rem;
+        line-height: 1.5;
+        margin-left: 1.1rem;
+        margin-top: 0.4rem;
+        color: var(--color-text-secondary);
     }
 
     .videoPicture{
-        transition: 0.7s ease-in-out;
-        width: 27vw;
-        white-space: wrap;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+        background-color: var(--color-bg-elevated);
+        border: 1px solid var(--color-border);
+        box-shadow: 0 1px 2px rgba(28, 25, 20, 0.04);
+        transition: transform 0.3s var(--ease-standard), box-shadow 0.3s var(--ease-standard), border-color 0.3s var(--ease-standard);
     }
 
     .videoPicture:hover{
-        transform: translateY(-2px);
-        box-shadow: 0 8px 15px rgba(0, 0, 0, 1.2);
-        transition: 0.7s ease-in-out;
-    }
-
-    @media (max-width: 768px) {
-        .videoPicture{
-            width: 46vw;
-        }
+        transform: translateY(-4px);
+        box-shadow: 0 16px 32px rgba(28, 25, 20, 0.09);
+        border-color: var(--color-border-strong);
     }
 }

@@ -1,5 +1,6 @@
 'use client'
 import '../globals.css';
+import '@/css/classes.css';
 import "../../css/projects.css"
 import React from "react";
 import NavBar from '../../components/navBar'
@@ -14,17 +15,13 @@ export default function Projects() {
          <div className="backgroundContainer">
             <NavBar/>
             <h1 className="topTitle">Projects!</h1>
-            <div style = {{display: 'flex', flexDirection: 'row', gap: '3vh'}}>
-                <div style = {{display: 'flex', flexDirection: 'column', gap: '4vh'}}>
-                    <WordsOfWisdomCard />
-                    <PurePrepCard />
-                    <HiddenCheeseCard />
-                </div>
-                <div style = {{display: 'flex', flexDirection: 'column', gap: '4vh'}}>
-                    <PortfolioCard />
-                    <CookieCrumblCard />
-                    <OrchestraCard />
-                </div>
+            <div className="cardsGrid">
+                <WordsOfWisdomCard />
+                <PortfolioCard />
+                <PurePrepCard />
+                <CookieCrumblCard />
+                <HiddenCheeseCard />
+                <OrchestraCard />
             </div>
         </div>
     )
