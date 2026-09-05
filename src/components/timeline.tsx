@@ -1,6 +1,7 @@
 'use client'
 import '../css/timeline.css'
 import * as React from 'react';
+import ScrollReveal from './ScrollReveal';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -59,35 +60,43 @@ export default function TimelineComponent(){
     if(mode === 'education'){
         return (
         <div id = "timelineComponent">
-            <div id = "timelineTopContainer">
-                <TimelineButtons mode={mode} onModeChange={handleModeChange} />
-            </div>
-            <div id =  "timelineContainer">
-                <div id = "timelineEducation">
-                    <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
-                    {/* <Timeline id = "timeline"> */}
-                        <McNeilTimeline />
-                    </Timeline>
+            <ScrollReveal>
+                <div id = "timelineTopContainer">
+                    <TimelineButtons mode={mode} onModeChange={handleModeChange} />
                 </div>
-            </div>
+            </ScrollReveal>
+            <ScrollReveal delay={150} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                <div id =  "timelineContainer">
+                    <div id = "timelineEducation">
+                        <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
+                        {/* <Timeline id = "timeline"> */}
+                            <McNeilTimeline />
+                        </Timeline>
+                    </div>
+                </div>
+            </ScrollReveal>
         </div>
     )
     }
     else if(mode === 'experience'){
         return (
             <div id = "timelineComponent">
-                <div id = "timelineTopContainer">
-                    <TimelineButtons mode={mode} onModeChange={handleModeChange} />
-                </div>
-                <div id =  "timelineContainer">
-                    <div id = "timelineExperience">
-                        <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
-                            <SilviaTimeline />
-                            <TAMUResearchTimeline />
-                            <NASATimeline />
-                        </Timeline>
+                <ScrollReveal>
+                    <div id = "timelineTopContainer">
+                        <TimelineButtons mode={mode} onModeChange={handleModeChange} />
                     </div>
-                </div>
+                </ScrollReveal>
+                <ScrollReveal delay={150} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+                    <div id =  "timelineContainer">
+                        <div id = "timelineExperience">
+                            <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
+                                <SilviaTimeline />
+                                <TAMUResearchTimeline />
+                                <NASATimeline />
+                            </Timeline>
+                        </div>
+                    </div>
+                </ScrollReveal>
             </div>
         )
     }
