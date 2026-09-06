@@ -118,7 +118,7 @@ function DateMaroonTimeline() {
             <TimelineContent className = "timeline-content">
                 <h4 className = "timeline-date">July 2026 - Current</h4>
                 <h3 className = "timeline-name">Date Maroon</h3>
-                <h4 className = "timeline-title">Intern</h4>
+                <h4 className = "timeline-title">Software Engineering Intern</h4>
                 <div className = "timeline-description-container">
                     <ul className = "timeline-description">
                         <li>Conducted structured user acceptance testing (UAT) on a personality-insights iOS application, evaluating functionality, performance, and user experience during weekly test sessions and documenting findings for engineering review.</li>
@@ -144,7 +144,7 @@ function SilviaTimeline() {
             <TimelineContent className = "timeline-content">
                 <h4 className = "timeline-date">June 2025 - August 2025</h4>
                 <h3 className = "timeline-name">Silvia</h3>
-                <h4 className = "timeline-title">Intern</h4>
+                <h4 className = "timeline-title">Student Intern</h4>
                 <div className = "timeline-description-container">
                     <ul className = "timeline-description">
                         <li>Performed UI/UX testing and feature validation for a mobile dementia-prevention platform, identifying critical usability improvements for elderly users and communicating findings to the team.</li>
@@ -194,7 +194,7 @@ function NASATimeline() {
             <TimelineContent  className = "timeline-content">
                 <h4 className = "timeline-date">October 2024 - July 2025</h4>
                 <h3 className = "timeline-name">NASA HAS Aerospace Scholars</h3>
-                <h4 className = "timeline-title">Intern</h4>
+                <h4 className = "timeline-title">Research Intern</h4>
                 <ul className = "timeline-description">
                     <li>Completed NASA Aerospace Scholars program modules emphasizing engineering, CAD modeling, and systems design, finishing the year with an A+ average.</li>
                     <li>Collaborated with a team of 7 peers to engineer a lunar habitat module using CAD and systems design, successfully passing a rigorous NASA mission simulation review.</li>
