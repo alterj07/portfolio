@@ -12,7 +12,11 @@ export default function CookieCrumblCard() {
       href="https://cookiecrumbl.jhchun.dev"
       githubHref="https://github.com/alterj07/CookieCrumbl"
       title="CookieCrumbl"
-      description={<>CookieCrumbl is a project developed for the Hack Club Scrapyard Hackathon, aiming to provide a unique and &quot;scrappy&quot; web experience. The website contains the &quot;cure to cancer&quot; but must first agree with cookies, human authentication, and a mass of ads. This was our first Hackathon. We&apos;ve learned a lot, and still have a lot to learn...</>}
+      bullets={[
+        "Developed for Hack Club's Scrapyard Hackathon as a satirical, humorous web experience.",
+        "Features interactive cookie consent traps, captcha human authentication, and dynamic ad popups.",
+        "First collaborative hackathon project emphasizing DOM manipulation and responsive design.",
+      ]}
       languages={<><HTMLComponent /><CSSComponent /><JavaScriptComponent /></>}
       media={<Image src={CookieCrumblPic.src} alt="CookieCrumbl Project Screenshot" width="500" height="500" />}
     />

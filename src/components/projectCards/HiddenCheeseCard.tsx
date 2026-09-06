@@ -10,7 +10,11 @@ export default function HiddenCheeseCard() {
       href="https://sprig.hackclub.com/share/BOoX5Ew1gWPRESZAvVlY"
       githubHref="https://github.com/alterj07/Sprig"
       title="Hidden Cheese"
-      description="For Hack Club's Sprig YSWS, this is a simple mind-stretching single player game to warm-up your mind! Consume as many pieces of cheese as you can! Dodge enemies! Memorize patterns!"
+      bullets={[
+        "Developed for Hack Club's Sprig console as an engaging 2D puzzle arcade game.",
+        "Players navigate mazes to collect cheese while dodging patrolling enemies and memorizing patterns.",
+        "Programmed using Sprig's lightweight JavaScript game engine and custom tilemaps.",
+      ]}
       languages={<JavaScriptComponent />}
       media={<Image src={SprigPic.src} alt="Sprig Project Screenshot" width="500" height="500" />}
     />

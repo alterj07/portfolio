@@ -18,7 +18,6 @@ export default function Projects() {
             <NavBar/>
             <h1 className="topTitle">Projects</h1>
             <div className="cardsGrid">
-                <OrchestraCard />
                 <ScrollReveal delay={0} style={{ width: '100%', height: '100%' }}>
                     <WordsOfWisdomCard />
                 </ScrollReveal>

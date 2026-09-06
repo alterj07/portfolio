@@ -11,16 +11,67 @@
         white-space: normal;
         border-radius: 20px;
         overflow: clip;
-        background-color: var(--color-bg-elevated);
-        border: 1px solid var(--color-border);
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-        transition: transform 0.4s var(--ease-standard), box-shadow 0.4s var(--ease-standard), border-color 0.4s var(--ease-standard);
+        padding: 1.25rem;
+        background-color: transparent !important;
+        border: 1px solid transparent !important;
+        box-shadow: 0 0 0 0 transparent !important;
+        transform: translateY(0);
+        transition: background-color 0.55s var(--ease-standard),
+                    border-color 0.55s var(--ease-standard),
+                    box-shadow 0.55s var(--ease-standard),
+                    transform 0.55s var(--ease-standard) !important;
     }
 
-    .cardClass:hover{
+    .cardClass:hover {
+        background-color: var(--color-bg-elevated) !important;
+        border-color: var(--color-border-strong) !important;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4) !important;
         transform: translateY(-4px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+        transition: background-color 0.55s var(--ease-standard),
+                    border-color 0.55s var(--ease-standard),
+                    box-shadow 0.55s var(--ease-standard),
+                    transform 0.55s var(--ease-standard) !important;
+    }
+
+    /* Override shared .cardContent inside .cardClass to blend seamlessly */
+    .cardClass .cardContent {
+        background: transparent !important;
+        border-top: none !important;
+        padding: 1rem 0.25rem 0.25rem !important;
+        gap: 0.75rem;
+    }
+
+    /* Sleek rectangular media frame mimicking Sawad reference */
+    .cardClass .cardMedia {
+        display: block;
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 10;
+        border-radius: 14px;
+        overflow: clip;
+        background-color: var(--color-bg-subtle);
+        border: 1px solid var(--color-border);
+        transition: border-color 0.55s var(--ease-standard);
+    }
+
+    .cardClass:hover .cardMedia {
         border-color: var(--color-border-strong);
+        transition: border-color 0.55s var(--ease-standard);
+    }
+
+    .cardClass .cardMedia img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+        transform: scale(1);
+        transition: transform 0.55s var(--ease-standard);
+    }
+
+    .cardClass:hover .cardMedia img {
+        transform: scale(1.04);
+        transition: transform 0.55s var(--ease-standard);
     }
 
     .cardMetaRow {
@@ -28,7 +79,6 @@
         align-items: center;
         gap: 0.5rem;
         flex-wrap: wrap;
-        margin-bottom: 0.2rem;
     }
 
     .languageComponent {
@@ -39,6 +89,12 @@
         width: fit-content;
         padding: 4px 10px;
         border-radius: 999px;
+        transition: border-color 0.55s var(--ease-standard), background-color 0.55s var(--ease-standard);
+    }
+
+    .cardClass:hover .languageComponent {
+        border-color: var(--color-border-strong);
+        transition: border-color 0.55s var(--ease-standard), background-color 0.55s var(--ease-standard);
     }
 
     .languageText {
@@ -51,21 +107,53 @@
         text-decoration: none;
         color: inherit;
         width: fit-content;
-        transition: color 0.25s var(--ease-standard);
+        transition: color 0.55s var(--ease-standard);
     }
 
     .cardTitleLink:hover {
         color: var(--color-accent);
+        transition: color 0.55s var(--ease-standard);
     }
 
     .cardTitleGithubIcon {
         flex-shrink: 0;
         font-size: 0.95em;
         color: var(--color-text-secondary);
-        transition: color 0.25s var(--ease-standard);
+        transition: color 0.55s var(--ease-standard);
     }
 
-    .cardTitleLink:hover .cardTitleGithubIcon {
+    .cardClass:hover .cardTitleGithubIcon {
         color: var(--color-accent);
+        transition: color 0.55s var(--ease-standard);
+    }
+
+    /* Bullet point styling */
+    .cardBulletList {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.45rem;
+    }
+
+    .cardBulletItem {
+        position: relative;
+        padding-left: 1.15rem;
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: var(--color-text-secondary);
+        white-space: normal;
+    }
+
+    .cardBulletItem::before {
+        content: "";
+        position: absolute;
+        left: 0.2rem;
+        top: 0.55em;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: var(--color-accent);
     }
 }

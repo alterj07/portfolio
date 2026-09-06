@@ -31,15 +31,17 @@
     }
 
     #projectsFeatureContainer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.5rem 2rem;
+        width: min(72rem, 90vw);
+        justify-content: center;
+        align-items: start;
     }
 
     #projectsFeatureWrapper {
         display: flex;
-        width: min(72rem, 90vw);
+        width: 100%;
         justify-content: center;
     }
 
@@ -48,7 +50,7 @@
         right: 0;
         top: 50%;
         transform: translateY(-50%);
-        transition: transform 0.25s var(--ease-standard), opacity 0.25s var(--ease-standard);
+        transition: transform 0.35s var(--ease-standard), opacity 0.35s var(--ease-standard);
     }
 
     #viewMoreContainer:hover{
@@ -62,28 +64,19 @@
         font-size: 0.85rem;
     }
 
-    .cardClass {
-        flex: 1 1 320px;
-        max-width: 24rem;
-    }
-
     @media (max-width: 768px) {
         #topProjectsContainer {
             width: 92vw;
         }
 
         #projectsFeatureWrapper {
-            width: 92vw;
+            width: 100%;
         }
 
         #projectsFeatureContainer {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .cardClass {
-            flex: 1 1 100%;
-            max-width: 100%;
+            grid-template-columns: 1fr;
+            width: 92vw;
+            gap: 2rem;
         }
     }
 

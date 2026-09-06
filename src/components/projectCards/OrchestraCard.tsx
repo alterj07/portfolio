@@ -11,7 +11,11 @@ export default function OrchestraCard() {
       href="https://orchestral-pieces.jhchun.dev"
       githubHref="https://github.com/alterj07/orchestral-pieces"
       title="Orchestral-Pieces"
-      description="My first website, created for Hack Club's Boba Drops YSWS. Includes the orchestral pieces that I enjoyed during my junior year of high school."
+      bullets={[
+        "Created as my first web development project for Hack Club's Boba Drops initiative.",
+        "Showcases a curated collection of classical orchestral pieces performed during high school.",
+        "Designed with clean HTML and CSS to create an accessible audio and visual listening library.",
+      ]}
       languages={<><HTMLComponent /><CSSComponent /></>}
       media={<Image src={OrchestraPic.src} alt="Orchestral-Pieces Project Screenshot" width="500" height="500" />}
     />
