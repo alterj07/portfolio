@@ -4,7 +4,8 @@ import Image from 'next/image'
 import "../css/classes.css"
 import '../css/introduction.css'
 import ProfilePic from '../assets/2.png'
-import { FiGithub, FiLinkedin } from "react-icons/fi";
+import { FiGithub } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
 import NotficationBox from './notificationBox'
@@ -53,7 +54,7 @@ export default function Introduction() {
                     <a href = "https://linkedin.com/in/alterj07"
                         target = "_blank"
                         rel = "noopener noreferrer">
-                        <FiLinkedin className = "linkIcon"/>
+                        <FaLinkedin className = "linkIcon"/>
                     </a>
                 </div>
             </div>
