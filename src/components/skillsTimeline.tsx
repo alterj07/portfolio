@@ -15,18 +15,12 @@ import '../css/timeline.css';
 
 export default function SkillsTimeline() {
     return (
-        <div id="skillsTimelineContainer">
-            <div className="skillsHeaderRow">
-                <h2 className="skillsHeader">Skills</h2>
-            </div>
-            <Timeline
-                id="skillsTimeline"
-                sx={{
-                    [`& .${timelineOppositeContentClasses.root}`]: { flex: 0 },
-                    padding: 0,
-                    margin: 0,
-                }}
-            >
+        <Timeline
+            id="timeline"
+            sx={{
+                [`& .${timelineOppositeContentClasses.root}`]: { flex: 0 },
+            }}
+        >
                 {/* 1. Programming Languages */}
                 <TimelineItem className="timeline-item">
                     <TimelineOppositeContent />
@@ -126,7 +120,6 @@ export default function SkillsTimeline() {
                     </TimelineContent>
                 </TimelineItem>
             </Timeline>
-        </div>
     );
 }
 

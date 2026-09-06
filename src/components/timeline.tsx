@@ -49,6 +49,9 @@ function TimelineButtons({ mode, onModeChange }: TimelineButtonsProps) {
             <ToggleButton value="experience" aria-label="experience" className="timeline-button">
                 <p className="timeline-button-text">Experience</p>
             </ToggleButton>
+            <ToggleButton value="skills" aria-label="skills" className="timeline-button">
+                <p className="timeline-button-text">Skills</p>
+            </ToggleButton>
         </ToggleButtonGroup>
     );
 }
@@ -68,27 +71,30 @@ export default function TimelineComponent(){
                 </div>
             </ScrollReveal>
             <ScrollReveal delay={150} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                <div id = "timelineRowContainer">
-                    <div id = "timelineContainer">
-                        {mode === 'education' ? (
-                            <div id = "timelineEducation">
-                                <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
-                                    <TAMUTimeline />
-                                    <McNeilTimeline />
-                                </Timeline>
-                            </div>
-                        ) : (
-                            <div id = "timelineExperience">
-                                <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
-                                    <DateMaroonTimeline />
-                                    <SilviaTimeline />
-                                    <TAMUResearchTimeline />
-                                    <NASATimeline />
-                                </Timeline>
-                            </div>
-                        )}
-                    </div>
-                    <SkillsTimeline />
+                <div id = "timelineContainer">
+                    {mode === 'education' && (
+                        <div id = "timelineEducation">
+                            <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
+                                <TAMUTimeline />
+                                <McNeilTimeline />
+                            </Timeline>
+                        </div>
+                    )}
+                    {mode === 'experience' && (
+                        <div id = "timelineExperience">
+                            <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
+                                <DateMaroonTimeline />
+                                <SilviaTimeline />
+                                <TAMUResearchTimeline />
+                                <NASATimeline />
+                            </Timeline>
+                        </div>
+                    )}
+                    {mode === 'skills' && (
+                        <div id = "timelineSkills">
+                            <SkillsTimeline />
+                        </div>
+                    )}
                 </div>
             </ScrollReveal>
         </div>
