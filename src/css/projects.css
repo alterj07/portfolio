@@ -15,10 +15,11 @@
         background-color: transparent !important;
         border: 1px solid transparent !important;
         box-shadow: 0 0 0 0 transparent !important;
-        transition: background-color 0.35s var(--ease-standard),
-                    border-color 0.35s var(--ease-standard),
-                    box-shadow 0.35s var(--ease-standard),
-                    transform 0.35s var(--ease-standard);
+        transform: translateY(0);
+        transition: background-color 0.55s var(--ease-standard),
+                    border-color 0.55s var(--ease-standard),
+                    box-shadow 0.55s var(--ease-standard),
+                    transform 0.55s var(--ease-standard) !important;
     }
 
     .cardClass:hover {
@@ -26,6 +27,10 @@
         border-color: var(--color-border-strong) !important;
         box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4) !important;
         transform: translateY(-4px);
+        transition: background-color 0.55s var(--ease-standard),
+                    border-color 0.55s var(--ease-standard),
+                    box-shadow 0.55s var(--ease-standard),
+                    transform 0.55s var(--ease-standard) !important;
     }
 
     /* Override shared .cardContent inside .cardClass to blend seamlessly */
@@ -44,14 +49,14 @@
         aspect-ratio: 16 / 10;
         border-radius: 14px;
         overflow: clip;
-        color: aliceblue;
         background-color: var(--color-bg-subtle);
         border: 1px solid var(--color-border);
-        transition: border-color 0.35s var(--ease-standard);
+        transition: border-color 0.55s var(--ease-standard);
     }
 
     .cardClass:hover .cardMedia {
         border-color: var(--color-border-strong);
+        transition: border-color 0.55s var(--ease-standard);
     }
 
     .cardClass .cardMedia img {
@@ -60,11 +65,13 @@
         height: 100%;
         object-fit: cover;
         object-position: top center;
-        transition: transform 0.35s var(--ease-standard);
+        transform: scale(1);
+        transition: transform 0.55s var(--ease-standard);
     }
 
     .cardClass:hover .cardMedia img {
         transform: scale(1.04);
+        transition: transform 0.55s var(--ease-standard);
     }
 
     .cardMetaRow {
@@ -82,11 +89,12 @@
         width: fit-content;
         padding: 4px 10px;
         border-radius: 999px;
-        transition: border-color 0.35s var(--ease-standard), background-color 0.35s var(--ease-standard);
+        transition: border-color 0.55s var(--ease-standard), background-color 0.55s var(--ease-standard);
     }
 
     .cardClass:hover .languageComponent {
         border-color: var(--color-border-strong);
+        transition: border-color 0.55s var(--ease-standard), background-color 0.55s var(--ease-standard);
     }
 
     .languageText {
@@ -99,22 +107,24 @@
         text-decoration: none;
         color: inherit;
         width: fit-content;
-        transition: color 0.35s var(--ease-standard);
+        transition: color 0.55s var(--ease-standard);
     }
 
     .cardTitleLink:hover {
         color: var(--color-accent);
+        transition: color 0.55s var(--ease-standard);
     }
 
     .cardTitleGithubIcon {
         flex-shrink: 0;
         font-size: 0.95em;
         color: var(--color-text-secondary);
-        transition: color 0.35s var(--ease-standard);
+        transition: color 0.55s var(--ease-standard);
     }
 
     .cardClass:hover .cardTitleGithubIcon {
         color: var(--color-accent);
+        transition: color 0.55s var(--ease-standard);
     }
 
     /* Bullet point styling */
