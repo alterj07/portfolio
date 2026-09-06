@@ -18,6 +18,7 @@ import {McNeilLogo} from './timelineIcons';
 import {TAMULogo} from './timelineIcons';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
+import SkillsTimeline from './skillsTimeline';
 
 interface TimelineButtonsProps {
     mode: string;
@@ -58,8 +59,8 @@ export default function TimelineComponent(){
     const handleModeChange = (newMode: string) => {
         setMode(newMode);
     };
-    if(mode === 'education'){
-        return (
+
+    return (
         <div id = "timelineComponent">
             <ScrollReveal>
                 <div id = "timelineTopContainer">
@@ -67,42 +68,31 @@ export default function TimelineComponent(){
                 </div>
             </ScrollReveal>
             <ScrollReveal delay={150} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                <div id =  "timelineContainer">
-                    <div id = "timelineEducation">
-                        <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
-                        {/* <Timeline id = "timeline"> */}
-                            <TAMUTimeline />
-                            <McNeilTimeline />
-                        </Timeline>
+                <div id = "timelineRowContainer">
+                    <div id = "timelineContainer">
+                        {mode === 'education' ? (
+                            <div id = "timelineEducation">
+                                <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
+                                    <TAMUTimeline />
+                                    <McNeilTimeline />
+                                </Timeline>
+                            </div>
+                        ) : (
+                            <div id = "timelineExperience">
+                                <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
+                                    <DateMaroonTimeline />
+                                    <SilviaTimeline />
+                                    <TAMUResearchTimeline />
+                                    <NASATimeline />
+                                </Timeline>
+                            </div>
+                        )}
                     </div>
+                    <SkillsTimeline />
                 </div>
             </ScrollReveal>
         </div>
-    )
-    }
-    else if(mode === 'experience'){
-        return (
-            <div id = "timelineComponent">
-                <ScrollReveal>
-                    <div id = "timelineTopContainer">
-                        <TimelineButtons mode={mode} onModeChange={handleModeChange} />
-                    </div>
-                </ScrollReveal>
-                <ScrollReveal delay={150} style={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-                    <div id =  "timelineContainer">
-                        <div id = "timelineExperience">
-                            <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
-                                <DateMaroonTimeline />
-                                <SilviaTimeline />
-                                <TAMUResearchTimeline />
-                                <NASATimeline />
-                            </Timeline>
-                        </div>
-                    </div>
-                </ScrollReveal>
-            </div>
-        )
-    }
+    );
 }
 
 function DateMaroonTimeline() {

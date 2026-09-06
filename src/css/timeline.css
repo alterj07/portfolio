@@ -13,17 +13,35 @@
     margin-bottom: 2rem;
 }
 
-#timelineContainer {
+#timelineRowContainer {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 2rem;
+    width: min(72rem, 90vw);
+    align-items: start;
+}
+
+#timelineContainer,
+#skillsTimelineContainer {
     padding: 2rem 2.5rem;
     background-color: var(--color-bg-elevated);
     border: 1px solid var(--color-border);
     border-radius: 20px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-    width: min(46rem, 90vw);
+    width: 100%;
+}
+
+@media (max-width: 900px) {
+    #timelineRowContainer {
+        grid-template-columns: 1fr;
+        width: min(46rem, 90vw);
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
-    #timelineContainer {
+    #timelineContainer,
+    #skillsTimelineContainer {
         width: 100%;
         padding: 1.5rem 1rem;
     }
@@ -107,3 +125,95 @@
 .timeline-button.Mui-selected .timeline-button-text {
     color: var(--color-text-primary);
 }
+
+/* Skills Timeline specific styling */
+.skillsHeaderRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+    padding: 0 0.5rem 0.75rem 0.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.skillsHeader {
+    font-weight: 700;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+    color: var(--color-text-primary);
+}
+
+.skillsPillContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.skillPill {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    background-color: var(--color-accent-soft);
+    border: 1px solid var(--color-border);
+    padding: 3px 9px;
+    border-radius: 999px;
+    transition: border-color 0.35s var(--ease-standard), background-color 0.35s var(--ease-standard), transform 0.35s var(--ease-standard);
+}
+
+.skillPill:hover {
+    border-color: var(--color-border-strong);
+    background-color: rgba(240, 161, 61, 0.22);
+    transform: translateY(-1px);
+}
+
+.certificationsList {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+}
+
+.certificationEntry {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding: 0.65rem 0.85rem;
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    transition: border-color 0.35s var(--ease-standard);
+}
+
+.certificationEntry:hover {
+    border-color: var(--color-border-strong);
+}
+
+.certificationHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.certificationName {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.certificationDate {
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.certificationIssuer {
+    font-size: 0.8rem;
+    color: var(--color-text-secondary);
+    margin: 0;
+}
+
