@@ -11,7 +11,7 @@ export default function PortfolioCard() {
       href="https://jhchun.dev"
       githubHref="https://github.com/alterj07/portfolio"
       title="Portfolio"
-      date="May 2025 - September 2026"
+      date="May 2025 - Current"
       bullets={[
         "Central hub showcasing software engineering projects, research experience, and cello performances.",
         "Built with Next.js App Router, TypeScript, Tailwind CSS, and custom bidirectional scroll reveal animations.",
