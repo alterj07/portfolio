@@ -11,7 +11,11 @@ export default function WordsOfWisdomCard() {
       href="https://words-of-wisdom.jhchun.dev"
       githubHref="https://github.com/alterj07/words-of-wisdom"
       title="Words of Wisdom"
-      description="Words of Wisdom is a quote generator that provides inspirational content whenever you need a boost. This project is my first experience working with Python Flask and attempting to create an API."
+      bullets={[
+        "Interactive inspirational quote generator delivering uplifting thoughts and wisdom on demand.",
+        "Built with a Python Flask REST API backend to dynamically serve curated quotes.",
+        "First full-stack project integrating a custom Python web service with a responsive frontend.",
+      ]}
       languages={<><HTMLComponent /><PythonComponent /></>}
       media={<Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}
     />

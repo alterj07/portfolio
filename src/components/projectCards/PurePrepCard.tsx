@@ -12,10 +12,14 @@ export default function PurePrepCard() {
       href="https://github.com/alterj07/PurePrep"
       githubHref="https://github.com/alterj07/PurePrep"
       title="PurePrep"
-      description={<>My first attempt at creating a mobile application that can identify allergens in a food using a picture of said food. First created as a passion project, this was soon used as my CS3 class&apos; final project; however, due to the time restraint on the project, I was unable to create the final product and instead had to pivot the app for it to become a hotdog identification app.</>}
+      bullets={[
+        "Cross-platform mobile app built with React Native and Expo for real-time food classification.",
+        "Integrated TensorFlow machine learning models for computer vision and allergen detection.",
+        "Developed as a CS3 capstone project focusing on mobile UI, camera input, and on-device inference.",
+      ]}
       languages={<><ReactNativeComponent /><TensorFlowComponent /><ExpoComponent /></>}
       media={
-        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', paddingTop: '4rem', paddingBottom: '4rem', backgroundColor: 'var(--color-bg-subtle)' }}>
+        <Box sx={{ width: '100%', height: '100%', minHeight: '160px', display: 'flex', justifyContent: 'center', alignItems: 'center', backgroundColor: 'var(--color-bg-subtle)' }}>
           <CircularProgress sx={{ color: 'var(--color-accent)' }} />
         </Box>
       }

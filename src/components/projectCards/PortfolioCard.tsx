@@ -11,7 +11,11 @@ export default function PortfolioCard() {
       href="https://jhchun.dev"
       githubHref="https://github.com/alterj07/portfolio"
       title="Portfolio"
-      description="This website was built to serve as a centralized platform to present who I am as a developer and creator."
+      bullets={[
+        "Central hub showcasing software engineering projects, research experience, and cello performances.",
+        "Built with Next.js App Router, TypeScript, Tailwind CSS, and custom bidirectional scroll reveal animations.",
+        "Designed with a modern, responsive minimalist dark-mode aesthetic.",
+      ]}
       languages={<><TypeScriptComponent /><NextJSComponent /></>}
       media={<Image src={PortfolioPic.src} alt="Portfolio Screenshot" width="500" height="500" />}
     />

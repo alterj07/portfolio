@@ -10,14 +10,15 @@ interface ProjectCardProps {
     href: string;
     githubHref: string;
     title: string;
-    description: React.ReactNode;
+    bullets?: string[];
+    description?: React.ReactNode;
     languages: React.ReactNode;
     media: React.ReactNode;
 }
 
-export default function ProjectCard({ href, githubHref, title, description, languages, media }: ProjectCardProps) {
+export default function ProjectCard({ href, githubHref, title, bullets, description, languages, media }: ProjectCardProps) {
     return (
-        <Card sx={{ boxShadow: 'none', bgcolor: 'transparent' }} className="cardClass">
+        <Card sx={{ boxShadow: 'none', bgcolor: 'transparent', backgroundImage: 'none' }} className="cardClass">
             <a href={href} target="_blank" rel="noopener noreferrer" className="cardMedia">
                 {media}
             </a>
@@ -30,7 +31,17 @@ export default function ProjectCard({ href, githubHref, title, description, lang
                     <span>{title}</span>
                     <FiArrowUpRight className="cardTitleArrow" />
                 </a>
-                <div className="cardDescription">{description}</div>
+                {bullets && bullets.length > 0 ? (
+                    <ul className="cardBulletList">
+                        {bullets.map((bullet, idx) => (
+                            <li key={idx} className="cardBulletItem">
+                                {bullet}
+                            </li>
+                        ))}
+                    </ul>
+                ) : (
+                    <div className="cardDescription">{description}</div>
+                )}
             </CardContent>
         </Card>
     );

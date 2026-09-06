@@ -12,11 +12,16 @@ export default function FeatureProjects() {
             <ScrollReveal style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <div id = "topProjectsContainer">
                     <h1 id = "featuredProjectsTitle">Featured Projects</h1>
+                    <div id = "viewMoreContainer">
+                        <Link href = "/projects">
+                            <p id = "viewMoreText">view more {'>'}</p>
+                        </Link>
+                    </div>
                 </div>
             </ScrollReveal>
-            <ScrollReveal delay={350} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+            <ScrollReveal delay={150} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <div id = "projectsFeatureWrapper">
-                    <div id = "projectsFeatureContainer" style = {{gap: '4vh'}}>
+                    <div id = "projectsFeatureContainer">
                         <WordsOfWisdomCard/>
                         <CookieCrumblCard/>
                     </div>
