@@ -12,6 +12,7 @@ export default function PurePrepCard() {
       href="https://github.com/alterj07/PurePrep"
       githubHref="https://github.com/alterj07/PurePrep"
       title="PurePrep"
+      date="May 2025"
       bullets={[
         "Cross-platform mobile app built with React Native and Expo for real-time food classification.",
         "Integrated TensorFlow machine learning models for computer vision and allergen detection.",

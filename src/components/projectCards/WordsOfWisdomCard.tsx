@@ -11,6 +11,7 @@ export default function WordsOfWisdomCard() {
       href="https://words-of-wisdom.jhchun.dev"
       githubHref="https://github.com/alterj07/words-of-wisdom"
       title="Words of Wisdom"
+      date="January 2025"
       bullets={[
         "Interactive inspirational quote generator delivering uplifting thoughts and wisdom on demand.",
         "Built with a Python Flask REST API backend to dynamically serve curated quotes.",

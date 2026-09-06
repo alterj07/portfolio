@@ -8,13 +8,14 @@ interface ProjectCardProps {
     href: string;
     githubHref: string;
     title: string;
+    date?: string;
     bullets?: string[];
     description?: React.ReactNode;
     languages: React.ReactNode;
     media: React.ReactNode;
 }
 
-export default function ProjectCard({ href, githubHref, title, bullets, description, languages, media }: ProjectCardProps) {
+export default function ProjectCard({ href, githubHref, title, date, bullets, description, languages, media }: ProjectCardProps) {
     return (
         <div className="cardClass">
             <a href={href} target="_blank" rel="noopener noreferrer" className="cardMedia">
@@ -24,11 +25,14 @@ export default function ProjectCard({ href, githubHref, title, bullets, descript
                 <div className="cardMetaRow">
                     {languages}
                 </div>
-                <a href={githubHref} target="_blank" rel="noopener noreferrer" className="cardTitle cardTitleLink">
-                    <FaGithub className="cardTitleGithubIcon" />
-                    <span>{title}</span>
-                    <FiArrowUpRight className="cardTitleArrow" />
-                </a>
+                <div className="cardTitleRow">
+                    <a href={githubHref} target="_blank" rel="noopener noreferrer" className="cardTitle cardTitleLink">
+                        <FaGithub className="cardTitleGithubIcon" />
+                        <span>{title}</span>
+                        <FiArrowUpRight className="cardTitleArrow" />
+                    </a>
+                    {date && <span className="cardDate">{date}</span>}
+                </div>
                 {bullets && bullets.length > 0 ? (
                     <ul className="cardBulletList">
                         {bullets.map((bullet, idx) => (

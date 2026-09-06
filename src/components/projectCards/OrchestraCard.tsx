@@ -11,6 +11,7 @@ export default function OrchestraCard() {
       href="https://orchestral-pieces.jhchun.dev"
       githubHref="https://github.com/alterj07/orchestral-pieces"
       title="Orchestral-Pieces"
+      date="September 2024 - October 2024"
       bullets={[
         "Created as my first web development project for Hack Club's Boba Drops initiative.",
         "Showcases a curated collection of classical orchestral pieces performed during high school.",

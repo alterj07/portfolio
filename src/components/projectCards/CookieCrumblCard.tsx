@@ -12,6 +12,7 @@ export default function CookieCrumblCard() {
       href="https://cookiecrumbl.jhchun.dev"
       githubHref="https://github.com/alterj07/CookieCrumbl"
       title="CookieCrumbl"
+      date="March 2025"
       bullets={[
         "Developed for Hack Club's Scrapyard Hackathon as a satirical, humorous web experience.",
         "Features interactive cookie consent traps, captcha human authentication, and dynamic ad popups.",

@@ -10,6 +10,7 @@ export default function HiddenCheeseCard() {
       href="https://sprig.hackclub.com/share/BOoX5Ew1gWPRESZAvVlY"
       githubHref="https://github.com/alterj07/Sprig"
       title="The Hidden Cheese"
+      date="December 2024"
       bullets={[
         "Developed for Hack Club's Sprig console as an engaging 2D puzzle arcade game.",
         "Players navigate mazes to collect cheese while dodging patrolling enemies and memorizing patterns.",
