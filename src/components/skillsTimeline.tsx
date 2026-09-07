@@ -36,7 +36,7 @@ export default function SkillsTimeline() {
                         <h3 className="timeline-name">Languages</h3>
                         <h4 className="timeline-title">Core Programming</h4>
                         <div className="skillsPillContainer">
-                            {['Python', 'Java', 'C / C++', 'TypeScript', 'JavaScript', 'HTML / CSS', 'SQL'].map((skill) => (
+                            {['Java', 'TypeScript', 'Python', 'JavaScript', 'HTML / CSS', 'SQL'].map((skill) => (
                                 <span key={skill} className="skillPill">{skill}</span>
                             ))}
                         </div>
@@ -58,7 +58,7 @@ export default function SkillsTimeline() {
                         <h3 className="timeline-name">Frameworks &amp; Libraries</h3>
                         <h4 className="timeline-title">Web &amp; Mobile Development</h4>
                         <div className="skillsPillContainer">
-                            {['React', 'Next.js', 'React Native', 'Node.js', 'Flask', 'Tailwind CSS', 'TensorFlow', 'Expo'].map((skill) => (
+                            {['React', 'Next.js', 'React Native', 'Node.js', 'Flask', 'Tailwind CSS', 'Expo'].map((skill) => (
                                 <span key={skill} className="skillPill">{skill}</span>
                             ))}
                         </div>
@@ -80,7 +80,7 @@ export default function SkillsTimeline() {
                         <h3 className="timeline-name">Tools &amp; Platforms</h3>
                         <h4 className="timeline-title">Development &amp; DevOps</h4>
                         <div className="skillsPillContainer">
-                            {['Git', 'GitHub', 'Linux / Bash', 'VS Code', 'Postman', 'Vercel'].map((skill) => (
+                            {['Git', 'GitHub', 'Linux', 'VS Code', 'Vercel'].map((skill) => (
                                 <span key={skill} className="skillPill">{skill}</span>
                             ))}
                         </div>
@@ -104,17 +104,17 @@ export default function SkillsTimeline() {
                             {/* Edit or add your certifications below */}
                             <div className="certificationEntry">
                                 <div className="certificationHeader">
-                                    <span className="certificationName">AWS Certified Cloud Practitioner</span>
-                                    <span className="timeline-date certificationDate">August 2025</span>
+                                    <span className="certificationName">AI Fluency Framework & Foundations</span>
+                                    <span className="timeline-date certificationDate">June 2026</span>
                                 </div>
-                                <p className="certificationIssuer">Amazon Web Services</p>
+                                <p className="certificationIssuer">Anthropic</p>
                             </div>
                             <div className="certificationEntry">
                                 <div className="certificationHeader">
-                                    <span className="certificationName">Python Institute Certified Associate</span>
-                                    <span className="timeline-date certificationDate">May 2025</span>
+                                    <span className="certificationName">Introduction to Model Context Protocol</span>
+                                    <span className="timeline-date certificationDate">June 2026</span>
                                 </div>
-                                <p className="certificationIssuer">Python Institute</p>
+                                <p className="certificationIssuer">Anthropic</p>
                             </div>
                         </div>
                     </TimelineContent>
