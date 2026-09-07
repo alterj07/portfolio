@@ -15,8 +15,8 @@ const ROLES = [
     "Software Engineer",
     "Full-Stack Developer",
     "Aspiring ML Engineer",
-    "React",
-    "Java",
+    "React Developer",
+    "Java Developer",
 ];
 
 export default function Introduction() {
