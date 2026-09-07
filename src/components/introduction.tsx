@@ -9,6 +9,16 @@ import { FaLinkedin } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { MdLocationPin } from "react-icons/md";
 import NotficationBox from './notificationBox'
+import RotatingText from './RotatingText'
+import '../css/rotatingText.css'
+const ROLES = [
+    "Software Engineer",
+    "Full-Stack Developer",
+    "Aspiring ML Engineer",
+    "React",
+    "Java",
+];
+
 export default function Introduction() {
     const [isCopied, setIsCopied] = useState(false);
     const email = "jayden.h.chun@gmail.com";
@@ -32,7 +42,11 @@ export default function Introduction() {
             <div id = "verticalContainer">
                 <div id = "nameContainer">
                     <h1 id="name">Jayden Chun</h1>
-                    <p id="description">Aspiring Engineer<br/>Marathoner<br/>Proud Aggie</p>
+                    <RotatingText
+                        className="roleRotator"
+                        texts={ROLES}
+                    />
+                    <p id="description">Marathoner<br/>Proud Aggie</p>
                 </div>
                 <div id = "linkContainer">
                     <a href = "https://www.github.com/alterj07"
