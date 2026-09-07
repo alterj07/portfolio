@@ -102,20 +102,30 @@ export default function SkillsTimeline() {
                         <h4 className="timeline-title">Credentials &amp; Honors</h4>
                         <div className="certificationsList">
                             {/* Edit or add your certifications below */}
-                            <div className="certificationEntry">
+                            <a
+                                href="https://verify.skilljar.com/c/bad7sx27ajet"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="certificationEntry"
+                            >
                                 <div className="certificationHeader">
-                                    <span className="certificationName">AI Fluency Framework & Foundations</span>
+                                    <span className="certificationName">AI Fluency Framework &amp; Foundations</span>
                                     <span className="timeline-date certificationDate">June 2026</span>
                                 </div>
                                 <p className="certificationIssuer">Anthropic</p>
-                            </div>
-                            <div className="certificationEntry">
+                            </a>
+                            <a
+                                href="https://verify.skilljar.com/c/2dkmzqtqkr3i"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="certificationEntry"
+                            >
                                 <div className="certificationHeader">
                                     <span className="certificationName">Introduction to Model Context Protocol</span>
                                     <span className="timeline-date certificationDate">June 2026</span>
                                 </div>
                                 <p className="certificationIssuer">Anthropic</p>
-                            </div>
+                            </a>
                         </div>
                     </TimelineContent>
                 </TimelineItem>
