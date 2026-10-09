@@ -11,11 +11,11 @@ export default function AlgoArcadeCard() {
       href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       githubHref="https://github.com/alterj07"
       title="AlgoArcade"
-      date="October 2026"
+      date="October 2026 - Current"
       bullets={[
-        "Interactive inspirational quote generator delivering uplifting thoughts and wisdom on demand.",
-        "Built with a Python Flask REST API backend to dynamically serve curated quotes.",
-        "First full-stack project integrating a custom Python web service with a responsive frontend.",
+        "A reinforcement learning framework for training and comparing AI agents on Pokémon FireRed using game-state observations and gameplay interactions.",
+        "Developing a custom Gymnasium environment that extracts live game-state data from emulator RAM to provide structured observations for reinforcement learning agents.",
+        "Implementing and comparing PPO and DQN agents using PyTorch and Stable-Baselines3, with multi-seed experiments tracked through Weights & Biases and Matplotlib.",
       ]}
       languages={<><HTMLComponent /><PythonComponent /></>}
       media={<Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}

@@ -13,9 +13,9 @@ export default function FinertiaCard() {
       title="Finertia(HackMIT 2026)"
       date="September 2026"
       bullets={[
-        "Integrated Elasticsearch 8 as the storage backend for a FastAPI multi-agent system, indexing bank, ledger, invoice, and email data across 7 indices with automatic fallback to local storage if the cluster is unreachable.",
-        "Built an orchestrator agent (OpenAI GPT-4o-mini) that routes requests to specialist agents using shared memory, and a cash reconciliation agent that matches bank transactions to ledger entries using 4 rule-based passes.",
-        "Implemented a tool-calling AI chatbot with 9 tools and cited answers, and refined the Next.js UI for a smoother user experience.",
+        "An agentic finance platform that connects bank transactions, ledger entries, invoices, and emails to automate financial reconciliation and answer questions with cited evidence.",
+        "Integrated Elasticsearch 8 across seven indices to centralize financial data, with automatic fallback to local storage when the cluster becomes unavailable.",
+        "Built a GPT-4o-mini orchestrator with shared memory to route requests to specialist agents, including a reconciliation agent that matches bank transactions to ledger entries through four rule-based passes.",
       ]}
       languages={<><HTMLComponent /><PythonComponent /></>}
       media={<Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}
