@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import WordsOfWisdomPic from '../../assets/wordsOfWisdom.png'
+import FinertiaPic from '../../assets/finertia.png'
 import HTMLComponent from '../libraryCards/html'
 import PythonComponent from '../libraryCards/python'
 import ProjectCard from './ProjectCard'
@@ -18,7 +18,7 @@ export default function FinertiaCard() {
         "Built a GPT-4o-mini orchestrator with shared memory to route requests to specialist agents, including a reconciliation agent that matches bank transactions to ledger entries through four rule-based passes.",
       ]}
       languages={<><HTMLComponent /><PythonComponent /></>}
-      media={<Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}
+      media={<Image src={FinertiaPic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}
     />
   );
 }

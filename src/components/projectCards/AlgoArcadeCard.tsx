@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import WordsOfWisdomPic from '../../assets/wordsOfWisdom.png'
+import AlgoArcadePic from '../../assets/algoarcade.png'
 import HTMLComponent from '../libraryCards/html'
 import PythonComponent from '../libraryCards/python'
 import ProjectCard from './ProjectCard'
@@ -18,7 +18,7 @@ export default function AlgoArcadeCard() {
         "Implementing and comparing PPO and DQN agents using PyTorch and Stable-Baselines3, with multi-seed experiments tracked through Weights & Biases and Matplotlib.",
       ]}
       languages={<><HTMLComponent /><PythonComponent /></>}
-      media={<Image src={WordsOfWisdomPic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}
+      media={<Image src={AlgoArcadePic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}
     />
   );
 }
