@@ -4,6 +4,8 @@ import '@/css/classes.css';
 import "../../css/projects.css"
 import React from "react";
 import NavBar from '../../components/navBar'
+import FinertiaCard from '@/components/projectCards/FinertiaCard';
+import AlgoArcadeCard from '@/components/projectCards/AlgoArcadeCard'
 import WordsOfWisdomCard from '@/components/projectCards/WordsOfWisdomCard';
 import PortfolioCard from '@/components/projectCards/PortfolioCard'
 import PurePrepCard from '@/components/projectCards/PurePrepCard'
@@ -18,6 +20,12 @@ export default function Projects() {
             <NavBar/>
             <h1 className="topTitle">Projects</h1>
             <div className="cardsGrid">
+                <ScrollReveal delay={0} style={{ width: '100%', height: '100%' }}>
+                    <FinertiaCard />
+                </ScrollReveal>
+                <ScrollReveal delay={100} style={{ width: '100%', height: '100%' }}>
+                    <AlgoArcadeCard />
+                </ScrollReveal>
                 <ScrollReveal delay={0} style={{ width: '100%', height: '100%' }}>
                     <WordsOfWisdomCard />
                 </ScrollReveal>
