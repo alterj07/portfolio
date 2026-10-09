@@ -80,7 +80,7 @@ export default function SkillsTimeline() {
                         <h3 className="timeline-name">Tools &amp; Platforms</h3>
                         <h4 className="timeline-title">Development &amp; DevOps</h4>
                         <div className="skillsPillContainer">
-                            {['Git', 'GitHub', 'Linux', 'VS Code', 'Vercel'].map((skill) => (
+                            {['Git', 'GitHub', 'Linux', 'VS Code', 'Vercel', 'Claude Code'].map((skill) => (
                                 <span key={skill} className="skillPill">{skill}</span>
                             ))}
                         </div>
