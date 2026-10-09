@@ -58,7 +58,7 @@ export default function SkillsTimeline() {
                         <h3 className="timeline-name">Frameworks &amp; Libraries</h3>
                         <h4 className="timeline-title">Web &amp; Mobile Development</h4>
                         <div className="skillsPillContainer">
-                            {['React', 'Next.js', 'React Native', 'Node.js', 'Flask', 'Tailwind CSS', 'Expo'].map((skill) => (
+                            {['React', 'Next.js', 'React Native', 'Node.js', 'Flask', 'Tailwind CSS', 'Expo', 'FastAPI', 'Gymnasium'].map((skill) => (
                                 <span key={skill} className="skillPill">{skill}</span>
                             ))}
                         </div>
