@@ -1,11 +1,20 @@
 'use client'
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
+import PozzlePic from '../assets/pozLogo.jpeg'
 import DateMaroonPic from '../assets/datemaroon_logo.jpeg'
 import SilviaPic from '../assets/silvia-logo.png'
 import NASAPic from '../assets/nasa-logo3.png'
 import TAMUPic from '../assets/tamu.png'
 import McNeilPic from '../assets/mcneil-logo1.png'
+
+export function PozzleLogo() {
+  return (
+        <a href = "https://site-x8k6gsch1.godaddysites.com/" target="_blank" rel="noopener noreferrer">
+            <Avatar src={PozzlePic.src} sx={{ width: 40, height: 40}} />
+        </a>
+    );
+}
 
 export function DateMaroonLogo() {
   return (

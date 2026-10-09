@@ -11,6 +11,7 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
+import {PozzleLogo} from './timelineIcons'
 import {SilviaLogo} from './timelineIcons';
 import {DateMaroonLogo} from './timelineIcons'
 import {NASALogo} from './timelineIcons';
@@ -83,6 +84,7 @@ export default function TimelineComponent(){
                     {mode === 'experience' && (
                         <div id = "timelineExperience">
                             <Timeline id = "timeline" sx={{[`& .${timelineOppositeContentClasses.root}`]: {flex: 0,},}}>
+                                <PozzleTimeline />
                                 <DateMaroonTimeline />
                                 <SilviaTimeline />
                                 <TAMUResearchTimeline />
@@ -99,6 +101,32 @@ export default function TimelineComponent(){
             </ScrollReveal>
         </div>
     );
+}
+
+function PozzleTimeline() {
+    return (
+        <TimelineItem className = "timeline-item">
+            <TimelineOppositeContent/>
+            <TimelineSeparator>
+                <TimelineDot sx={{ border: 'none', padding: 0 }}>
+                    <PozzleLogo />
+                </TimelineDot>
+                <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent className = "timeline-content">
+                <h4 className = "timeline-date">September 2026 - Current</h4>
+                <h3 className = "timeline-name">POZzlePiece Inc.</h3>
+                <h4 className = "timeline-title">Full-Stack Developer Intern</h4>
+                <div className = "timeline-description-container">
+                    <ul className = "timeline-description">
+                        <li>Built the backend for a real-time messaging module supporting text, emoji reactions, image sharing, and voice/video calls between users.</li>
+                        <li>Implemented message editing and soft deletion with persistent status tracking, preserving conversation history and message state.</li>
+                        <li>Integrated messaging with the notifications service to alert users of new messages, and restricted image sharing to non-explicit content.</li>
+                    </ul>
+                </div>
+            </TimelineContent>
+        </TimelineItem>
+    )
 }
 
 function DateMaroonTimeline() {
