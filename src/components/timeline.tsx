@@ -140,7 +140,7 @@ function DateMaroonTimeline() {
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent className = "timeline-content">
-                <h4 className = "timeline-date">July 2026 - Sept 2026</h4>
+                <h4 className = "timeline-date">July 2026 - September 2026</h4>
                 <h3 className = "timeline-name">Date Maroon</h3>
                 <h4 className = "timeline-title">Software Engineering Intern</h4>
                 <div className = "timeline-description-container">
