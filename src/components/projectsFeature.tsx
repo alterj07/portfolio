@@ -2,8 +2,8 @@
 import React from 'react';
 import Link from 'next/link'
 import '../css/projectsFeature.css';
-import WordsOfWisdomCard from  '../components/projectCards/WordsOfWisdomCard'
-import CookieCrumblCard from  '../components/projectCards/CookieCrumblCard'
+import FinertiaCard from  '../components/projectCards/FinertiaCard'
+import AlgoArcadeCard from  '../components/projectCards/AlgoArcadeCard'
 import ScrollReveal from './ScrollReveal';
 
 export default function FeatureProjects() {
@@ -22,8 +22,8 @@ export default function FeatureProjects() {
             <ScrollReveal delay={150} style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
                 <div id = "projectsFeatureWrapper">
                     <div id = "projectsFeatureContainer">
-                        <WordsOfWisdomCard/>
-                        <CookieCrumblCard/>
+                        <FinertiaCard/>
+                        <AlgoArcadeCard/>
                     </div>
                 </div>
             </ScrollReveal>
