@@ -103,16 +103,28 @@ export default function SkillsTimeline() {
                         <div className="certificationsList">
                             {/* Edit or add your certifications below */}
                             <a
-                                href="https://verify.skilljar.com/c/bad7sx27ajet"
+                                href="https://www.kaggle.com/learn/certification/jaydenchun/pandas"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="certificationEntry"
                             >
                                 <div className="certificationHeader">
-                                    <span className="certificationName">AI Fluency Framework &amp; Foundations</span>
-                                    <span className="timeline-date certificationDate">June 2026</span>
+                                    <span className="certificationName">Introduction to Pandas</span>
+                                    <span className="timeline-date certificationDate">October 2026</span>
                                 </div>
-                                <p className="certificationIssuer">Anthropic</p>
+                                <p className="certificationIssuer">Kaggle</p>
+                            </a>
+                            <a
+                                href="https://www.kaggle.com/learn/certification/jaydenchun/intro-to-machine-learning"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="certificationEntry"
+                            >
+                                <div className="certificationHeader">
+                                    <span className="certificationName">Introduction to Machine Learning</span>
+                                    <span className="timeline-date certificationDate">October 2026</span>
+                                </div>
+                                <p className="certificationIssuer">Kaggle</p>
                             </a>
                             <a
                                 href="https://verify.skilljar.com/c/2dkmzqtqkr3i"
@@ -122,6 +134,30 @@ export default function SkillsTimeline() {
                             >
                                 <div className="certificationHeader">
                                     <span className="certificationName">Introduction to Model Context Protocol</span>
+                                    <span className="timeline-date certificationDate">June 2026</span>
+                                </div>
+                                <p className="certificationIssuer">Anthropic</p>
+                            </a>
+                            <a
+                                href="https://www.credly.com/badges/7a88f468-f79d-4af5-96e6-d9c635fc7922/public_url"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="certificationEntry"
+                            >
+                                <div className="certificationHeader">
+                                    <span className="certificationName">AI Professional</span>
+                                    <span className="timeline-date certificationDate">September 2026</span>
+                                </div>
+                                <p className="certificationIssuer">Google</p>
+                            </a>
+                            <a
+                                href="https://verify.skilljar.com/c/bad7sx27ajet"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="certificationEntry"
+                            >
+                                <div className="certificationHeader">
+                                    <span className="certificationName">AI Fluency Framework &amp; Foundations</span>
                                     <span className="timeline-date certificationDate">June 2026</span>
                                 </div>
                                 <p className="certificationIssuer">Anthropic</p>
