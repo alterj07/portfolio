@@ -1,7 +1,10 @@
 'use client'
 import Image from 'next/image'
 import FinertiaPic from '../../assets/finertia.png'
-import HTMLComponent from '../libraryCards/html'
+import FastAPIComponent from '../libraryCards/fastapi'
+import NextJSComponent from '../libraryCards/nextjs'
+import ElasticSearchComponent from '../libraryCards/elasticsearch'
+import OpenAPIComponent from '../libraryCards/openapi'
 import PythonComponent from '../libraryCards/python'
 import ProjectCard from './ProjectCard'
 
@@ -17,7 +20,7 @@ export default function FinertiaCard() {
         "Integrated Elasticsearch 8 across seven indices to centralize financial data, with automatic fallback to local storage when the cluster becomes unavailable.",
         "Built a GPT-4o-mini orchestrator with shared memory to route requests to specialist agents, including a reconciliation agent that matches bank transactions to ledger entries through four rule-based passes.",
       ]}
-      languages={<><HTMLComponent /><PythonComponent /></>}
+      languages={<><PythonComponent /><FastAPIComponent /><NextJSComponent /><ElasticSearchComponent /><OpenAPIComponent /></>}
       media={<Image src={FinertiaPic.src} alt="Words-Of-Wisdom project screenshot" width="500" height="500" />}
     />
   );
